@@ -489,7 +489,8 @@ justify-content: space-between;
         font-size:1rem ;
     }
     .aboutUs__article--title{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        padding: 3%;
     }
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{

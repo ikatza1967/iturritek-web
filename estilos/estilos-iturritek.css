@@ -27,32 +27,43 @@
     height: 100vh;
     background-image: url(../imagenes/header-background.png);
     background-size: cover;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 /* ----- header - navegador-------- */
-.Cont-header__navegador{
-    width:90vw ; 
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.Cont-header__navegador-menu{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-around;
-}
-.navegador__lista-enlace{
+.navegador-general{
     color: #fff;
-    font-size: calc(0.6em + 0.4vw);
-    text-decoration: none;
-    font-family:var(--fuentetitulo);
 }
+.links-navegador{
+    color: #fff;
+}
+
+.nav-idioma{
+    color: rgb(255, 255, 255);
+    width: 25%;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    justify-content: space-around; 
+}
+
+
+.cont-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 40%;
+    
+    
+}
+
+.cont-apartados{
+    width: 60%;
+    
+
+}
+
 .nav-idiom:hover{
     background-color: var(--azul-pag) ;
     border-radius: 5%;
@@ -137,6 +148,7 @@
 /* ------------------INICIO SOCIAL PROMISE------------------- */
 .socialPromise{
     padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 .socialPromise__list--parallax{
     overflow: scroll;
@@ -181,6 +193,83 @@
 
 /* ------------------INICIO SERVICES------------------- */
 
+.services-container__title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2.5rem, 1.5vw, 2rem);
+    display: flex;
+    justify-content: center;
+    text-decoration: underline var(--naranja-pag);
+    padding-bottom: 5%;
+}
+
+.services-container{
+    width: 94%;
+    height: 165vh;
+    background-image: url(../imagenes/BG\ SERVICIOS.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-inline: 5%;
+    margin-bottom: 15%;
+}
+.services-container__box--upper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+.box__upper--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2rem, 1.5vw, 2rem);
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-left: 10%;
+}
+.services-container__box--down{
+    display:flex;
+    justify-content: space-between;
+}
+.box__down--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2rem, 1.5vw, 2rem);
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    padding-bottom: 4%;
+}
+.services__cont--cards{
+    width: 30%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.services__cont__cards--imagen img{
+    width: 100%;
+    border-radius: 0.5vw;
+}
+.services__title-position{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+.services__cont__cards--info{
+    padding: 20%;
+    height: 23vh;
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    padding: 5%;
+    text-align: center;
+    box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
+}
+.services__cont__cards--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-bottom: 5%;
+}
+.services__cont__cards--paragraph{
+    font-family: var(--fuenteparrafo);
+}
 /* ------------------FIN SERVICES------------------- */
 
 /*-------------------INICIO GRUPO PÉNASCAL-------------------*/
@@ -194,16 +283,13 @@
     padding-top: 1.5%;
 }
 .grupoPeñascal__titular{
-display: flex;
+margin-left: 55% ;
 font-family: var(--fuentetitulo);
 font-size: clamp(2.5rem, 1.5vw, 3rem);
-justify-content: center;
+
 }
 .grupoPeñascal__separador{
-    display: flex;
-    float: right;
-    margin-right: 5%;
-    margin-top: 1.5%;
+padding-left: 55%;
 }
 .grupoPeñascal__img8{
     position: absolute;
@@ -374,5 +460,12 @@ justify-content: space-between;
     flex-direction: column;
     margin: 0 auto;
   }
-  
+  .grupoPeñascal__titular{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .grupoPeñascal__separador{
+    padding: 0;
+    }
 }

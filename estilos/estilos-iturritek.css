@@ -22,6 +22,9 @@
 
 
 /* ------------------INICIO HEADER------------------- */
+.container-General{
+    width: 100%;
+}
 .Cont-header{
     width: 100%;
     height: 100vh;

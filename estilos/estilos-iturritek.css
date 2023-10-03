@@ -473,9 +473,22 @@ justify-content: space-between;
     width: 100%;
     padding: 0;
     }
+    /*-------------------ABOUT US------------------- */
+    .aboutUs{
+        width: 100%;
+        height:auto;
+    }
+    .aboutUs__article{
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    .aboutUs__article--info{
+        font-size:1rem ;
+    }
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{
-        width: 95%;
+        width: 90%;
         text-align: justify;
      }
      .socialPromise__article--img{

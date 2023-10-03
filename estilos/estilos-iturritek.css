@@ -271,12 +271,17 @@ justify-content: center;
 
 @media screen and (max-width: 600px) {
   .grupoPeñascal{
-    height: 50vh;
+    position: sticky;
+    height: auto;
     display: flex;
     justify-content: center;
   }
   .responsiveImg{
-    width: 15%;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
 }

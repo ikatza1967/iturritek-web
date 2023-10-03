@@ -265,15 +265,97 @@ justify-content: center;
 /*-------------------INICIO FOOTER-------------------*/
 .piedepagina{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
+.container-piedepag{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
 
+.logos-container{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+}
 
+.container-contacto{
+    width: 33%;
+    height: 70%;
+    color: rgb(255, 255, 255);   
+}
 
+.container-contacto h3{
+font-size: 2vw;
+}
 
+.title-underline{
+    width: 60%;
+    height: 2px;
+    border: none;
+    background-color: #FE8101;
+}
 
+.container-contacto-info{
+    width: 80%;
+    margin-block-start: 10%;
+    font-size: 1.3vw;
+}
+
+.remarked{
+color: #FE8101;
+font-weight: bold;
+}
+
+.container-direccion{ 
+    height: 70%;
+    width: 33%;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; 
+}
+
+.direccion-title{
+    font-size: 2vw;
+}
+
+.container-legal{
+    width: 80%;
+    margin: 0 auto;
+    height: 10vh;
+    color: white;
+}
+
+.legal-line{
+    width: 100%;
+    height: 3px;
+    border: none;
+    background-color: #FE8101;
+}
+
+.legalidades{
+    margin-block-start: 2%;
+display: flex;
+justify-content: space-between;
+}
+
+.legalidades a{
+    text-decoration: none;
+    color: white;
+}
 
 
 @media screen and (max-width: 720px) {

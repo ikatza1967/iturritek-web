@@ -180,8 +180,9 @@
  }
 .socialPromise__article--title{
     font-family: var(--fuentetitulo);
-    font-size: clamp(2.5rem, 1.5vw, 2rem);
+    font-size: clamp(2.5rem, 1.5vw, 5rem);
     display: flex;
+    text-align: center;
     justify-content: center;
     padding-bottom: 3%;
     text-decoration: underline var(--azul-pag);
@@ -449,13 +450,14 @@ justify-content: space-between;
 @media screen and (max-width: 720px) {
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
+    height: auto;
     position: sticky;
     height: auto;
     display: flex;
     justify-content: center;
   }
   .responsiveImg{
-    width: 80%;
+    width: 50%;
     padding: 2%;
     position: static;
     display: flex;
@@ -471,6 +473,14 @@ justify-content: space-between;
     width: 100%;
     padding: 0;
     }
+    /* ------------------INICIO SOCIAL PROMISE------------------- */
+    .socialPromise__article__cont--flex{
+        width: 95%;
+        text-align: justify;
+     }
+     .socialPromise__article--img{
+        width: 10vw;
+     }
     /*-------------------SERVICIOS------------------- */
      .services-container{
         width: 94%;

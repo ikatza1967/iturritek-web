@@ -32,23 +32,6 @@
     align-items: center;
 }
 /* ----- header - navegador-------- */
-.navegador-general{
-    color: #fff;
-}
-.links-navegador{
-    color: #fff;
-}
-
-.nav-idioma{
-    color: rgb(255, 255, 255);
-    width: 25%;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    justify-content: space-around; 
-}
-
-
 .cont-menu{
     width: 100%;
     height: 100%;
@@ -64,6 +47,15 @@
 
 }
 
+.nav-idioma{
+    color: rgb(255, 255, 255);
+    width: 25%;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    justify-content: space-around; 
+}
+
 .nav-idiom:hover{
     background-color: var(--azul-pag) ;
     border-radius: 5%;
@@ -76,6 +68,16 @@
   .nav-idiom{
     padding-right: 2px;
     border-right: 2px solid white;
+    
+  }
+  .es:hover{
+    background-color: rgb(131, 190, 224);
+  }
+  .eu:hover{
+    background-color: rgb(131, 190, 224);
+  }
+  .en:hover{
+    background-color: rgb(131, 190, 224);
   }
 
 
@@ -88,6 +90,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .Cont-header__presentIturritek-title{
     font-size: calc(2.3em + 3.5vw);
@@ -101,6 +104,10 @@
     font-size: calc(0.7em + 0.4vw);
     text-align: center;
     font-family: var(--fuenteparrafo);
+}
+.contactanosbtn{
+    color: #fff;
+    text-decoration: none;
 }
 .presentIturritek__Btn-contact{
     text-decoration: none;

@@ -369,6 +369,7 @@ padding-left: 55%;
     height: auto;
     display: flex;
     justify-content: center;
+    margin-top: 50%;
   }
   .responsiveImg{
     width: 80%;
@@ -386,4 +387,36 @@ padding-left: 55%;
   .grupoPeñascal__separador{
     padding: 0;
     }
+    /*-------------------SERVICIOS------------------- */
+     .services-container{
+        width: 94%;
+        height: 510vh;
+        padding-inline: 5%;
+        margin-bottom: 15%;
+    }
+    .services-container__box--upper{
+        flex-direction: column;
+        align-items: center;
+     }
+    .services-container__box--down{
+       flex-direction: column;
+       align-items: center;
+    }
+    .services__cont--cards{
+        width: 85%;
+        height: auto;
+        background-color: transparent;
+        margin-bottom: 15%;
+    } 
+    .box__down--title{
+        font-family: var(--fuentetitulo);
+        font-size: clamp(2rem, 1.5vw, 2rem);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 4%;
+        padding-top: 40%;
+    }
+
 }
+
+

@@ -284,7 +284,7 @@ justify-content: center;
     justify-content: center;
   }
   .responsiveImg{
-    width: 100%;
+    width: 80%;
     padding: 2%;
     position: static;
     display: flex;

@@ -451,7 +451,7 @@ justify-content: space-between;
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 50%;
+    margin-top: 85%;
   }
   .responsiveImg{
     width: 80%;
@@ -472,7 +472,7 @@ justify-content: space-between;
     /*-------------------SERVICIOS------------------- */
      .services-container{
         width: 94%;
-        height: 510vh;
+        height: 340vh;
         padding-inline: 5%;
         margin-bottom: 15%;
     }

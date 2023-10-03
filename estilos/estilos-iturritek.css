@@ -364,7 +364,6 @@ padding-left: 55%;
 .container-piedepag{
     width: 100%;
     height: 60vh;
-    background-color: black;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -533,6 +532,117 @@ justify-content: space-between;
         margin-top: 0%;
     }
 
+    
+    /*-------------------FOOTER-------------------------*/
+    .piedepagina{
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-block-start: 5%;
+    }
+
+    .container-piedepag{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .logos-container{  
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20%;
+    }
+
+    .Cont-header__navegador_logo{
+        width: 30%;
+        border: 2px solid red;
+    }
+
+    .logo-footer{
+        width: 100%;
+    }
+    
+    .container-contacto{
+        width: 70%;
+        height: 70%;
+    }
+    
+    .container-contacto h3{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .title-underline{
+        width: 100%;
+        height: 2px;
+        border: none;
+        background-color: #FE8101;
+        align-items: center;
+    }
+    
+    .container-contacto-info{
+        width: 100%;
+        margin-block-start: 10%;
+        font-size: 2vw;
+        text-align: center;
+
+    }
+    
+    .remarked{
+        color: #FE8101;
+        font-weight: bold;
+    }
+    
+    .container-direccion{
+        height: 70%;
+        width: 70%;
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        margin-block-start: 5%;
+    }
+    
+    .direccion-title{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .container-legal{
+        width: 80%;
+        height: 20vh;
+        margin: 0 auto;
+        height: 10vh;
+        color: white;
+    }
+    
+    .legal-line{
+        width: 100%;
+        height: 3px;
+        border: none;
+        background-color: #FE8101;
+    }
+    
+    .legalidades{
+        margin-block-start: 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .legalidades a{
+        text-decoration: none;
+        color: white;
+    }
+    
 }
 
 

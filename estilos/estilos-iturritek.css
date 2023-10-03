@@ -180,7 +180,40 @@
 
 
 /* ------------------INICIO SERVICES------------------- */
+.services{
+    width: 90%;
+    height: 160vh;
+    background-image: url(../imagenes/BG\ SERVICIOS.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6";
+    margin-bottom: 10%;
 
+    
+}
+.services__cont--cards{
+    margin: 6%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.services__cont__cards--imagen img{
+    width: 100%;
+}
+
+.services__cont__cards--info{
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    padding: 5%;
+}
 /* ------------------FIN SERVICES------------------- */
 
 /*-------------------INICIO GRUPO PÉNASCAL-------------------*/

@@ -189,6 +189,8 @@
     height: 85vh;
     background-color: var(--grisfondogpenascal);
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 1.5%;
 }
 .grupoPeñascal__titular{
@@ -265,4 +267,29 @@ justify-content: center;
     width: 100%;
     height: 60vh;
     background-color: black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .grupoPeñascal{
+    position: sticky;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .responsiveImg{
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 }

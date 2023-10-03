@@ -137,6 +137,7 @@
 /* ------------------INICIO SOCIAL PROMISE------------------- */
 .socialPromise{
     padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 .socialPromise__list--parallax{
     overflow: scroll;
@@ -180,39 +181,83 @@
 
 
 /* ------------------INICIO SERVICES------------------- */
-.services{
-    width: 90%;
-    height: 160vh;
+
+.services-container__title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2.5rem, 1.5vw, 2rem);
+    display: flex;
+    justify-content: center;
+    text-decoration: underline var(--naranja-pag);
+    padding-bottom: 5%;
+}
+
+.services-container{
+    width: 94%;
+    height: 165vh;
     background-image: url(../imagenes/BG\ SERVICIOS.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    grid-template-areas: 
-    "card1 card2 card3"
-    "card4 card5 card6";
-    margin-bottom: 10%;
-
-    
+    padding-inline: 5%;
+    margin-bottom: 15%;
+}
+.services-container__box--upper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+.box__upper--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2rem, 1.5vw, 2rem);
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-left: 10%;
+}
+.services-container__box--down{
+    display:flex;
+    justify-content: space-between;
+}
+.box__down--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2rem, 1.5vw, 2rem);
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    padding-bottom: 4%;
 }
 .services__cont--cards{
-    margin: 6%;
+    width: 30%;
     height: 70vh;
     background-color: transparent;
 }
 
 .services__cont__cards--imagen img{
     width: 100%;
+    border-radius: 0.5vw;
+}
+.services__title-position{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
 .services__cont__cards--info{
+    padding: 20%;
+    height: 23vh;
     margin: 0 auto;
+    margin-top: 3%;
     background-color: #fff;
     border-radius: 0.5vw;
     padding: 5%;
+    text-align: center;
+    box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
+}
+.services__cont__cards--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-bottom: 5%;
+}
+.services__cont__cards--paragraph{
+    font-family: var(--fuenteparrafo);
 }
 /* ------------------FIN SERVICES------------------- */
 
@@ -227,16 +272,13 @@
     padding-top: 1.5%;
 }
 .grupoPeñascal__titular{
-display: flex;
+margin-left: 55% ;
 font-family: var(--fuentetitulo);
 font-size: clamp(2.5rem, 1.5vw, 3rem);
-justify-content: center;
+
 }
 .grupoPeñascal__separador{
-    display: flex;
-    float: right;
-    margin-right: 5%;
-    margin-top: 1.5%;
+padding-left: 55%;
 }
 .grupoPeñascal__img8{
     position: absolute;
@@ -325,5 +367,12 @@ justify-content: center;
     flex-direction: column;
     margin: 0 auto;
   }
-  
+  .grupoPeñascal__titular{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .grupoPeñascal__separador{
+    padding: 0;
+    }
 }

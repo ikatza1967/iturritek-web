@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gorka Jabonero" content="Alexander Galvez"  content="Maily Rodriguez">
+    <meta name="author" content="Gorka Jabonero" content="Alexander Galvez" content="Maily Rodriguez">
     <title>Iturritek</title>
     <link rel="stylesheet" href="estilos/estilos-iturritek.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
+
 <body>
 
     <div class="container-General">
 
-            <header class="Cont-header">
-                <nav class="Cont-header__navegador">
-                    <figure class="Cont-header__navegador_logo">
-                        <img src="imagenes/iturritek.png" alt="logo iturrutek">
-                    </figure>
-                    <ul class="Cont-header__navegador-menu">
-                        <li class="Cont-header__navegador-lista"><a class="navegador__lista-enlace" href="">QUIENES SOMOS</a></li>
-                        <li class="Cont-header__navegador-lista"><a class="navegador__lista-enlace" href="">SERVICIOS</a></li>
-                        <li class="Cont-header__navegador-lista"><a class="navegador__lista-enlace"href="">GRUPO PEÑASCAL</a></li>
-                        <li class="Cont-header__navegador-lista"><a class="navegador__lista-enlace nav-idiom ee"href="">ES</a> 
-                            <a class="navegador__lista-enlace nav-idiom"href="">EU</a> <a class="navegador__lista-enlace nav-idiom "href="">EN</a></li>
-                      
-                       
-                    </ul>
-                </nav>
+        <header class="Cont-header">
+            <nav class="navbar navbar-expand-lg navegador-general">
 
-                <section class="Cont-header__presentIturritek">
-                    <h1 class="Cont-header__presentIturritek-title">2O AÑOS DE EXPERIENCIA</h1>
-                    <p class="Cont-header__presentIturritek-text">Iturritek es una realidad empresarial puntera en lo que a Proyectos e Instalaciones, Mantenimiento y
-                         Montajes se refiere y que contribuye a la generación de riqueza y empleo en nuestra sociedad, desde
-                          una serie de consideraciones, valores y estilo sociales.</p>
-                    <button class="presentIturritek__Btn-contact">Contáctanos</button>
-                </section>
-            </header>
+                <div class="container-fluid cont-menu">
+                    <a class="navbar-brand" href="#">
+                       <img src="/imagenes/iturritek.png" alt="logo iturritek">
+                    </a>
+                    <button class="navbar-toggler btn-nav" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <main class="container-Main">
-            
-        <section class="aboutUs">
-            <div class="aboutUs__cont-img">
-                <img class="aboutUs__img" src="imagenes/quienesomosImg.svg" alt="Icono quienes somos">
-            </div>
+                    <div class="collapse navbar-collapse cont-apartados" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link links-navegador" aria-current="page" href="#">QUIENES SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    SERVICIOS</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">
+                                    GRUPO PEÑASCAL
+                                </a>
+                            </li>
+
+                            <ul class="nav-idioma">
+                                <li class="nav-item"><a class="nav-link" href="">ES</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">EU</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">EN</a></li>
+
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="Cont-header__presentIturritek">
+                <h1 class="Cont-header__presentIturritek-title">2O AÑOS DE EXPERIENCIA</h1>
+                <p class="Cont-header__presentIturritek-text">Iturritek es una realidad empresarial puntera en lo que a
+                    Proyectos e Instalaciones, Mantenimiento y
+                    Montajes se refiere y que contribuye a la generación de riqueza y empleo en nuestra sociedad, desde
+                    una serie de consideraciones, valores y estilo sociales.</p>
+                <button class="presentIturritek__Btn-contact">Contáctanos</button>
+            </section>
+        </header>
+
+        <main class="container-Main">
+
+            <section class="aboutUs">
+                <div class="aboutUs__cont-img">
+                    <img class="aboutUs__img" src="imagenes/quienesomosImg.svg" alt="Icono quienes somos">
+                </div>
                 <article class="aboutUs__article">
                     <h2 class="aboutUs__article--title">QUEREMOS...</h2>
-                    <p class="aboutUs__article--info">Queremos ser un proyecto empresarial tutelado por Peñascal S.Cooperativa,
-                         que se base en las personas, y que busque favorecer la inserción laboral y la creación de empleo y riqueza social.</p>
+                    <p class="aboutUs__article--info">Queremos ser un proyecto empresarial tutelado por Peñascal
+                        S.Cooperativa,
+                        que se base en las personas, y que busque favorecer la inserción laboral y la creación de empleo
+                        y riqueza social.</p>
                     <h2 class="aboutUs__article--title">PRETENDEMOS...</h2>
-                    <p class="aboutUs__article--info">Ser el vehículo que posibilite la insersión social y laboral de colectivos en situación de riesgo de 
+                    <p class="aboutUs__article--info">Ser el vehículo que posibilite la insersión social y laboral de
+                        colectivos en situación de riesgo de
                         exclusión en los sectores profesionales de la construcción.</p>
                     <h2 class="aboutUs__article--title">NOS COMPROMETEMOS...</h2>
-                    <p class="aboutUs__article--info">A brindar un servicio y un trabajo de calidad, formar profesionales competentes, generar empleo y posibilitar la inserción social</p>
+                    <p class="aboutUs__article--info">A brindar un servicio y un trabajo de calidad, formar
+                        profesionales competentes, generar empleo y posibilitar la inserción social</p>
                 </article>
-        </section>
-       
-        <section class="socialPromise">
-            <div class="socialPromise__list--parallax"></div>
-            <article class="socialPromise__article">
-                <h3 class="socialPromise__article--title">COMPROMISO SOCIAL</h3>
-                <div class="socialPromise__article__cont--flex">
-                    <figure class="socialPromise__article__cont--flex--figure">
-                    <img class="socialPromise__article--img" src="imagenes/garrapata 1.svg" alt="icono de checkbox">
-                </figure>
-                    <p class="socialPromise__article--paragraph">La empresa Iturritek es una iniciativa empresarial gestada y tutelada por Peñascal S.Coop. Pretender ser una experiencia de creación de empleo que posibilite la inserción social y laboral de colectivos en situación o en riesgo de exclusión o en los sectores profesionales de la construcción.</p>
-                </div>
-              </article>
-        </section>
-       
+            </section>
+
+            <section class="socialPromise">
+                <div class="socialPromise__list--parallax"></div>
+                <article class="socialPromise__article">
+                    <h3 class="socialPromise__article--title">COMPROMISO SOCIAL</h3>
+                    <div class="socialPromise__article__cont--flex">
+                        <figure class="socialPromise__article__cont--flex--figure">
+                            <img class="socialPromise__article--img" src="imagenes/garrapata 1.svg"
+                                alt="icono de checkbox">
+                        </figure>
+                        <p class="socialPromise__article--paragraph">La empresa Iturritek es una iniciativa empresarial
+                            gestada y tutelada por Peñascal S.Coop. Pretender ser una experiencia de creación de empleo
+                            que posibilite la inserción social y laboral de colectivos en situación o en riesgo de
+                            exclusión o en los sectores profesionales de la construcción.</p>
+                    </div>
+                </article>
+            </section>
+
             <section class="services">
-           
+
                 <article class="services__cont--cards card1">
                     <div class="services__cont__cards--imagen">
                         <figure>
@@ -77,7 +112,8 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
 
@@ -89,7 +125,8 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
 
@@ -101,11 +138,12 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
-              
-               
+
+
                 <article class="services__cont--cards card4">
                     <div class="services__cont__cards--imagen">
                         <figure>
@@ -114,7 +152,8 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
 
@@ -126,7 +165,8 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
 
@@ -138,35 +178,41 @@
                     </div>
                     <div class="services__cont__cards--info">
                         <h5 class="services__cont__cards--title">AIRE ACONDICIONADO</h5>
-                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado frío-calor.</p>
+                        <p class="services__cont__cards--paragraph">Realizamos instalaciones de aire acondicionado
+                            frío-calor.</p>
                     </div>
                 </article>
             </section>
 
             <section class="grupoPeñascal">
                 <div class="grupoPeñascal__cont--titulo">
-                <h5 class="grupoPeñascal__titular">Grupo Peñascal</h5>
-                <img class="grupoPeñascal__separador" src="imagenes/Rectangle 44.svg" alt="">
-            </div>
+                    <h5 class="grupoPeñascal__titular">Grupo Peñascal</h5>
+                    <img class="grupoPeñascal__separador" src="imagenes/Rectangle 44.svg" alt="">
+                </div>
                 <figure class="grupoPeñascal__cont--figures">
-                    <img class="grupoPeñascal__img8 responsiveImg" src="imagenes/empresa8.svg" alt=" logo de grupo Peñascal">
-                    <img class="grupoPeñascal__img4 responsiveImg" src="imagenes/empresa4.svg" alt=" logo de produccion textil">
+                    <img class="grupoPeñascal__img8 responsiveImg" src="imagenes/empresa8.svg"
+                        alt=" logo de grupo Peñascal">
+                    <img class="grupoPeñascal__img4 responsiveImg" src="imagenes/empresa4.svg"
+                        alt=" logo de produccion textil">
                     <img class="grupoPeñascal__img6 responsiveImg" src="imagenes/empresa6.svg" alt="logo ekoizan">
                     <img class="grupoPeñascal__img3 responsiveImg" src="imagenes/empresa3.svg" alt="logo eureka">
-                    <img class="grupoPeñascal__img5 responsiveImg" src="imagenes/empresa5.svg" alt="logo lapiko katering">
+                    <img class="grupoPeñascal__img5 responsiveImg" src="imagenes/empresa5.svg"
+                        alt="logo lapiko katering">
                     <img class="grupoPeñascal__img9 responsiveImg" src="imagenes/empresa9.svg" alt="logo zurtek">
                     <img class="grupoPeñascal__img10 responsiveImg" src="imagenes/empresa10.svg" alt="logo laiatzen">
-                    <img class="grupoPeñascal__img1 responsiveImg" src="imagenes/empresa1.svg" alt="logo perpetum movile">
-                    <img class="grupoPeñascal__img7 responsiveImg" src="imagenes/empresa7.svg" alt=" logo servicios hostelería Peñascal">
+                    <img class="grupoPeñascal__img1 responsiveImg" src="imagenes/empresa1.svg"
+                        alt="logo perpetum movile">
+                    <img class="grupoPeñascal__img7 responsiveImg" src="imagenes/empresa7.svg"
+                        alt=" logo servicios hostelería Peñascal">
                     <img class="grupoPeñascal__img11 responsiveImg" src="imagenes/empresa11.svg" alt="logo izarza">
                     <img class="grupoPeñascal__img2 responsiveImg" src="imagenes/empresa2.svg" alt="logo ukalbide">
-                    
+
                 </figure>
             </section>
-    </main>
-    <footer class="piedepagina"></footer>
-</div>
-
-    
+        </main>
+        <footer class="piedepagina"></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

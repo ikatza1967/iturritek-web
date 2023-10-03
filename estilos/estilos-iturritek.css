@@ -467,6 +467,7 @@ justify-content: space-between;
     margin: 0;
   }
   .grupoPeñascal__separador{
+    width: 100%;
     padding: 0;
     }
     /*-------------------SERVICIOS------------------- */

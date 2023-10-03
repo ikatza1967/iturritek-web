@@ -276,7 +276,8 @@ justify-content: center;
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+    /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     position: sticky;
     height: auto;
@@ -290,7 +291,6 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
   }
   
 }

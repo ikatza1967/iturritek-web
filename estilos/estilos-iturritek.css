@@ -22,6 +22,9 @@
 
 
 /* ------------------INICIO HEADER------------------- */
+.container-General{
+    width: 100%;
+}
 .Cont-header{
     width: 100%;
     height: 100vh;
@@ -184,8 +187,9 @@
  }
 .socialPromise__article--title{
     font-family: var(--fuentetitulo);
-    font-size: clamp(2.5rem, 1.5vw, 2rem);
+    font-size: clamp(2.5rem, 1.5vw, 5rem);
     display: flex;
+    text-align: center;
     justify-content: center;
     padding-bottom: 3%;
     text-decoration: underline var(--azul-pag);
@@ -259,13 +263,12 @@
 }
 
 .services__cont__cards--info{
-    padding: 20%;
-    height: 23vh;
+    padding: 9%;
+    height: 24vh;
     margin: 0 auto;
     margin-top: 3%;
     background-color: #fff;
     border-radius: 0.5vw;
-    padding: 5%;
     text-align: center;
     box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
 }
@@ -368,7 +371,6 @@ padding-left: 55%;
 .container-piedepag{
     width: 100%;
     height: 60vh;
-    background-color: black;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -454,14 +456,14 @@ justify-content: space-between;
 @media screen and (max-width: 720px) {
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
+    height: auto;
     position: sticky;
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 50%;
   }
   .responsiveImg{
-    width: 80%;
+    width: 50%;
     padding: 2%;
     position: static;
     display: flex;
@@ -474,12 +476,40 @@ justify-content: space-between;
     margin: 0;
   }
   .grupoPeñascal__separador{
+    width: 100%;
     padding: 0;
     }
+    /*-------------------ABOUT US------------------- */
+    .aboutUs{
+        width: 100%;
+        height:auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .aboutUs__article{
+        width: 95%;
+        height: auto;
+        text-align: center;
+    }
+    .aboutUs__article--info{
+        font-size:1rem ;
+    }
+    .aboutUs__article--title{
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+    /* ------------------INICIO SOCIAL PROMISE------------------- */
+    .socialPromise__article__cont--flex{
+        width: 90%;
+        text-align: justify;
+     }
+     .socialPromise__article--img{
+        width: 10vw;
+     }
     /*-------------------SERVICIOS------------------- */
      .services-container{
         width: 94%;
-        height: 510vh;
+        height: auto;
         padding-inline: 5%;
         margin-bottom: 15%;
     }
@@ -492,7 +522,7 @@ justify-content: space-between;
        align-items: center;
     }
     .services__cont--cards{
-        width: 85%;
+        width: 90%;
         height: auto;
         background-color: transparent;
         margin-bottom: 15%;
@@ -505,7 +535,121 @@ justify-content: space-between;
         padding-bottom: 4%;
         padding-top: 40%;
     }
+    .services__cont__cards--info{
+        margin-top: 0%;
+    }
 
+    
+    /*-------------------FOOTER-------------------------*/
+    .piedepagina{
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-block-start: 5%;
+    }
+
+    .container-piedepag{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .logos-container{  
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20%;
+    }
+
+    .Cont-header__navegador_logo{
+        width: 30%;
+        border: 2px solid red;
+    }
+
+    .logo-footer{
+        width: 100%;
+    }
+    
+    .container-contacto{
+        width: 70%;
+        height: 70%;
+    }
+    
+    .container-contacto h3{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .title-underline{
+        width: 100%;
+        height: 2px;
+        border: none;
+        background-color: #FE8101;
+        align-items: center;
+    }
+    
+    .container-contacto-info{
+        width: 100%;
+        margin-block-start: 10%;
+        font-size: 2vw;
+        text-align: center;
+
+    }
+    
+    .remarked{
+        color: #FE8101;
+        font-weight: bold;
+    }
+    
+    .container-direccion{
+        height: 70%;
+        width: 70%;
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        margin-block-start: 5%;
+    }
+    
+    .direccion-title{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .container-legal{
+        width: 80%;
+        height: 20vh;
+        margin: 0 auto;
+        height: 10vh;
+        color: white;
+    }
+    
+    .legal-line{
+        width: 100%;
+        height: 3px;
+        border: none;
+        background-color: #FE8101;
+    }
+    
+    .legalidades{
+        margin-block-start: 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .legalidades a{
+        text-decoration: none;
+        color: white;
+    }
+    
 }
 
 

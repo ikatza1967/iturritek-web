@@ -77,7 +77,7 @@
     border-right: 2px solid white;
     
   }
-  
+
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
     color: #fff;
@@ -590,6 +590,7 @@ justify-content: space-between;
         padding-top: 40%;
     }
     .services__cont__cards--info{
+        height: auto;
         margin-top: 0%;
     }
 

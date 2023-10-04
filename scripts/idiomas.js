@@ -3,6 +3,8 @@ let tituloHeader=document.querySelector(".Cont-header__presentIturritek-title");
 let textoHeader=document.querySelector(".Cont-header__presentIturritek-text");
 let vinculosHeader=document.querySelectorAll(".linkscript");
 let btnContact=document.querySelector(".contactanosbtn");
+let sobreNosotrosTitle=document.querySelectorAll(".aboutUs__article--title");
+let sobreNosotrosParrafo=document.querySelectorAll(".aboutUs__article--info");
 
 
 const encabezadoNav1= {
@@ -31,13 +33,41 @@ const encabezadoBtn={
     en:"Contact Us",
     eu:"", 
 }
+const aboutUsTitle={
+    title0:{
+     en:"WE WANT...",
+     eu:"",
+    },
+    title1:{
+     en:"WE PRETEND...",
+     eu:"",
+    },
+    title2:{
+     en:"WE COMMIT...",
+     eu:"",
+    },
+ }
+ const aboutUsText={
+     text0:{
+         en:"We want to be a business project supervised by Peñascal S.Cooperativa, which is based on people, and which seeks to promote job insertion and the creation of employment and social wealth.",
+         eu:"",
+     },
+     text1:{
+        en:"To be the vehicle that enables the social and labor insertion of groups at risk of exclusion in the professional construction sectors.",
+        eu:"",
+    },
+     text2:{
+        en:"To provide quality service and work, train competent professionals, generate employment and enable social integration.",
+        eu:"",
+     }
+ }
+
 
 idiomas.forEach((idioma)=>{
     idioma.addEventListener("click",()=>{
         if(idioma.classList.contains("en")){
-            idiomaEn()
-            recorrernavEn()
-          
+            headerEn()
+            aboutEn()
         }
         else if(idioma.classList.contains("eu")){
             
@@ -49,17 +79,26 @@ idiomas.forEach((idioma)=>{
    
 })
 
-function recorrernavEn(){
+function headerEn(){
     for (let i=0;i<vinculosHeader.length;i++){
         vinculosHeader[0].textContent=encabezadoNav1.en
         vinculosHeader[1].textContent=encabezadoNav2.en
         vinculosHeader[2].textContent=encabezadoNav3.en
      }
+     tituloHeader.textContent=encabezadoTitle.en;
+     textoHeader.textContent=encabezadoText.en;
+     btnContact.textContent=encabezadoBtn.en;
 }
 
-function idiomaEn(){
-tituloHeader.textContent=encabezadoTitle.en;
-textoHeader.textContent=encabezadoText.en;
-btnContact.textContent=encabezadoBtn.en;
+function aboutEn(){
+    for (let i=0;i<sobreNosotrosTitle.length;i++){
+        sobreNosotrosTitle[0].textContent=aboutUsTitle.title0.en
+        sobreNosotrosTitle[1].textContent=aboutUsTitle.title1.en
+        sobreNosotrosTitle[2].textContent= aboutUsTitle.title2.en
+     }
+    for (let i=0;i<sobreNosotrosParrafo.length;i++){
+        sobreNosotrosParrafo[0].textContent=aboutUsText.text0.en
+        sobreNosotrosParrafo[1].textContent=aboutUsText.text1.en
+        sobreNosotrosParrafo[2].textContent=aboutUsText.text2.en
+     }
 }
-

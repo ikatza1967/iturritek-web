@@ -124,7 +124,7 @@
 /* --------------INICIO ABOUT-US -------------------- */
 .aboutUs{
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -137,6 +137,7 @@
 }
 .aboutUs__article{
     width: 50%;
+    padding: 4%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@
     justify-content: space-between;
 }
 .aboutUs__article--title{
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
     font-family: var(--fuentetitulo);
 }
 .aboutUs__article--info{
@@ -512,16 +513,21 @@ justify-content: space-between;
     }
     /* -------------ABOUT US----------------- */
     .aboutUs{
+         height: 100%;
         flex-flow: column;
+        justify-content: space-between;
     }
     .aboutUs__cont-img{
-        width: 40%;
+        width: 60%;
+        margin: 5%;
     }
     .aboutUs__img{
         width: 90%;
     }
     .aboutUs__article{
         width: 70%;
+        margin: 5%;
+    
     }
 
     /*---------COMPROMISO SOCIAL----------*/
@@ -566,14 +572,7 @@ justify-content: space-between;
     width: 100%;
     padding: 0;
     }
-    /*-------------------ABOUT US------------------- */
-    .aboutUs{
-        width: 100%;
-        height:auto;
-        margin-top: 4%;
-        margin-bottom: 4%;
-    }
-    
+   
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{
         width: 90%;

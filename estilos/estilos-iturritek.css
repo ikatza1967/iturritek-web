@@ -374,6 +374,9 @@ padding-left: 55%;
     justify-content: space-between;
     gap: 20%;
 }
+.logo-footer{
+    cursor: pointer;
+}
 
 .container-contacto{
     width: 33%;

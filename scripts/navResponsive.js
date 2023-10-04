@@ -1,5 +1,6 @@
 let barra = document.querySelector('.cont-apartados')
 let btnNav = document.querySelector('.btn-nav')
+let logoFter= document.querySelector('.logo-footer')
 
 btnNav.addEventListener('click', () => {
   barra.style.display = 'block'
@@ -11,5 +12,6 @@ document.addEventListener('click', (e) => {
   }
 })
     
-
-    
+    logoFter.addEventListener('click', () => {
+      location.href = 'index.html'
+    })

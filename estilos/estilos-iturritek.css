@@ -504,6 +504,11 @@ justify-content: space-between;
 }
 
 @media screen and (max-width: 720px) {
+    /*-------------------INICIO HEADER------------------- */
+    .bg-principal{
+        background-position: center;
+    }
+    
     /* ----NAVEGADOR---------- */
     .logo-cont{
         width: 30%;
@@ -532,7 +537,7 @@ justify-content: space-between;
 
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
-        height: 40vh;
+        height: 50vh;
     }
     .socialPromise__article{
         margin-block-start: 3%;

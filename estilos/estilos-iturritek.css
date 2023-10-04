@@ -43,14 +43,15 @@
     height: 100%;
     display: flex;
     gap: 40%;
+
     
     
 }
 
 
 .cont-apartados{
-    width: 60%;
-    
+    width: 100%;
+ 
 
 }
 
@@ -123,7 +124,7 @@
 /* --------------INICIO ABOUT-US -------------------- */
 .aboutUs{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -135,16 +136,19 @@
     height: 90%;
 }
 .aboutUs__article{
-    width: 60%;
-    height: 60vh;
+    width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .aboutUs__article--title{
-    font-size: calc(0.8em + 0.8vw);
+    font-size: clamp(1rem, 5vw, 2rem);
     font-family: var(--fuentetitulo);
 }
 .aboutUs__article--info{
-    font-size:calc(0.5em + 1vw) ;
+    font-size: clamp(0.7rem, 4vw, 1.2rem);
     margin: 2%;
     font-family: var(--fuenteparrafo);
 }
@@ -511,6 +515,19 @@ justify-content: space-between;
     .logo{
         width: 90%;
     }
+    /* -------------ABOUT US----------------- */
+    .aboutUs{
+        flex-flow: column;
+    }
+    .aboutUs__cont-img{
+        width: 40%;
+    }
+    .aboutUs__img{
+        width: 90%;
+    }
+    .aboutUs__article{
+        width: 70%;
+    }
 
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
@@ -561,18 +578,7 @@ justify-content: space-between;
         margin-top: 4%;
         margin-bottom: 4%;
     }
-    .aboutUs__article{
-        width: 95%;
-        height: auto;
-        text-align: center;
-    }
-    .aboutUs__article--info{
-        font-size:1rem ;
-    }
-    .aboutUs__article--title{
-        font-size: 1.5rem;
-        padding: 3%;
-    }
+    
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{
         width: 90%;

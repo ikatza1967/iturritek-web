@@ -648,7 +648,7 @@ justify-content: space-between;
     }
     
     .container-contacto h3{
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
     }
     
@@ -663,9 +663,8 @@ justify-content: space-between;
     .container-contacto-info{
         width: 100%;
         margin-block-start: 10%;
-        font-size: 2vw;
+        font-size: 3vw;
         text-align: center;
-
     }
     
     .remarked{
@@ -684,7 +683,7 @@ justify-content: space-between;
     }
     
     .direccion-title{
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
     }
     
@@ -698,7 +697,7 @@ justify-content: space-between;
     
     .legal-line{
         width: 100%;
-        height: 3px;
+        height: 2px;
         border: none;
         background-color: #FE8101;
     }
@@ -707,6 +706,7 @@ justify-content: space-between;
         margin-block-start: 2%;
         display: flex;
         justify-content: space-between;
+        font-size: 3vw;
     }
     
     .legalidades a{
@@ -714,6 +714,10 @@ justify-content: space-between;
         color: white;
     }
     
+    .legalidades h5{
+        font-size: 3vw;
+    }
+
 }
 
 

@@ -154,11 +154,11 @@ const aboutUsTitle={
  const fterTitles={
      ft1:{
          en:"Contact",
-         eu:"",
+         eu:"Kontaktua",
      },
      ft2:{
          en:"Address",
-         eu:"",
+         eu:"Helbidea",
      },
      
  }
@@ -179,7 +179,9 @@ idiomas.forEach((idioma)=>{
             aboutEu();
             compSocialEu();
             serviceEu();
-            penascalGroupTitle.textContent=encabezadoNav.link3.eu
+            penascalGroupTitle.textContent=encabezadoNav.link3.eu;
+            fterEu();
+    
         }
         else if(idioma.classList.contains("es")){
             location.reload()
@@ -245,7 +247,7 @@ function fterEn(){
         footerTitle[0].textContent=fterTitles.ft1.en
         footerTitle[1].textContent=fterTitles.ft2.en
     }
-    document.querySelector(".remarked").textContent="CENTRAL OFFICE";
+    document.querySelector(".remarked").textContent="MAIN OFFICE";
     document.querySelector("#politicas").textContent="Legal notice and privacy policy";
 }
 
@@ -301,4 +303,14 @@ function serviceEu(){
     servicePrincipalTitle.textContent=servicesPrincipalTitle.eu
     serviceSecondTitle.textContent=servicesSecondTitle.eu
     serviceThirdTitle.textContent=servicesThirdTitle.eu
+}
+
+
+function fterEu(){
+    for(let i=0;i<footerTitle.length;i++){
+        footerTitle[0].textContent=fterTitles.ft1.eu
+        footerTitle[1].textContent=fterTitles.ft2.eu
+    }
+    document.querySelector(".remarked").textContent="BULEGO NAGUSIA";
+    document.querySelector("#politicas").textContent="Lege oharra eta pribatutasun politika";
 }

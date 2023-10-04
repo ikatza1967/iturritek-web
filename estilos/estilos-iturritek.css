@@ -144,11 +144,11 @@
     justify-content: space-between;
 }
 .aboutUs__article--title{
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     font-family: var(--fuentetitulo);
 }
 .aboutUs__article--info{
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.7rem, 4vw, 1.2rem);
     margin: 2%;
     font-family: var(--fuenteparrafo);
 }

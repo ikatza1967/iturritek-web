@@ -166,12 +166,10 @@
     background-position:center;
     background-size: 100% 100%;
     background-repeat: no-repeat;  
+    height: 60vh;
 }
 ::-webkit-scrollbar{
     display: none;
-}
-.socialPromise__list--parallax{
-    height: 60vh;
 }
 .socialPromise__article{
     width: 100%;
@@ -527,13 +525,19 @@ justify-content: space-between;
     }
 
     /*---------COMPROMISO SOCIAL----------*/
+    .socialPromise__list--parallax{
+        height: 40vh;
+    }
     .socialPromise__article{
         margin-block-start: 3%;
         padding-inline: 7%;
     }
 
+    .socialPromise__article__cont--flex{
+        padding-block-start: 10%;
+    }
+
     .socialPromise__article--paragraph{
-        padding-block-start: 3%;
         font-size: 4vw;
     }
 

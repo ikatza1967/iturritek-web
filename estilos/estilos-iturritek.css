@@ -648,7 +648,7 @@ justify-content: space-between;
     }
     
     .container-contacto h3{
-        font-size: 4vw;
+        font-size: 5vw;
         text-align: center;
     }
     
@@ -663,7 +663,7 @@ justify-content: space-between;
     .container-contacto-info{
         width: 100%;
         margin-block-start: 10%;
-        font-size: 3vw;
+        font-size: 3.5vw;
         text-align: center;
     }
     
@@ -683,7 +683,7 @@ justify-content: space-between;
     }
     
     .direccion-title{
-        font-size: 4vw;
+        font-size: 5vw;
         text-align: center;
     }
     

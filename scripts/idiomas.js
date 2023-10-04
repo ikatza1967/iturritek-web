@@ -14,7 +14,14 @@ let serviciosTarjetasTitulos=document.querySelectorAll(".services__cont__cards--
 let serviciosTarjetasParrafos=document.querySelectorAll(".services__cont__cards--paragraph");
 let penascalGroupTitle=document.querySelector(".grupoPeñascal__titular");
 let footerTitle=document.querySelectorAll(".fterTitle");
+let espanol=document.querySelector(".es");
+let ingles=document.querySelector(".en");
+let euskera=document.querySelector(".eu");
 
+
+addEventListener("load", ()=> {
+    espanol.style.backgroundColor="rgb(131, 190, 224)";
+})
 
 const encabezadoNav={
     link1:{
@@ -167,6 +174,9 @@ const aboutUsTitle={
 idiomas.forEach((idioma)=>{
     idioma.addEventListener("click",()=>{
         if(idioma.classList.contains("en")){
+            espanol.style.backgroundColor="transparent";
+            euskera.style.backgroundColor="transparent";
+            idioma.style.backgroundColor="rgb(131, 190, 224)"
             headerEn()
             aboutEn()
             compSocialEn()
@@ -175,6 +185,9 @@ idiomas.forEach((idioma)=>{
             fterEn()
         }
         else if(idioma.classList.contains("eu")){
+            espanol.style.backgroundColor="transparent";
+            ingles.style.backgroundColor="transparent";
+            idioma.style.backgroundColor="rgb(131, 190, 224)"
             headerEu();
             aboutEu();
             compSocialEu();

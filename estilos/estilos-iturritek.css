@@ -77,17 +77,7 @@
     border-right: 2px solid white;
     
   }
-  .es:hover{
-    background-color: rgb(131, 190, 224);
-  }
-  .eu:hover{
-    background-color: rgb(131, 190, 224);
-  }
-  .en:hover{
-    background-color: rgb(131, 190, 224);
-  }
-
-
+  
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
     color: #fff;

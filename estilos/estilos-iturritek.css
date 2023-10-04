@@ -515,8 +515,11 @@ justify-content: space-between;
         padding-inline: 7%;
     }
 
+    .socialPromise__article__cont--flex{
+        padding-block-start: 5%;
+    }
+
     .socialPromise__article--paragraph{
-        padding-block-start: 3%;
         font-size: 4vw;
     }
 

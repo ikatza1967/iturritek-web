@@ -512,7 +512,12 @@ justify-content: space-between;
         height: 40vh;
     }
     .socialPromise__article{
-    padding-inline: 10%;
+        margin-block-start: 3%;
+        padding-inline: 7%;
+    }
+
+    .socialPromise__article__cont--flex{
+        padding-block-start: 10%;
     }
 
     .socialPromise__article--paragraph{

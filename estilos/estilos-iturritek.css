@@ -24,8 +24,9 @@
 /* ------------------INICIO HEADER------------------- */
 .container-General{
     width: 100%;
+
 }
-.Cont-header{
+.bg-principal{
     width: 100%;
     height: 100vh;
     background-image: url(../imagenes/header-background.png);
@@ -34,7 +35,9 @@
     justify-content: center;
     align-items: center;
 }
+
 /* ----- header - navegador-------- */
+
 .cont-menu{
     width: 100%;
     height: 100%;
@@ -43,6 +46,7 @@
     
     
 }
+
 
 .cont-apartados{
     width: 60%;
@@ -91,8 +95,8 @@
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     
 }
 .Cont-header__presentIturritek-title{
@@ -451,9 +455,69 @@ justify-content: space-between;
     text-decoration: none;
     color: white;
 }
+/* ------- Avisos legales y politicas de privacidad------------ */
+.bg-principal-legal{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/header-background.png);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ---botones legalidades---- */
+.btns-legalidad{
+    background-color: #ffffff76;
+    margin: 0 auto;
+    width: 70%;
+    color: #fff;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn-legalidad{
+    width: 50%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: var(--fuenteparrafo);
+    color: white;
+    border: none;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(185, 124, 124, 0.53);
+}
+.btn-legalidad:hover{
+    background-color:var(--naranja-pag);
+}
+.tabs-legalidad-gen{
+    padding: 5%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabs-legalidad{
+    background-color: #739bc58b;
+    width: 80%;
+    padding: 4%;
 
+}
+.tabs-politicas{
+    display: none;
+}
 
 @media screen and (max-width: 720px) {
+    /* ----NAVEGADOR---------- */
+    .logo-cont{
+        width: 30%;
+    }
+    .logo{
+        width: 90%;
+    }
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     height: auto;

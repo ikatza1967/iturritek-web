@@ -5,6 +5,8 @@ let vinculosHeader=document.querySelectorAll(".linkscript");
 let btnContact=document.querySelector(".contactanosbtn");
 let sobreNosotrosTitle=document.querySelectorAll(".aboutUs__article--title");
 let sobreNosotrosParrafo=document.querySelectorAll(".aboutUs__article--info");
+let compSocialTitulo=document.querySelector(".socialPromise__article--title");
+let compSocialParrafo=document.querySelector(".socialPromise__article--paragraph");
 
 
 const encabezadoNav1= {
@@ -62,12 +64,22 @@ const aboutUsTitle={
      }
  }
 
+ const compSocialTitle={
+     en:"SOCIAL COMMITMENT",
+     eu:"",
+ }
+ const compSocialText={
+     en:"The Iturritek company is a business initiative created and supervised by Peñascal S.Coop. Aim to be a job creation experience that enables the social and labor insertion of groups in a situation or at risk of exclusion or in the professional construction sectors.",
+     eu:"",
+ }
+
 
 idiomas.forEach((idioma)=>{
     idioma.addEventListener("click",()=>{
         if(idioma.classList.contains("en")){
             headerEn()
             aboutEn()
+            compSocialEn()
         }
         else if(idioma.classList.contains("eu")){
             
@@ -101,4 +113,9 @@ function aboutEn(){
         sobreNosotrosParrafo[1].textContent=aboutUsText.text1.en
         sobreNosotrosParrafo[2].textContent=aboutUsText.text2.en
      }
+}
+
+function compSocialEn(){
+   compSocialTitulo.textContent=compSocialTitle.en;
+   compSocialParrafo.textContent=compSocialText.en;
 }

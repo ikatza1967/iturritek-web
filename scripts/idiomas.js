@@ -43,7 +43,7 @@ const encabezadoText={
 }
 const encabezadoBtn={
     en:"Contact Us",
-    eu:"Deitu iezadazu", 
+    eu:"DEITU IEZAIGUZU", 
 }
 
 const aboutUsTitle={
@@ -86,36 +86,36 @@ const aboutUsTitle={
 
  const servicesPrincipalTitle={
      en:"SERVICES",
-     eu:"",
+     eu:"Zerbitzuak",
  }
  const servicesSecondTitle={
      en:"FACILITIES",
-     eu:"",
+     eu:"INSTALAZIOAK",
  }
  const servicesThirdTitle={
      en:"REFORMS-MAINTENANCE",
-     eu:"",
+     eu:"BERRITZE-MANTENTZEAK",
  }
  const servicesTitle={
     tarjeta0:{
         en:"AIR-CONDITIONING",
-        eu:"",
+        eu:"AIRE GIROTUA",
     },
     tarjeta1:{
         en:"PLUMBING",
-        eu:"",
+        eu:"ITURGINTZA",
     },
     tarjeta2:{
         en:"HEATING AND GAS",
-        eu:"",
+        eu:"BEROKUNTZA",
     },
     tarjeta3:{
         en:"REFORMS",
-        eu:"",
+        eu:"BERRITZE",
     },
     tarjeta4:{
         en:"ASSEMBLY",
-        eu:"",
+        eu:"MUNTAIA",
     },
     tarjeta5:{
         en:"MAINTENANCE",
@@ -125,27 +125,27 @@ const aboutUsTitle={
  const servicesInfo={
     tarjeta0:{
         en:"We carry out hot-cold air conditioning installations.",
-        eu:"",
+        eu:"Bero-hotza klimatizazio instalazioak egiten ditugu.",
     },
     tarjeta1:{
         en:"We develop the design, calculation and installation of plumbing projects.",
-        eu:"",
+        eu:"Iturgintza proiektuen diseinua, kalkulua eta instalazioa garatzen dugu.",
     },
     tarjeta2:{
         en:"We carry out gas installation and assembly in kitchens, gas installations for washing machines, ceramic hobs or dishwashers.",
-        eu:"",
+        eu:"Gas-instalazioa eta muntaketa egiten dugu sukaldeetan, garbigailuetarako gas-instalazioetan, bitrozeramika edo ontzi-garbigailuetan.",
     },
     tarjeta3:{
         en:"We carry out all types of renovations and rehabilitations (partial, total or repairs).",
-        eu:"",
+        eu:"Gas-instalazioa eta muntaketa egiten dugu sukaldeetan, garbigailuetarako gas-instalazioetan, bitrozeramika edo ontzi-garbigailuetan.",
     },
     tarjeta4:{
-        en:"Fixed, Portable and Azoka.",
-        eu:"",
+        en:"Fixed, Portable and market.",
+        eu:"Finkoa, eramangarria eta azoka",
     },
     tarjeta5:{
         en:"Maintenance of facilities both at the individual level and in buildings, carrying out preventive and corrective treatments.",
-        eu:"",
+        eu:"Instalazioen mantentze-lanak bai banakako mailan, bai eraikinetan, tratamendu prebentiboak eta zuzentzaileak eginez.",
     }
  }
 
@@ -164,6 +164,7 @@ idiomas.forEach((idioma)=>{
             headerEu();
             aboutEu();
             compSocialEu();
+            serviceEu();
             penascalGroupTitle.textContent=encabezadoNav.link3.eu
         }
         else if(idioma.classList.contains("es")){
@@ -255,4 +256,27 @@ function aboutEu(){
 function compSocialEu(){
    compSocialTitulo.textContent=compSocialTitle.eu;
    compSocialParrafo.textContent=compSocialText.eu;
+}
+
+function serviceEu(){
+    for(let i=0;i<serviciosTarjetasTitulos.length;i++){
+        serviciosTarjetasTitulos[0].textContent=servicesTitle.tarjeta0.eu
+        serviciosTarjetasTitulos[1].textContent=servicesTitle.tarjeta1.eu
+        serviciosTarjetasTitulos[2].textContent=servicesTitle.tarjeta2.eu
+        serviciosTarjetasTitulos[3].textContent=servicesTitle.tarjeta3.eu
+        serviciosTarjetasTitulos[4].textContent=servicesTitle.tarjeta4.eu
+        serviciosTarjetasTitulos[5].textContent=servicesTitle.tarjeta5.eu
+    }
+    for (let i=0; i<serviciosTarjetasParrafos.length;i++){
+        serviciosTarjetasParrafos[0].textContent=servicesInfo.tarjeta0.eu
+        serviciosTarjetasParrafos[1].textContent=servicesInfo.tarjeta1.eu
+        serviciosTarjetasParrafos[2].textContent=servicesInfo.tarjeta2.eu
+        serviciosTarjetasParrafos[3].textContent=servicesInfo.tarjeta3.eu
+        serviciosTarjetasParrafos[4].textContent=servicesInfo.tarjeta4.eu
+        serviciosTarjetasParrafos[5].textContent=servicesInfo.tarjeta5.eu
+    }
+
+    servicePrincipalTitle.textContent=servicesPrincipalTitle.eu
+    serviceSecondTitle.textContent=servicesSecondTitle.eu
+    serviceThirdTitle.textContent=servicesThirdTitle.eu
 }

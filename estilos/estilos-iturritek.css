@@ -508,6 +508,12 @@ justify-content: space-between;
     .logo{
         width: 90%;
     }
+
+    /*---------COMPROMISO SOCIAL----------*/
+    .socialPromise__article--paragraph{
+        font-size: 4vw;
+    }
+
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     height: auto;

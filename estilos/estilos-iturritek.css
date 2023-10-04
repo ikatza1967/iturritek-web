@@ -64,16 +64,20 @@
     justify-content: space-around; 
 }
 
-  .es:hover{
-    background-color: rgb(131, 190, 224);
+.nav-idiom:hover{
+    background-color: var(--azul-pag) ;
+    border-radius: 5%;
+    
+}
+  .nav-idiom:focus{
+    background-color:var(--naranja-pag);
+  
   }
-  .eu:hover{
-    background-color: rgb(131, 190, 224);
+  .nav-idiom{
+    padding-right: 2px;
+    border-right: 2px solid white;
+    
   }
-  .en:hover{
-    background-color: rgb(131, 190, 224);
-  }
-
 
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
@@ -521,6 +525,18 @@ justify-content: space-between;
     .aboutUs__article{
         width: 70%;
     }
+
+    /*---------COMPROMISO SOCIAL----------*/
+    .socialPromise__article{
+        margin-block-start: 3%;
+        padding-inline: 7%;
+    }
+
+    .socialPromise__article--paragraph{
+        padding-block-start: 3%;
+        font-size: 4vw;
+    }
+
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     height: auto;
@@ -592,6 +608,7 @@ justify-content: space-between;
         padding-top: 40%;
     }
     .services__cont__cards--info{
+        height: auto;
         margin-top: 0%;
     }
 
@@ -640,7 +657,7 @@ justify-content: space-between;
     }
     
     .container-contacto h3{
-        font-size: 3vw;
+        font-size: 5vw;
         text-align: center;
     }
     
@@ -655,9 +672,8 @@ justify-content: space-between;
     .container-contacto-info{
         width: 100%;
         margin-block-start: 10%;
-        font-size: 2vw;
+        font-size: 4vw;
         text-align: center;
-
     }
     
     .remarked{
@@ -676,7 +692,7 @@ justify-content: space-between;
     }
     
     .direccion-title{
-        font-size: 3vw;
+        font-size: 5vw;
         text-align: center;
     }
     
@@ -690,7 +706,7 @@ justify-content: space-between;
     
     .legal-line{
         width: 100%;
-        height: 3px;
+        height: 2px;
         border: none;
         background-color: #FE8101;
     }
@@ -699,6 +715,7 @@ justify-content: space-between;
         margin-block-start: 2%;
         display: flex;
         justify-content: space-between;
+        font-size: 3vw;
     }
     
     .legalidades a{
@@ -706,6 +723,10 @@ justify-content: space-between;
         color: white;
     }
     
+    .legalidades h5{
+        font-size: 3vw;
+    }
+
 }
 
 

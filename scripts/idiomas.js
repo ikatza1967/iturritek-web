@@ -13,6 +13,7 @@ let serviceThirdTitle=document.querySelector(".box__down--title");
 let serviciosTarjetasTitulos=document.querySelectorAll(".services__cont__cards--title");
 let serviciosTarjetasParrafos=document.querySelectorAll(".services__cont__cards--paragraph");
 let penascalGroupTitle=document.querySelector(".grupoPeñascal__titular");
+let footerTitle=document.querySelectorAll(".fterTitle");
 
 
 const encabezadoNav={
@@ -150,6 +151,18 @@ const aboutUsTitle={
  }
 
 
+ const fterTitles={
+     ft1:{
+         en:"Contact",
+         eu:"",
+     },
+     ft2:{
+         en:"Address",
+         eu:"",
+     },
+     
+ }
+
 
 idiomas.forEach((idioma)=>{
     idioma.addEventListener("click",()=>{
@@ -159,6 +172,7 @@ idiomas.forEach((idioma)=>{
             compSocialEn()
             serviceEn()
             penascalGroupTitle.textContent=encabezadoNav.link3.en
+            fterEn()
         }
         else if(idioma.classList.contains("eu")){
             headerEu();
@@ -226,6 +240,14 @@ function serviceEn(){
     serviceThirdTitle.textContent=servicesThirdTitle.en
 }
 
+function fterEn(){
+    for(let i=0;i<footerTitle.length;i++){
+        footerTitle[0].textContent=fterTitles.ft1.en
+        footerTitle[1].textContent=fterTitles.ft2.en
+    }
+    document.querySelector(".remarked").textContent="CENTRAL OFFICE";
+    document.querySelector("#politicas").textContent="Legal notice and privacy policy";
+}
 
 /**EUSKERA**/
 

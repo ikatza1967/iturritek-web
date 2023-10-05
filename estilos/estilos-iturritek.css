@@ -23,7 +23,7 @@
 
 /* ------------------INICIO HEADER------------------- */
 .container-General{
-    width: 100%;
+    width: auto;
 
 }
 .bg-principal{
@@ -152,11 +152,10 @@
 }
 .socialPromise__list--parallax{
     overflow: scroll;
-   background-image: url(../imagenes/grupo\ construccion.jpg);
+   background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
-    background-size:contain;
-    background-position:center;
-    background-size: 100% 100%;
+    background-size:cover;
+    background-position-y: 0%;
     background-repeat: no-repeat;  
     height: 60vh;
 }
@@ -287,6 +286,8 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
 
 }
 .grupoPeñascal__separador{
+    width:80%;
+    float: right;
 padding-left: 55%;
 }
 .grupoPeñascal__img8{
@@ -573,6 +574,11 @@ font-weight: bold;
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
         height: 50vh;
+        background-size: cover;
+        background-position-y: top;
+        background-position-x: 30%;
+        
+       
     }
     .socialPromise__article{
         margin-block-start: 3%;

@@ -1,5 +1,6 @@
 let btnTabs = document.querySelectorAll(".btn-legalidad");
 let tabsContent = document.querySelectorAll(".tabs-legalidad");
+let logoFter= document.querySelector('.logo-footer')
 
 btnTabs.forEach((btnTabs, i) =>{
     btnTabs.addEventListener("click", () => {
@@ -9,3 +10,7 @@ btnTabs.forEach((btnTabs, i) =>{
         tabsContent[i].style.display = "block";  
     });
 });
+
+logoFter.addEventListener('click', () => {
+    location.href = 'index.html'
+  })

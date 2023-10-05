@@ -522,19 +522,24 @@ font-weight: bold;
    margin-inline: 5.5%;
    }
    .cont-apartados{
-   background-color: rgba(0, 0, 0, 0.876);
+   background-color: rgb(0, 0, 0);
    position: absolute;
    top:100%;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-
+   .Cont-header__presentIturritek{
+    height: 80%;
+   }
    .Cont-header__presentIturritek-title{
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
   .Cont-header__presentIturritek-text{
     margin-bottom: 10%;
+    width: 60%;
+  }
+  .contactobtn{
+    margin: 5%;
   }
     /* ----NAVEGADOR---------- */
     .logo-cont{

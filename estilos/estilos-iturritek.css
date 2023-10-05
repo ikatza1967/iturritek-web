@@ -507,6 +507,64 @@ font-weight: bold;
     display: none;
 }
 
+/*-----------------Contacto.html----------------------*/
+
+.main-contact{
+    width: 95%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.595);  
+}
+
+.contact-title{
+    text-align: center;
+}
+
+.container-contact_main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.container-llamar{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.section-form {
+    width: 50%;
+    height: 100%;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.container-mapa_contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form{
+padding-block-start: 15%;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+/* -------------RESPONSIVE-------------- */
+/**/
 
 @media screen and (max-width: 1024px){
 
@@ -686,7 +744,6 @@ font-weight: bold;
 
     .Cont-header__navegador_logo{
         width: 30%;
-        
     }
 
     .logo-footer{

@@ -573,10 +573,10 @@ font-weight: bold;
     .home{
         position: fixed;
         bottom: 0;
-        left: 90%;
+        left: 85%;
     }
     .home__img{
-        width: 80%; 
+        width: 90%; 
     }
     .dropdown{
         width: 25%;

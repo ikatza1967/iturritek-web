@@ -558,16 +558,20 @@ font-weight: bold;
 .main-contact{
     width: 95%;
     margin: 0 auto;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.595);  
+    height: 90vh;
+    background-color: rgba(172, 200, 240, 0.595);  
 }
 
 .contact-title{
+    color: #fff;
+    font-family: var(--fuentetitulo);
     text-align: center;
+    padding: 2%;
+    text-decoration: underline var(--naranja-pag);
 }
 
 .container-contact_main{
-    height: 85vh;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,6 +583,7 @@ font-weight: bold;
     text-align: center;
 }
 
+
 .container-llamar{
     width: 100%;
     text-align: center;
@@ -587,8 +592,8 @@ font-weight: bold;
 
 .section-form {
     width: 50%;
-    height: 100%;
-    border: 2px solid red;
+    height: 80%;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -599,9 +604,8 @@ font-weight: bold;
 }
 
 .contact-form{
-padding-block-start: 15%;
+    padding-block-start: 5%;
     width: 100%;
-    border: 2px solid red;
     display: flex;
     flex-flow: column;
     justify-content: center;

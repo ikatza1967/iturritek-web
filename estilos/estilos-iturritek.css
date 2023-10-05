@@ -493,6 +493,7 @@ font-weight: bold;
 .tabs-legalidad-gen{
     padding: 3%;
     color: #fff;
+    background-color: #a41313;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,9 +501,12 @@ font-weight: bold;
 }
 .tabs-legalidad{
     background-color: #739bc58b;
-    width: 80%;
+    width: 90%;
     padding: 4%;
 
+}
+.tab-avisolegal{
+    height: 100%;
 }
 .tab-politicas{
     display: none;

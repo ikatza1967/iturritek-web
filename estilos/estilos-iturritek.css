@@ -155,7 +155,7 @@
    background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
     background-size:cover;
-    background-position:center;
+    background-position-y: 0%;
     background-repeat: no-repeat;  
     height: 60vh;
 }

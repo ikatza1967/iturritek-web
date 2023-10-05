@@ -137,10 +137,10 @@
     overflow: scroll;
    background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
-    background-size:contain;
+   background-size:cover;
     background-position:center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    background-position-y: 0%; 
     height: 60vh;
 }
 ::-webkit-scrollbar{
@@ -500,7 +500,7 @@ font-weight: bold;
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
         background-position: center;
@@ -559,6 +559,8 @@ font-weight: bold;
     .socialPromise__list--parallax{
         height: 50vh;
         background-size: cover;
+        background-position-y: top;
+        background-position-x: 30%;
     }
     .socialPromise__article{
         margin-block-start: 3%;

@@ -48,7 +48,7 @@
     width: 100%;
 }
 
-.nav-idioma{
+/* .nav-idioma{
     color: rgb(255, 255, 255);
     width: 25%;
     display: flex;
@@ -64,9 +64,8 @@
     background-color:var(--naranja-pag);
   }
   .nav-idiom{
-    padding-right: 2px;
     border-right: 2px solid white;
-  }
+  } */
   .dropdown{
     display: flex;
   }
@@ -505,8 +504,10 @@ justify-content: space-between;
         background-position: center;
     }
     .dropdown{
-        width: 40%;
-        justify-content: space-evenly;
+        width: 25%;
+        margin-inline: 5.5%;
+        justify-content: space-between;
+        
     }
    .linkscript{
    margin-inline: 5.5%;

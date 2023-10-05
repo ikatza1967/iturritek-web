@@ -47,30 +47,10 @@
 .cont-apartados{
     width: 100%;
 }
-
-/* .nav-idioma{
-    color: rgb(255, 255, 255);
-    width: 25%;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    justify-content: space-around; 
-}
-.nav-idiom:hover{
-    background-color: var(--azul-pag) ;
-    border-radius: 5%;
-}
-  .nav-idiom:focus{
-    background-color:var(--naranja-pag);
-  }
-  .nav-idiom{
-    border-right: 2px solid white;
-  } */
   .dropdown{
     display: flex;
   }
   
-
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
     color: #fff;

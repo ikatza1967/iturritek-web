@@ -521,7 +521,22 @@ font-weight: bold;
 
     
 }
+.link-iturritek{
+    text-decoration: none;
+    color: var(--naranja-pag);
+}
+.titu-politicas{
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: 5px underline var(--naranja-pag);
+    font-size: clamp(2rem, 1.5vw, 3rem);
+}
 .titulos-avisos{
+    margin-top: 5%;
+}
+.titulos-politicas{
     margin-top: 5%;
 }
 
@@ -677,6 +692,9 @@ font-weight: bold;
     /* ---------LEGALIDADES-------------------------- */
     .titulos-avisos{
         margin-top: 10%;
+    }
+    .titulos-politicas{
+        margin-top: 15%;
     }
 
     

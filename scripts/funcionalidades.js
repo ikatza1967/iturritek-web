@@ -12,10 +12,10 @@ btnTabs.forEach((btnTabs, i) =>{
         tabsContent[i].style.display = "block";  
     });
 });
-
-// btncontacto.addEventListener('click', () => {
-//     sectfooter.scrollIntoView({ behavior: "smooth" });
-// })
+if(btncontacto)
+btncontacto.addEventListener('click', () => {
+    sectfooter.scrollIntoView({ behavior: "smooth" });
+})
 
 
 

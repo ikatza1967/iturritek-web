@@ -488,7 +488,6 @@ font-weight: bold;
 .tabs-legalidad-gen{
     padding: 3%;
     color: #fff;
-    background-color: #a41313;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -496,6 +495,7 @@ font-weight: bold;
 }
 .tabs-legalidad{
     background-color: #739bc58b;
+    /* background-color: #739bc58b; */
     width: 90%;
     padding: 4%;
 
@@ -505,6 +505,19 @@ font-weight: bold;
 }
 .tab-politicas{
     display: none;
+}
+.titu-aviso{
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: 5px underline var(--naranja-pag);
+    font-size: clamp(2rem, 1.5vw, 3rem);
+
+    
+}
+.titulos-avisos{
+    margin-top: 5%;
 }
 
 
@@ -656,6 +669,10 @@ font-weight: bold;
         height: auto;
         margin-top: 0%;
     }
+    /* ---------LEGALIDADES-------------------------- */
+    .titulos-avisos{
+        margin-top: 10%;
+    }
 
     
     /*-------------------FOOTER-------------------------*/
@@ -763,6 +780,7 @@ font-weight: bold;
     .legalidades h5{
         font-size: 3vw;
     }
+   
 
 }
 

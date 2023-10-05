@@ -326,6 +326,9 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
     left: 72%;
     top: 50%;
 }
+.responsiveImg{
+    cursor: pointer;
+}
 /*-------------------FIN GRUPO PÉNASCAL-------------------*/
 
 /*-------------------INICIO FOOTER-------------------*/
@@ -396,6 +399,11 @@ font-size: 2vw;
 .remarked{
 color: #FE8101;
 font-weight: bold;
+}
+
+.info-contacto{
+    text-decoration: none;
+    color: white;
 }
 
 .container-direccion{ 

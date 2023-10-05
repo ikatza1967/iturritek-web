@@ -398,6 +398,11 @@ color: #FE8101;
 font-weight: bold;
 }
 
+.info-contacto{
+    text-decoration: none;
+    color: white;
+}
+
 .container-direccion{ 
     height: 70%;
     width: 33%;

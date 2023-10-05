@@ -513,7 +513,19 @@ font-weight: bold;
     display: none;
 }
 
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 1024px){
+
+    .piedepagina{
+        height: 35vh;
+
+    }
+    .container-piedepag{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 720px) {
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
         background-position: center;

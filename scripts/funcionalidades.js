@@ -13,9 +13,9 @@ btnTabs.forEach((btnTabs, i) =>{
     });
 });
 
-// btncontacto.addEventListener('click', () => {
-//     sectfooter.scrollIntoView({ behavior: "smooth" });
-// })
+btncontacto.addEventListener('click', () => {
+    sectfooter.scrollIntoView({ behavior: "smooth" });
+})
 
 
 
@@ -38,5 +38,17 @@ document.addEventListener('click', (e) => {
     }
     else if(e.target.classList.contains('grupoPeñascal__img5')){
         location='https://lapikocatering.com/'
+    }
+    else if(e.target.classList.contains('grupoPeñascal__img6')){
+        location='https://ekoizan.com/'
+    }
+    else if(e.target.classList.contains('grupoPeñascal__img11')){
+        location='http://www.izarza.com/'
+    }
+    else if(e.target.classList.contains('grupoPeñascal__img3')){
+        location='http://eurekasolucionesadaptadas.com/'
+    }
+    else if(e.target.classList.contains('grupoPeñascal__img1')){
+        location='https://perpetummobile.store/'
     }
 })

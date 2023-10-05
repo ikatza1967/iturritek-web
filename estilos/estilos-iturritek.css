@@ -54,7 +54,6 @@
   
 
 /* ---- HEADER PRESENTACION---------------- */
-/* ----header - presentación---- */
 .Cont-header__presentIturritek{
     color: #fff;
     width: 100%;
@@ -497,10 +496,18 @@ font-weight: bold;
 }
 
 
+@media screen and (max-width: 1024px){
 
+    .piedepagina{
+        height: 35vh;
 
+    }
+    .container-piedepag{
+        height: 30vh;
+    }
+}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
         background-position: center;

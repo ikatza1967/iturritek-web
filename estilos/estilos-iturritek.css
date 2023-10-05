@@ -79,6 +79,10 @@
     color: #fff;
     text-decoration: none;
 }
+.contactanosbtn:hover{
+    background-color: rgb(206, 104, 3);;
+}
+
 .presentIturritek__Btn-contact{
     text-decoration: none;
     font-size: 1.3rem;
@@ -92,6 +96,7 @@
     text-align: center;
     background-color: var(--naranja-pag);
 }
+
 
 /* --------------INICIO ABOUT-US -------------------- */
 .aboutUs{

@@ -12,7 +12,7 @@ btnTabs.forEach((btnTabs, i) =>{
         tabsContent[i].style.display = "block";  
     });
 });
-
+if(btncontacto)
 btncontacto.addEventListener('click', () => {
     sectfooter.scrollIntoView({ behavior: "smooth" });
 })
@@ -23,7 +23,7 @@ btncontacto.addEventListener('click', () => {
 
 
 logoFter.addEventListener('click', () => {
-    location.href = 'index.html'
+    location.href = '../index.html'
   })
 
 document.addEventListener('click', (e) => {

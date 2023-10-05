@@ -154,7 +154,7 @@
     overflow: scroll;
    background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
     background-repeat: no-repeat;  
     height: 60vh;

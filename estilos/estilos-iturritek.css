@@ -48,30 +48,12 @@
     width: 100%;
 }
 
-/* .nav-idioma{
-    color: rgb(255, 255, 255);
-    width: 25%;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    justify-content: space-around; 
-}
-.nav-idiom:hover{
-    background-color: var(--azul-pag) ;
-    border-radius: 5%;
-}
-  .nav-idiom:focus{
-    background-color:var(--naranja-pag);
-  }
-  .nav-idiom{
-    border-right: 2px solid white;
-  } */
   .dropdown{
     display: flex;
   }
   
 
-/* ----header - presentación---- */
+/* ---- HEADER PRESENTACION---------------- */
 .Cont-header__presentIturritek{
     color: #fff;
     width: 100%;
@@ -251,7 +233,7 @@
 
 .services__cont__cards--info{
     padding: 9%;
-    height: 24vh;
+    height: 26vh;
     margin: 0 auto;
     margin-top: 3%;
     background-color: #fff;
@@ -266,6 +248,7 @@
 }
 .services__cont__cards--paragraph{
     font-family: var(--fuenteparrafo);
+    font-size: clamp(1rem, 1.5vw, 1rem);
 }
 /* ------------------FIN SERVICES------------------- */
 
@@ -518,9 +501,7 @@ justify-content: space-between;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-   .Cont-header__presentIturritek{
-    height: 100%;  
-}
+
    .Cont-header__presentIturritek-title{
     margin-top: 10%;
     margin-bottom: 5%;
@@ -618,8 +599,7 @@ justify-content: space-between;
         margin-bottom: 15%;
     }
     .services-container__box--upper{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
      }
     .services-container__box--down{
        flex-direction: column;

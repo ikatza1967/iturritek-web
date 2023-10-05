@@ -696,6 +696,12 @@ font-weight: bold;
     .titulos-politicas{
         margin-top: 15%;
     }
+    .titu-aviso{
+        margin: 10%;
+    }
+    .titu-politicas{
+        margin: 10%;
+    }
 
     
     /*-------------------FOOTER-------------------------*/

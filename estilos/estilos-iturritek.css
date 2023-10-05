@@ -528,7 +528,9 @@ font-weight: bold;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-
+    .Cont-header__presentIturritek{
+        height: 70%;
+    }
    .Cont-header__presentIturritek-title{
     margin-top: 10%;
     margin-bottom: 5%;

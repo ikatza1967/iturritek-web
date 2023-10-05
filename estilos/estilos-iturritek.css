@@ -23,7 +23,7 @@
 
 /* ------------------INICIO HEADER------------------- */
 .container-General{
-    width: 100%;
+    width: auto;
 
 }
 .bg-principal{
@@ -286,6 +286,8 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
 
 }
 .grupoPeñascal__separador{
+    width:80%;
+    float: right;
 padding-left: 55%;
 }
 .grupoPeñascal__img8{

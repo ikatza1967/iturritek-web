@@ -70,6 +70,7 @@
   .dropdown{
     display: flex;
   }
+  
 
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
@@ -80,13 +81,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 .Cont-header__presentIturritek-title{
     font-size: calc(2.3em + 3.5vw);
     text-align: center;
     font-family: var(--fuentetitulo);
-
 }
 .Cont-header__presentIturritek-text{
     width: 50%;
@@ -154,7 +153,7 @@
 }
 .socialPromise__list--parallax{
     overflow: scroll;
-   background-image: url(../imagenes/parallax.jpg);
+   background-image: url(../imagenes/grupo\ construccion.jpg);
    background-attachment: fixed;
     background-size:contain;
     background-position:center;
@@ -375,6 +374,9 @@ padding-left: 55%;
     justify-content: space-between;
     gap: 20%;
 }
+.logo-footer{
+    cursor: pointer;
+}
 
 .container-contacto{
     width: 33%;
@@ -509,7 +511,23 @@ justify-content: space-between;
    .linkscript{
    margin-inline: 5.5%;
    }
-  
+   .cont-apartados{
+   background-color: rgba(209, 221, 228, 0.416);
+   position: absolute;
+   top:100%;
+   }
+
+   /*-------------------HEADER PRESENTACION------------------- */
+   .Cont-header__presentIturritek{
+    height: 100%;  
+}
+   .Cont-header__presentIturritek-title{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+  .Cont-header__presentIturritek-text{
+    margin-bottom: 10%;
+  }
     /* ----NAVEGADOR---------- */
     .logo-cont{
         width: 30%;

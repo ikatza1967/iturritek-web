@@ -47,10 +47,13 @@
 .cont-apartados{
     width: 100%;
 }
+
   .dropdown{
     display: flex;
   }
   
+
+/* ---- HEADER PRESENTACION---------------- */
 /* ----header - presentación---- */
 .Cont-header__presentIturritek{
     color: #fff;
@@ -232,7 +235,7 @@
 
 .services__cont__cards--info{
     padding: 9%;
-    height: 24vh;
+    height: 26vh;
     margin: 0 auto;
     margin-top: 3%;
     background-color: #fff;
@@ -247,6 +250,7 @@
 }
 .services__cont__cards--paragraph{
     font-family: var(--fuenteparrafo);
+    font-size: clamp(1rem, 1.5vw, 1rem);
 }
 /* ------------------FIN SERVICES------------------- */
 
@@ -517,9 +521,7 @@ font-weight: bold;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-   .Cont-header__presentIturritek{
-    height: 100%;  
-}
+
    .Cont-header__presentIturritek-title{
     margin-top: 10%;
     margin-bottom: 5%;
@@ -604,8 +606,7 @@ font-weight: bold;
         margin-bottom: 15%;
     }
     .services-container__box--upper{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
      }
     .services-container__box--down{
        flex-direction: column;

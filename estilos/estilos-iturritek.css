@@ -48,30 +48,12 @@
     width: 100%;
 }
 
-/* .nav-idioma{
-    color: rgb(255, 255, 255);
-    width: 25%;
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    justify-content: space-around; 
-}
-.nav-idiom:hover{
-    background-color: var(--azul-pag) ;
-    border-radius: 5%;
-}
-  .nav-idiom:focus{
-    background-color:var(--naranja-pag);
-  }
-  .nav-idiom{
-    border-right: 2px solid white;
-  } */
   .dropdown{
     display: flex;
   }
   
 
-/* ----header - presentación---- */
+/* ---- HEADER PRESENTACION---------------- */
 .Cont-header__presentIturritek{
     color: #fff;
     width: 100%;
@@ -152,7 +134,7 @@
 }
 .socialPromise__list--parallax{
     overflow: scroll;
-   background-image: url(../imagenes/grupo\ construccion.jpg);
+   background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
     background-size:contain;
     background-position:center;
@@ -252,7 +234,7 @@
 
 .services__cont__cards--info{
     padding: 9%;
-    height: 24vh;
+    height: 26vh;
     margin: 0 auto;
     margin-top: 3%;
     background-color: #fff;
@@ -267,6 +249,7 @@
 }
 .services__cont__cards--paragraph{
     font-family: var(--fuenteparrafo);
+    font-size: clamp(1rem, 1.5vw, 1rem);
 }
 /* ------------------FIN SERVICES------------------- */
 
@@ -276,19 +259,18 @@
     height: 85vh;
     background-color: var(--grisfondogpenascal);
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 1.5%;
 }
+.grupoPeñascal__cont--titulo{
+    width: 60%;
+   float: right;
+   box-shadow: 0px 2.5px 0px 0px rgba(198, 196, 196, 0.377);
+}
 .grupoPeñascal__titular{
-margin-left: 55% ;
 font-family: var(--fuentetitulo);
 font-size: clamp(2.5rem, 1.5vw, 3rem);
+}
 
-}
-.grupoPeñascal__separador{
-padding-left: 55%;
-}
 .grupoPeñascal__img8{
     position: absolute;
     	left: 4%;
@@ -546,9 +528,7 @@ font-weight: bold;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-   .Cont-header__presentIturritek{
-    height: 100%;  
-}
+
    .Cont-header__presentIturritek-title{
     margin-top: 10%;
     margin-bottom: 5%;
@@ -585,6 +565,7 @@ font-weight: bold;
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
         height: 50vh;
+        background-size: cover;
     }
     .socialPromise__article{
         margin-block-start: 3%;
@@ -602,29 +583,20 @@ font-weight: bold;
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     height: auto;
-    position: sticky;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .responsiveImg{
-    width: 50%;
-    padding: 2%;
-    position: static;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .responsiveImg{
+    position: static;
+    width: 40%;
+    padding: 2%;
   }
   .grupoPeñascal__titular{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-  .grupoPeñascal__separador{
-    width: 100%;
-    padding: 0;
+    font-size: 2rem
     }
-   
+  
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{
         width: 90%;
@@ -641,8 +613,7 @@ font-weight: bold;
         margin-bottom: 15%;
     }
     .services-container__box--upper{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
      }
     .services-container__box--down{
        flex-direction: column;

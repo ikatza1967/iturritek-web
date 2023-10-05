@@ -528,7 +528,9 @@ font-weight: bold;
    }
 
    /*-------------------HEADER PRESENTACION------------------- */
-
+    .Cont-header__presentIturritek{
+        height: 75%;
+    }
    .Cont-header__presentIturritek-title{
     margin-top: 10%;
     margin-bottom: 5%;
@@ -644,7 +646,7 @@ font-weight: bold;
     /*-------------------FOOTER-------------------------*/
     .piedepagina{
         width: 100%;
-        height: 120vh;
+        height: 115vh;
         padding-block-start: 5%;
     }
 

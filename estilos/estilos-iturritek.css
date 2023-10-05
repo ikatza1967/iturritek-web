@@ -132,7 +132,7 @@
 }
 .socialPromise__list--parallax{
     overflow: scroll;
-   background-image: url(../imagenes/grupo\ construccion.jpg);
+   background-image: url(../imagenes/compromiso.jpg);
    background-attachment: fixed;
     background-size:contain;
     background-position:center;
@@ -556,6 +556,7 @@ font-weight: bold;
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
         height: 50vh;
+        background-size: cover;
     }
     .socialPromise__article{
         margin-block-start: 3%;

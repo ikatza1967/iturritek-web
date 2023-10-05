@@ -13,9 +13,9 @@ btnTabs.forEach((btnTabs, i) =>{
     });
 });
 
-// btncontacto.addEventListener('click', () => {
-//     sectfooter.scrollIntoView({ behavior: "smooth" });
-// })
+btncontacto.addEventListener('click', () => {
+    sectfooter.scrollIntoView({ behavior: "smooth" });
+})
 
 
 

@@ -5,15 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Gorka Jabonero" content="Alexander Galvez" content="Maily Rodriguez">
-  <title>Iturritek</title>
+  <title>Iturritek_Aviso-legal_politica</title>
   <link rel="stylesheet" href="../estilos/estilos-iturritek.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container-General">
+    <figure style="display: none;" class="home">
+      <a href="#header"><img class="home__img" src="../imagenes/casa.png" alt="logo iturritek"></a>
+  </figure>
     <div class="bg-principal-legal">
-      <header class="Cont-header">
+      <header class="Cont-header" id="header">
         <nav class="navbar navbar-expand-lg navegador-general">
 
           <div class="container-fluid cont-menu">
@@ -29,22 +32,29 @@
             <div class="collapse navbar-collapse cont-apartados" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="/index.html">QUIÉNES SOMOS</a>
+                  <a class="nav-link text-light" href="/index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="/index.html">
+                  <a class="nav-link text-light" href="/index.html#quienesSomos">QUIENES SOMOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/index.html#servicios">
                     SERVICIOS</a>
                 </li>
                 <li class="nav-item ">
-                  
                   <a class="nav-link text-light" href="/index.html">
                     GRUPO PEÑASCAL
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">CONTÁCTANOS</a>
+                </li>
 
-                  <li class="nav-item"><a class="nav-link text-light es" href="">ES</a></li>
-                  <li class="nav-item"><a class="nav-link text-light eu" href="">EU</a></li>
-                  <li class="nav-item"><a class="nav-link text-light en" href="">EN</a></li>
+                <div class="dropdown">
+                  <li class="nav-item idioma-responsive"><button class="nav-link text-light es">ES</button></li>
+                  <li class="nav-item idioma-responsive"><button class="nav-link text-light eu">EU</button></li>
+                  <li class="nav-item idioma-responsive"><button class="nav-link text-light en">EN</button></li>
+              </div> 
 
               </ul>
             </div>
@@ -60,16 +70,16 @@
         <section class="tabs-legalidad-gen">
           <article class="tab-avisolegal tabs-legalidad">
             <article>
-              <h2 class="titu-aviso">Aviso legal</h2>
+              <h2 class="titu-aviso">AVISO LEGAL</h2>
               <p>El presente aviso legal (en adelante, el “Aviso Legal”) regula el uso del servicio del portal de
                 Internet
-                <a href="/index.html">www.iturritek.com</a> (en adelante, el “Web”) de Iturritek SL con CIF B95325445
+                <a href="/index.html" class="link-iturritek">www.iturritek.com</a> (en adelante, el “Web”) de Iturritek SL con CIF B95325445
                 con domicilio social Plaza
                 Belategi 1 Bj 48002 - (Bilbao) - Vizcaya.
               </p>
             </article>
             <article>
-              <h3 class="legis">Legislación</h3>
+              <h3 class="legis titulos-avisos">Legislación</h3>
               <p>Con carácter general las relaciones entre Peñascal Kooperatiba con los Usuarios de sus servicios
                 telemáticos, presentes en la web, se encuentran sometidas a la legislación y jurisdicción españolas.
                 Las partes renuncian expresamente al fuero que les pudiera corresponder y someten expresamente a los
@@ -78,7 +88,7 @@
                 o ejecución de las presentes condiciones contractuales.</p>
             </article>
             <article>
-              <h3 class="contenido-aviso">Contenido y uso</h3>
+              <h3 class="contenido-aviso titulos-avisos">Contenido y uso</h3>
               <p>El Usuario queda informado, y acepta, que el acceso a la presente web no supone, en modo alguno, el
                 inicio
                 de una relación comercial con Peñascal Kooperatiba.
@@ -91,7 +101,7 @@
                 misma como la forma en la que éstos aparezcan presentados o localizados en sus servidores.</p>
             </article>
             <article>
-              <h3 class="prop-intelec">Propiedad intelectual e industrial</h3>
+              <h3 class="prop-intelec titulos-avisos">Propiedad intelectual e industrial</h3>
               <p>
                 Los derechos de propiedad intelectual del contenido de las páginas web, su diseño gráfico y códigos son
                 titularidad de Peñascal Kooperatiba y, por tanto, queda prohibida su reproducción, distribución,
@@ -104,7 +114,7 @@
               </p>
             </article>
             <article>
-              <h3 class="enlaces">Enlaces (links)</h3>
+              <h3 class="enlaces titulos-avisos">Enlaces (links)</h3>
               <p>La presencia de enlaces (links) en las páginas web de Peñascal Kooperatiba tiene finalidad meramente
                 informativa y en ningún caso supone sugerencia, invitación o recomendación sobre los mismos.</p>
             </article>
@@ -112,7 +122,7 @@
 
           <article class="tab-politicas tabs-legalidad">
             <article>
-              <h2 class="titu-politicas">Politicas y privacidad</h2>
+              <h2 class="titu-politicas">POLÍTICAS Y PRIVACIDAD</h2>
               <p>Nuestra Política de privacidad está diseñada para ayudar a comprender cómo recopilamos y usamos la
                 información personal que usted nos proporciona y para ayudarlo a tomar decisiones informadas al usar
                 nuestro sitio web. Cuando visita nuestro sitio web, puede proporcionarnos dos tipos de información: la
@@ -132,14 +142,14 @@
                 de Privacidad” aplicable a cada formulario concreto.</p>
             </article>
             <article>
-              <h3>¿QUIÉN ES RESPONSABLE DEL TRATAMIENTO DE LOS DATOS?</h3>
+              <h3 class="titulos-politicas">¿QUIÉN ES RESPONSABLE DEL TRATAMIENTO DE LOS DATOS?</h3>
               <p>Razón Social: Iturritek SL</p>
               <p>CIF B95325445</p>
               <p>Domicilio social: Plaza Belategi 1 Bj 48002 - (Bilbao) - Vizcaya.</p>
               <p>Contacto Delegado de Protección de datos (DPO): XXX@XXX</p>
             </article>
             <article>
-              <h3> ¿CUÁL ES EL PLAZO DE CONSERVACIÓN DE LOS DATOS?</h3>
+              <h3 class="titulos-politicas"> ¿CUÁL ES EL PLAZO DE CONSERVACIÓN DE LOS DATOS?</h3>
               <p> En cumplimiento del principio de limitación del plazo de conservación, los datos recabados por la
                 empresa son tratados sólo durante el tiempo necesario y para las finalidades concretas para las que se
                 hayan recogido. Por todo lo anterior y en términos genéricos, la empresa conservará sus datos mientras
@@ -150,7 +160,7 @@
                 de envío de información o newsletters, conservaremos los datos hasta no recibir oposición en contra.</p>
             </article>
             <article>
-              <h3>¿QUÉ INFORMACIÓN RECOPILAMOS?</h3>
+              <h3 class="titulos-politicas">¿QUÉ INFORMACIÓN RECOPILAMOS?</h3>
               <p>Recopilamos información de usted cuando se registra en nuestro sitio, realiza un pedido, se suscribe a
                 nuestro boletín informativo, responde una encuesta o completa un formulario. </p>
               <p> Al hacer un pedido o registrarse en nuestro sitio, según corresponda, se le puede solicitar que
@@ -162,7 +172,7 @@
               <p> Los datos tratados en la empresa han sido facilitados por el propio interesado. </p>
             </article>
             <article>
-              <h3> ¿PARA QUÉ UTILIZAMOS SU INFORMACIÓN?</h3>
+              <h3 class="titulos-politicas"> ¿PARA QUÉ UTILIZAMOS SU INFORMACIÓN?</h3>
               <p>Cualquier información que recopilamos podrá usarse de una de las siguientes maneras: </p>
 
               <h5>Para gestionar las suscripciones y compras</h5>
@@ -197,7 +207,7 @@
               </p>
             </article>
             <article>
-              <h2>¿CÓMO PROTEGEMOS SU INFORMACIÓN?</h2>
+              <h2 class="titulos-politicas">¿CÓMO PROTEGEMOS SU INFORMACIÓN?</h2>
               <p>La empresa se compromete a la adopción de las medidas de índole técnica y organizativa necesarias que
                 garanticen la seguridad de los datos de carácter personal y eviten su alteración, pérdida, tratamiento o
                 acceso no autorizado, habida cuenta del estado de la tecnología, de acuerdo con lo establecido por el
@@ -210,7 +220,7 @@
             </p>
 
             <article>
-              <h2>¿DIVULGAMOS INFORMACIÓN A TERCEROS?</h2>
+              <h2 class="titulos-politicas">¿DIVULGAMOS INFORMACIÓN A TERCEROS?</h2>
               <p>Para operar efectivamente como una empresa, es posible que tengamos que pasar su información a terceros
                 seleccionados y de confianza. Los terceros con los que podemos compartir información son:</p>
 
@@ -232,7 +242,7 @@
             </article>
 
             <article>
-              <h3> ENLACES DE TERCEROS</h3>
+              <h3 class="titulos-politicas"> ENLACES DE TERCEROS</h3>
               <p> Ocasionalmente, a nuestro criterio, podemos incluir u ofrecer productos o servicios de terceros en
                 nuestro sitio web. Estos sitios de terceros tienen políticas de privacidad separadas e independientes.
                 Por lo tanto, no tenemos ninguna responsabilidad por el contenido y las actividades de estos sitios
@@ -240,7 +250,7 @@
                 comentario sobre estos sitios.</p>
             </article>
             <article>
-              <h3>MENORES DE EDAD</h3>
+              <h3 class="titulos-politicas">MENORES DE EDAD</h3>
               <p> En nuestro sitio web no permitiremos intencionalmente que ninguna persona menor de 16 años nos
                 proporcione ninguna información de identificación personal; si tienes menos de 16 años, no proporciones
                 información sobre ti en este sitio web. En el caso de que sepamos que hemos recopilado información
@@ -248,11 +258,11 @@
                 rápido posible.</p>
             </article>
             <article>
-              <h3>SU CONSENTIMIENTO</h3>
+              <h3 class="titulos-politicas">SU CONSENTIMIENTO</h3>
               <p> Al usar nuestro sitio, usted acepta la política de privacidad de nuestros sitios web.</p>
             </article>
             <article>
-              <h3> CAMBIOS A NUESTRA POLÍTICA DE PRIVACIDAD</h3>
+              <h3 class="titulos-politicas" > CAMBIOS A NUESTRA POLÍTICA DE PRIVACIDAD</h3>
               <p> Si decidimos cambiar nuestra política de privacidad, publicaremos esos cambios en esta página y / o
                 actualizaremos la fecha de modificación de la Política de privacidad a continuación.</p>
 

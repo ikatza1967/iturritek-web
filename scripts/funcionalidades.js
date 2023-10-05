@@ -3,6 +3,7 @@ let tabsContent = document.querySelectorAll(".tabs-legalidad");
 let logoFter= document.querySelector('.logo-footer');
 let btncontacto = document.querySelector('.contactanosbtn');
 let sectfooter = document.querySelector('.piedepagina');
+let home=document.querySelector('.home');
 
 btnTabs.forEach((btnTabs, i) =>{
     btnTabs.addEventListener("click", () => {
@@ -12,7 +13,7 @@ btnTabs.forEach((btnTabs, i) =>{
         tabsContent[i].style.display = "block";  
     });
 });
-
+if(btncontacto)
 btncontacto.addEventListener('click', () => {
     sectfooter.scrollIntoView({ behavior: "smooth" });
 })
@@ -52,3 +53,25 @@ document.addEventListener('click', (e) => {
         location='https://perpetummobile.store/'
     }
 })
+
+
+document.addEventListener('scroll', () => {
+    if(document.title === 'Iturritek'){
+        if (window.scrollY > 500){
+            home.style.display = 'block';
+        }
+        else if(window.scrollY < 500){
+            home.style.display = 'none';
+        }
+        }
+    
+    if(document.title === 'Iturritek_Aviso-legal_politica'){
+        if (window.scrollY > 50){
+            home.style.display = 'block';
+        }
+        else if(window.scrollY < 50){
+            home.style.display = 'none';
+        }
+    }
+   
+    })

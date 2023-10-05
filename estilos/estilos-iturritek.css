@@ -24,7 +24,18 @@
 /* ------------------INICIO HEADER------------------- */
 .container-General{
     width: 100%;
-
+}
+.home{
+    position: fixed;
+    bottom: 0;
+    left: 95%;
+    z-index: 100;
+}
+.home__img{
+    width: 60%; 
+}
+.home__img:hover{
+   scale: 110%;
 }
 .bg-principal{
     width: 100%;
@@ -79,6 +90,10 @@
     color: #fff;
     text-decoration: none;
 }
+.contactanosbtn:hover{
+    background-color: rgb(206, 104, 3);;
+}
+
 .presentIturritek__Btn-contact{
     text-decoration: none;
     font-size: 1.3rem;
@@ -92,6 +107,7 @@
     text-align: center;
     background-color: var(--naranja-pag);
 }
+
 
 /* --------------INICIO ABOUT-US -------------------- */
 .aboutUs{
@@ -488,7 +504,6 @@ font-weight: bold;
 .tabs-legalidad-gen{
     padding: 3%;
     color: #fff;
-    background-color: #a41313;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -496,6 +511,7 @@ font-weight: bold;
 }
 .tabs-legalidad{
     background-color: #739bc58b;
+    /* background-color: #739bc58b; */
     width: 90%;
     padding: 4%;
 
@@ -506,6 +522,36 @@ font-weight: bold;
 .tab-politicas{
     display: none;
 }
+.titu-aviso{
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: 5px underline var(--naranja-pag);
+    font-size: clamp(2rem, 1.5vw, 3rem);
+
+    
+}
+.link-iturritek{
+    text-decoration: none;
+    color: var(--naranja-pag);
+}
+.titu-politicas{
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: 5px underline var(--naranja-pag);
+    font-size: clamp(2rem, 1.5vw, 3rem);
+}
+.titulos-avisos{
+    margin-top: 5%;
+}
+.titulos-politicas{
+    margin-top: 5%;
+}
+
+/*__________________________________________________________________________________________*/
 
 /*-----------------Contacto.html----------------------*/
 
@@ -581,6 +627,14 @@ padding-block-start: 15%;
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
         background-position: center;
+    }
+    .home{
+        position: fixed;
+        bottom: 0;
+        left: 85%;
+    }
+    .home__img{
+        width: 90%; 
     }
     .dropdown{
         width: 25%;
@@ -714,6 +768,19 @@ padding-block-start: 15%;
         height: auto;
         margin-top: 0%;
     }
+    /* ---------LEGALIDADES-------------------------- */
+    .titulos-avisos{
+        margin-top: 10%;
+    }
+    .titulos-politicas{
+        margin-top: 15%;
+    }
+    .titu-aviso{
+        margin: 10%;
+    }
+    .titu-politicas{
+        margin: 10%;
+    }
 
     
     /*-------------------FOOTER-------------------------*/
@@ -820,6 +887,7 @@ padding-block-start: 15%;
     .legalidades h5{
         font-size: 3vw;
     }
+   
 
 }
 

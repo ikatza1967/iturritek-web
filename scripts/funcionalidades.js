@@ -5,6 +5,7 @@ let btncontacto = document.querySelector('.contactanosbtn');
 let sectfooter = document.querySelector('.piedepagina');
 let home=document.querySelector('.home');
 
+
 btnTabs.forEach((btnTabs, i) =>{
     btnTabs.addEventListener("click", () => {
         tabsContent.forEach(tabsContent => {
@@ -13,16 +14,18 @@ btnTabs.forEach((btnTabs, i) =>{
         tabsContent[i].style.display = "block";  
     });
 });
+
 if(btncontacto)
 btncontacto.addEventListener('click', () => {
-    sectfooter.scrollIntoView({ behavior: "smooth" });
+    location.href = '../pages/contactos.html'
 })
 
 
+if(document.title === 'Iturritek-Contacto-Formulario'){
+    document.querySelector(".cont-menu").style.gap="48%";
+}
 
-
-
-
+if(logoFter)
 logoFter.addEventListener('click', () => {
     location.href = '../index.html'
   })

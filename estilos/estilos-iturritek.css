@@ -24,7 +24,17 @@
 /* ------------------INICIO HEADER------------------- */
 .container-General{
     width: 100%;
-
+}
+.home{
+    position: fixed;
+    bottom: 0;
+    left: 95%;
+}
+.home__img{
+    width: 60%; 
+}
+.home__img:hover{
+   scale: 110%;
 }
 .bg-principal{
     width: 100%;
@@ -525,6 +535,8 @@ font-weight: bold;
     margin-top: 5%;
 }
 
+/*__________________________________________________________________________________________*/
+
 
 @media screen and (max-width: 1024px){
 
@@ -541,6 +553,14 @@ font-weight: bold;
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
         background-position: center;
+    }
+    .home{
+        position: fixed;
+        bottom: 0;
+        left: 90%;
+    }
+    .home__img{
+        width: 80%; 
     }
     .dropdown{
         width: 25%;

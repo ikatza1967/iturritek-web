@@ -644,7 +644,7 @@ font-weight: bold;
     /*-------------------FOOTER-------------------------*/
     .piedepagina{
         width: 100%;
-        height: 115vh;
+        height: 120vh;
         padding-block-start: 5%;
     }
 
@@ -718,7 +718,7 @@ font-weight: bold;
     
     .container-legal{
         width: 80%;
-        height: 20vh;
+        height: 10vh;
         margin: 0 auto;
         height: 10vh;
         color: white;

@@ -6,6 +6,9 @@ btnNav.addEventListener('click', () => {
   if (barra.style.display === 'block') {
     barra.style.display = 'none'
   } 
+  else if(barra.style.display === 'none') {
+    barra.style.display = 'block'
+  }
 })
 
 document.addEventListener('click', (e) => {

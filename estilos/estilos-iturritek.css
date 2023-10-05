@@ -23,7 +23,7 @@
 
 /* ------------------INICIO HEADER------------------- */
 .container-General{
-    width: auto;
+    width: 100%;
 
 }
 .bg-principal{
@@ -152,10 +152,11 @@
 }
 .socialPromise__list--parallax{
     overflow: scroll;
-   background-image: url(../imagenes/compromiso.jpg);
+   background-image: url(../imagenes/grupo\ construccion.jpg);
    background-attachment: fixed;
-    background-size:cover;
-    background-position-y: 0%;
+    background-size:contain;
+    background-position:center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;  
     height: 60vh;
 }
@@ -367,12 +368,23 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
     height: 50%;
     display: flex;
     flex-flow: column;
-    align-items: center;
     justify-content: space-between;
     gap: 20%;
 }
+
+.cont-header__navegador_logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo-footer{
     cursor: pointer;
+}
+
+.logo-p{
+    width: 70%;
 }
 
 .container-contacto{
@@ -416,6 +428,11 @@ font-weight: bold;
     font-size: 2vw;
 }
 
+.container-mapa{
+    width: 80%;
+    height: 40vh;
+}
+
 .container-legal{
     width: 80%;
     margin: 0 auto;
@@ -431,9 +448,8 @@ font-weight: bold;
 }
 
 .legalidades{
-    margin-block-start: 2%;
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .legalidades a{
@@ -560,11 +576,6 @@ justify-content: space-between;
     /*---------COMPROMISO SOCIAL----------*/
     .socialPromise__list--parallax{
         height: 50vh;
-        background-size: cover;
-        background-position-y: top;
-        background-position-x: 30%;
-        
-       
     }
     .socialPromise__article{
         margin-block-start: 3%;
@@ -643,10 +654,6 @@ justify-content: space-between;
     .piedepagina{
         width: 100%;
         height: 120vh;
-        background-color: black;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
         padding-block-start: 5%;
     }
 
@@ -658,7 +665,7 @@ justify-content: space-between;
         align-items: center;
     }
 
-    .logos-container{  
+    .logos-container{ 
         width: 80%;
         height: 50%;
         display: flex;
@@ -670,7 +677,7 @@ justify-content: space-between;
 
     .Cont-header__navegador_logo{
         width: 30%;
-        border: 2px solid red;
+        
     }
 
     .logo-footer{
@@ -679,7 +686,6 @@ justify-content: space-between;
     
     .container-contacto{
         width: 70%;
-        height: 70%;
     }
     
     .container-contacto h3{
@@ -690,9 +696,6 @@ justify-content: space-between;
     .title-underline{
         width: 100%;
         height: 2px;
-        border: none;
-        background-color: #FE8101;
-        align-items: center;
     }
     
     .container-contacto-info{
@@ -702,15 +705,8 @@ justify-content: space-between;
         text-align: center;
     }
     
-    .remarked{
-        color: #FE8101;
-        font-weight: bold;
-    }
-    
     .container-direccion{
-        height: 70%;
         width: 70%;
-        color: white;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
@@ -720,6 +716,13 @@ justify-content: space-between;
     .direccion-title{
         font-size: 5vw;
         text-align: center;
+    }
+
+    .container-mapa{
+        width: 100%;
+        height: 30vh;
+       display: flex;
+       justify-content: center;
     }
     
     .container-legal{
@@ -732,9 +735,6 @@ justify-content: space-between;
     
     .legal-line{
         width: 100%;
-        height: 2px;
-        border: none;
-        background-color: #FE8101;
     }
     
     .legalidades{

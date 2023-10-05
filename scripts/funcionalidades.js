@@ -23,7 +23,7 @@ btnTabs.forEach((btnTabs, i) =>{
 
 
 logoFter.addEventListener('click', () => {
-    location.href = 'index.html'
+    location.href = '../index.html'
   })
 
 document.addEventListener('click', (e) => {

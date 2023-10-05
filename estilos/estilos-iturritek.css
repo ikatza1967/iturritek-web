@@ -644,7 +644,7 @@ font-weight: bold;
     /*-------------------FOOTER-------------------------*/
     .piedepagina{
         width: 100%;
-        height: 120vh;
+        height: 115vh;
         padding-block-start: 5%;
     }
 
@@ -654,6 +654,7 @@ font-weight: bold;
         display: flex;
         flex-flow: column;
         align-items: center;
+        
     }
 
     .logos-container{ 
@@ -718,9 +719,8 @@ font-weight: bold;
     
     .container-legal{
         width: 80%;
-        height: 10vh;
+        height: 5vh;
         margin: 0 auto;
-        height: 10vh;
         color: white;
     }
     
@@ -729,10 +729,13 @@ font-weight: bold;
     }
     
     .legalidades{
+        height: 100%;
         margin-block-start: 2%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-size: 3vw;
+        
     }
     
     .legalidades a{

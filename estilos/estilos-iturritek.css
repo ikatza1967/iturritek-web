@@ -275,21 +275,18 @@
     height: 85vh;
     background-color: var(--grisfondogpenascal);
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 1.5%;
 }
+.grupoPeñascal__cont--titulo{
+    width: 60%;
+   float: right;
+   box-shadow: 0px 2.5px 0px 0px rgba(198, 196, 196, 0.377);
+}
 .grupoPeñascal__titular{
-margin-left: 55% ;
 font-family: var(--fuentetitulo);
 font-size: clamp(2.5rem, 1.5vw, 3rem);
+}
 
-}
-.grupoPeñascal__separador{
-    width:80%;
-    float: right;
-padding-left: 55%;
-}
 .grupoPeñascal__img8{
     position: absolute;
     	left: 4%;
@@ -499,6 +496,10 @@ justify-content: space-between;
     display: none;
 }
 
+
+
+
+
 @media screen and (max-width: 720px) {
     /*-------------------INICIO HEADER------------------- */
     .bg-principal{
@@ -581,29 +582,20 @@ justify-content: space-between;
     /*-------------------GRUPO PEÑASCAL------------------- */
   .grupoPeñascal{
     height: auto;
-    position: sticky;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .responsiveImg{
-    width: 50%;
-    padding: 2%;
-    position: static;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .responsiveImg{
+    position: static;
+    width: 40%;
+    padding: 2%;
   }
   .grupoPeñascal__titular{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-  .grupoPeñascal__separador{
-    width: 100%;
-    padding: 0;
+    font-size: 2rem
     }
-   
+  
     /* ------------------INICIO SOCIAL PROMISE------------------- */
     .socialPromise__article__cont--flex{
         width: 90%;

@@ -128,7 +128,7 @@ const aboutUsTitle={
     },
     tarjeta5:{
         en:"MAINTENANCE",
-        eu:"",
+        eu:"MANTENTZEAK",
     }
  }
  const servicesInfo={

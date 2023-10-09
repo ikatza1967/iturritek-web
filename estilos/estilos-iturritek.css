@@ -1100,10 +1100,10 @@ background-color: rgba(215, 211, 211, 0.726);
     }
     .main-contact {
         width: 80%;
-        height: 150vh;
+        height: 130vh;
      }
     .main-container{
-        height: 130vh;
+        height: 120vh;
         flex-flow: column;
         border: 3px solid green;
     }

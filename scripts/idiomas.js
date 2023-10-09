@@ -21,7 +21,6 @@ let euskera=document.querySelector(".eu");
 
 addEventListener("load", ()=> {
     espanol.style.backgroundColor="rgb(131, 190, 224)";
-    
 })
 
 const encabezadoNav={

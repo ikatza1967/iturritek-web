@@ -6,12 +6,22 @@ let sectfooter = document.querySelector('.piedepagina');
 let home=document.querySelector('.home');
 
 
+
+
 btnTabs.forEach((btnTabs, i) =>{
     btnTabs.addEventListener("click", () => {
         tabsContent.forEach(tabsContent => {
             tabsContent.style.display = "none";
         });
         tabsContent[i].style.display = "block";  
+        if(btnTabs.classList.contains("alegal")){
+            document.querySelector(".polypriv").style.background="rgba(185, 124, 124, 0.53)";
+            document.querySelector(".alegal").style.background="rgba(254, 129, 1, 1)";
+        }
+        else if(btnTabs.classList.contains("polypriv")){
+            document.querySelector(".alegal").style.background="rgba(185, 124, 124, 0.53)";
+            document.querySelector(".polypriv").style.background="rgba(254, 129, 1, 1)";
+        }
     });
 });
 
@@ -78,3 +88,4 @@ document.addEventListener('scroll', () => {
     }
    
     })
+

@@ -1100,12 +1100,12 @@ background-color: rgba(215, 211, 211, 0.726);
     }
     .main-contact {
         width: 90%;
-        height: 130vh;
+        height: 140vh;
      }
     .main-container{
-        height: 120vh;
+        height: 130vh;
         flex-flow: column-reverse;
-        border: 3px solid green;
+        /* border: 3px solid rgb(128, 0, 0); */
     }
     .contact-title{
         height: 5%;
@@ -1113,20 +1113,22 @@ background-color: rgba(215, 211, 211, 0.726);
     }
     .contact-descrip {
         width: 100%;
-        height: 50vh;
-     
+        height: 60vh;
+        /* border: 3px solid green; */
     }
     .contact-form_usuario{
-        height: 30%;
+        height: 70%;
+        display: flex;
         flex-flow: column;
-
-        
+        /* border: 3px solid rgb(36, 82, 176); */
+      
     }
     .contact-detalles{
         height: 60vh;
     }
     .input-deco{
        width: 70%; 
+       padding: 1.5%;
     }
     
 }

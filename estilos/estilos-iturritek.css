@@ -615,9 +615,11 @@
     margin-top: 5%;
 }
 
+
 /*__________________________________________________________________________________________*/
 
 /*-----------------Contacto.html----------------------*/
+
 .bg-principal-contact {
     width: 100%;
     height: 100%;
@@ -701,15 +703,23 @@
     align-items: center;
 }
 
+.contact-form_datos {
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+}
+
 .datos-personales {
     margin-inline-start: 3%;
-    width: 60%;
+    width: 70%;
 }
 
 .input-deco{
-border-radius: 15px;
-border: none;
-background-color: rgba(215, 211, 211, 0.726);
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(215, 211, 211, 0.726);
 }
 
 .datos-servicio {
@@ -1094,6 +1104,7 @@ background-color: rgba(215, 211, 211, 0.726);
     .legalidades h5 {
         font-size: 3vw;
     }
+
     /* -------------CONTACTOS-------------- */
     .main-contact {
         width: 90%;
@@ -1105,22 +1116,36 @@ background-color: rgba(215, 211, 211, 0.726);
         /* border: 3px solid rgb(128, 0, 0); */
     }
     .contact-title{
-        height: 8%;
-        padding: 2%;
+        height: 10vh;
         margin: 5%;
         font-size: 2rem;
     }
     .contact-descrip {
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         /* border: 3px solid green; */
+    }
+    .titulos-card_contacto{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-form {
+        height: 80%;
     }
     .contact-form_usuario{
         height: 20%;
         display: flex;
         flex-flow: column;
-      
     }
+    .contact-form_datos{
+        height: 20%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
     .contact-detalles{
         height: 60vh;
         width: 100%;
@@ -1130,6 +1155,7 @@ background-color: rgba(215, 211, 211, 0.726);
        width: 70%; 
        padding: 1.5%;
     }
+
 
     
 }

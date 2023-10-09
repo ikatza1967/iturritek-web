@@ -498,10 +498,12 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(185, 124, 124, 0.53);
 }
-.btn-legalidad:hover{
-    background-color:var(--naranja-pag);
+.alegal{
+    background-color: var(--naranja-pag);
+}
+.polypriv{
+    background-color: rgba(185, 124, 124, 0.53);
 }
 .tabs-legalidad-gen{
     padding: 3%;

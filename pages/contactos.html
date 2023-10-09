@@ -49,21 +49,56 @@
         </nav>
       </header>
       <main class="main-contact">
-        <h3 class="contact-title">¿Hablamos?</h3>
+        <h2 class="contact-title">¿Hablamos?</h2>
         <div class="main-container">
-
           <div class="contact-descrip contact-detalles">
-            <p>sdfdkñjn</p>
+            <h3>Detalles de contacto</h3>
+            <div class="">
+              <p>Belategi, 1 48002 BILBAO</p>
+              <p>
+                <span class="remarked">Tel: </span>
+                <a class="contact-info" href="tel:+34944700793">944 700 793</a>
+              </p>
+              <p>
+                <span class="remarked">Email: </span>
+                <a class="contact-info" href="mailto:iturritek@iturritek.com">iturritek@iturritek.com</a>
+              </p>
+            </div>
+            <figure class="container-mapa_contact">
+              <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+              </div>
+            </figure>
           </div>
+          
           <div class="contact-descrip contact-mensaje">
-            <p>sdfdkñjn</p>
+            <h3>Mándanos un mensaje</h3>
+            <form action="post" class="contact-form">
+              <div class="contact-form_usuario">
+                <input type="text" id="name" name="user_name" placeholder="Nombre"/>
+                <input type="text" id="surname" name="user_surname" placeholder="Apellidos"/>  
+              </div>
+              <input type="number" id="tel" name="user_tel" placeholder="Teléfono" />
+              <input type="Email" id="email" name="user_email" placeholder="Email" />
+              <label for="email">En qué servicio está interesado?</label>
+              <select name="select">
+                <option value="value1"></option>
+                <option value="value1">Aire acondicionado</option>
+                <option value="value2">Fontanería</option>
+                <option value="value3">Calefacción y gas</option>
+                <option value="value1">Reformas</option>
+                <option value="value2">Montajes</option>
+                <option value="value3">Mantenimineto</option>
+              </select>
+              <textarea id="mensaje" name="message" rows="4" cols="50" placeholder="Cuéntanos"></textarea>
+
+              <button>Enviar</button>
+            </form>
           </div>
 
         </div>
 
       </main>
-
-
 
     </div>
   </div>

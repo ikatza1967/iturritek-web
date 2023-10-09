@@ -576,29 +576,58 @@ font-weight: bold;
     padding-inline: 5%;
     text-align: center;
     margin-top: 1%;
+    /* border: 3px solid green; */
 }
 
 .main-container{
     width: 100%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
+    /* border: 3px solid rgb(81, 51, 218); */
 }
 
 .contact-title{
-    border: 2px solid red;
-    
+    height: 13%;
+    display: flex;
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
 }
 
 .contact-descrip{
     width: 45%;
-    height: 90%;
-    background-color: rgba(255, 255, 255, 0.701);
-    border: 2px solid red;
+    height: 100%;
+    padding-top: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
+    /* border: 2px solid red; */
+    
 }
 
+.contact-detalles{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-mapa_contact{
+    width: 90%;
+}
+
+.contact-info{
+    text-decoration: none;
+    color: black;
+}
+
+
+.contact-mensaje{
+    border: 2px solid red;
+}
 
 
 
@@ -639,7 +668,7 @@ font-weight: bold;
     height: 80%;
     background-color: #fff;
     text-align: center;
-    /* border: 2px solid red; */
+    border: 2px solid red; 
 }
 
 .container-mapa_contato{

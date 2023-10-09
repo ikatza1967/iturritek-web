@@ -1104,7 +1104,7 @@ background-color: rgba(215, 211, 211, 0.726);
      }
     .main-container{
         height: 120vh;
-        flex-flow: column;
+        flex-flow: column-reverse;
         border: 3px solid green;
     }
     .contact-title{
@@ -1117,7 +1117,7 @@ background-color: rgba(215, 211, 211, 0.726);
      
     }
     .contact-form_usuario{
-        flex-flow: column;
+        flex-flow: column-reverse;
     }
     .contact-detalles{
         height: 60vh;

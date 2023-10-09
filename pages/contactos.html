@@ -71,17 +71,17 @@
             </figure>
           </div>
           
-          <div class="contact-descrip contact-mensaje">
+          <div class="contact-descrip">
             <h3>Mándanos un mensaje</h3>
             <form action="post" class="contact-form">
               <div class="contact-form_usuario">
-                <input type="text" id="name" name="user_name" placeholder="Nombre"/>
-                <input type="text" id="surname" name="user_surname" placeholder="Apellidos"/>  
+                <input type="text" id="name" class="input-deco" name="user_name" placeholder="  Nombre * " />
+                <input type="text" id="surname" class="input-deco" name="user_surname" placeholder="  Apellidos *"/>  
               </div>
-              <input type="number" id="tel" name="user_tel" placeholder="Teléfono" />
-              <input type="Email" id="email" name="user_email" placeholder="Email" />
-              <label for="email">En qué servicio está interesado?</label>
-              <select name="select">
+              <input type="tel" class="datos-personales input-deco" id="tel" name="user_tel" placeholder="  Teléfono *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+              <input type="email" class="datos-personales input-deco" id="email" name="user_email" placeholder="  Email *" />
+              <label for="servicio">¿En qué servicio está interesado?</label>
+              <select name="select" class="datos-personales datos-servicio " >
                 <option value="value1"></option>
                 <option value="value1">Aire acondicionado</option>
                 <option value="value2">Fontanería</option>
@@ -90,9 +90,9 @@
                 <option value="value2">Montajes</option>
                 <option value="value3">Mantenimineto</option>
               </select>
-              <textarea id="mensaje" name="message" rows="4" cols="50" placeholder="Cuéntanos"></textarea>
+              <textarea id="mensaje" name="message" rows="4" cols="50" class="datos-textarea" placeholder="  Cuéntanos"></textarea>
 
-              <button>Enviar</button>
+              <button class="datos-servicio btn-form">Enviar</button>
             </form>
           </div>
 

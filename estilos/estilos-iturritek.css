@@ -1,43 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: Roboto-Bold;
-    src: url(../fuentes/Roboto-Bold.ttf);	
-  }
-  @font-face {
+    src: url(../fuentes/Roboto-Bold.ttf);
+}
+
+@font-face {
     font-family: Roboto-Medium;
     src: url(../fuentes/Roboto-Medium.ttf);
-  }
-:root{
-    --fuentetitulo:"Roboto-Bold";
-    --fuenteparrafo:"Roboto-Medium";
-   --naranja-pag:rgba(254, 129, 1, 1);
-   --azul-pag:rgba(60, 160, 216, 1);
-   --grisfondogpenascal:rgba(235, 231, 231, 0.75);
-    }
+}
+
+:root {
+    --fuentetitulo: "Roboto-Bold";
+    --fuenteparrafo: "Roboto-Medium";
+    --naranja-pag: rgba(254, 129, 1, 1);
+    --azul-pag: rgba(60, 160, 216, 1);
+    --grisfondogpenascal: rgba(235, 231, 231, 0.75);
+}
 
 
 
 /* ------------------INICIO HEADER------------------- */
-.container-General{
+.container-General {
     width: 100%;
 }
-.home{
+
+.home {
     position: fixed;
     bottom: 0;
     left: 95%;
     z-index: 100;
 }
-.home__img{
-    width: 60%; 
+
+.home__img {
+    width: 60%;
 }
-.home__img:hover{
-   scale: 110%;
+
+.home__img:hover {
+    scale: 110%;
 }
-.bg-principal{
+
+.bg-principal {
     width: 100%;
     height: 100vh;
     background-image: url(../imagenes/header-background.webp);
@@ -45,28 +52,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /* ----- header - navegador-------- */
 
-.cont-menu{
+.cont-menu {
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 40%;  
+    gap: 40%;
 }
-.cont-apartados{
+
+.cont-apartados {
     width: 100%;
 }
 
-  .dropdown{
+.dropdown {
     display: flex;
-  }
-  
+}
+
 
 /* ---- HEADER PRESENTACION---------------- */
-.Cont-header__presentIturritek{
+.Cont-header__presentIturritek {
     color: #fff;
     width: 100%;
     height: 90%;
@@ -75,27 +83,32 @@
     align-items: center;
     justify-content: center;
 }
-.Cont-header__presentIturritek-title{
+
+.Cont-header__presentIturritek-title {
     font-size: calc(2.3em + 3.5vw);
     text-align: center;
     font-family: var(--fuentetitulo);
 }
-.Cont-header__presentIturritek-text{
+
+.Cont-header__presentIturritek-text {
     width: 50%;
     margin: 2%;
     font-size: calc(0.7em + 0.4vw);
     text-align: center;
     font-family: var(--fuenteparrafo);
 }
-.contactanosbtn{
+
+.contactanosbtn {
     color: #fff;
     text-decoration: none;
 }
-.contactanosbtn:hover{
-    background-color: rgb(206, 104, 3);;
+
+.contactanosbtn:hover {
+    background-color: rgb(206, 104, 3);
+    ;
 }
 
-.presentIturritek__Btn-contact{
+.presentIturritek__Btn-contact {
     text-decoration: none;
     font-size: 1.3rem;
     font-family: var(--fuenteparrafo);
@@ -111,20 +124,22 @@
 
 
 /* --------------INICIO ABOUT-US -------------------- */
-.aboutUs{
+.aboutUs {
     width: 100%;
     height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
- 
+
 }
-.aboutUs__img{
+
+.aboutUs__img {
     width: 90%;
     height: 90%;
 }
-.aboutUs__article{
+
+.aboutUs__article {
     width: 50%;
     padding: 4%;
     text-align: center;
@@ -133,46 +148,53 @@
     align-items: center;
     justify-content: space-between;
 }
-.aboutUs__article--title{
+
+.aboutUs__article--title {
     font-size: clamp(1.5rem, 5vw, 1.5rem);
     font-family: var(--fuentetitulo);
     padding-top: 7%;
 }
-.aboutUs__article--info{
+
+.aboutUs__article--info {
     font-size: clamp(0.7rem, 4vw, 1.2rem);
     margin: 2%;
     font-family: var(--fuenteparrafo);
 }
 
 /* ------------------INICIO SOCIAL PROMISE------------------- */
-.socialPromise{
+.socialPromise {
     padding-bottom: 5%;
     margin-bottom: 5%;
 }
-.socialPromise__list--parallax{
+
+.socialPromise__list--parallax {
     overflow: scroll;
-   background-image: url(../imagenes/compromiso.webp);
-   background-attachment: fixed;
-   background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat; 
-    background-position-y: 0%; 
+    background-image: url(../imagenes/compromiso.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
     height: 60vh;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-.socialPromise__article{
+
+.socialPromise__article {
     width: 100%;
     padding-top: 5%;
- }
- .socialPromise__article__cont--flex{
+}
+
+.socialPromise__article__cont--flex {
     width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
- }
-.socialPromise__article--title{
+}
+
+.socialPromise__article--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2.5rem, 1.5vw, 5rem);
     display: flex;
@@ -181,17 +203,19 @@
     padding-bottom: 3%;
     text-decoration: underline var(--azul-pag);
 }
-.socialPromise__article--paragraph{
+
+.socialPromise__article--paragraph {
     font-family: var(--fuenteparrafo);
     font-size: clamp(1.3rem, 1.5vw, 2rem);
     margin-left: 3%;
 }
+
 /* ------------------FIN SOCIAL PROMISE------------------- */
 
 
 /* ------------------INICIO SERVICES------------------- */
 
-.services-container__title{
+.services-container__title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2.5rem, 1.5vw, 2rem);
     display: flex;
@@ -200,7 +224,7 @@
     padding-bottom: 5%;
 }
 
-.services-container{
+.services-container {
     width: 94%;
     height: 165vh;
     background-image: url(../imagenes/BG-SERVICIOS.webp);
@@ -211,23 +235,27 @@
     margin-bottom: 15%;
     border: 2px solid red;
 }
-.services-container__box--upper{
+
+.services-container__box--upper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7%;
 }
-.box__upper--title{
+
+.box__upper--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2rem, 1.5vw, 2rem);
     padding-top: 2%;
     padding-bottom: 4%;
     margin-left: 10%;
 }
-.services-container__box--down{
-    display:flex;
+
+.services-container__box--down {
+    display: flex;
     justify-content: space-between;
 }
-.box__down--title{
+
+.box__down--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2rem, 1.5vw, 2rem);
     display: flex;
@@ -235,22 +263,24 @@
     margin-right: 5%;
     padding-bottom: 4%;
 }
-.services__cont--cards{
+
+.services__cont--cards {
     width: 30%;
     height: 70vh;
     background-color: transparent;
 }
 
-.services__cont__cards--imagen img{
+.services__cont__cards--imagen img {
     width: 100%;
     border-radius: 0.5vw;
 }
-.services__title-position{
+
+.services__title-position {
     font-family: var(--fuentetitulo);
     font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
-.services__cont__cards--info{
+.services__cont__cards--info {
     padding: 9%;
     height: 26vh;
     margin: 0 auto;
@@ -260,97 +290,114 @@
     text-align: center;
     box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
 }
-.services__cont__cards--title{
+
+.services__cont__cards--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin-bottom: 5%;
 }
-.services__cont__cards--paragraph{
+
+.services__cont__cards--paragraph {
     font-family: var(--fuenteparrafo);
     font-size: clamp(1rem, 1.5vw, 1rem);
 }
+
 /* ------------------FIN SERVICES------------------- */
 
 /*-------------------INICIO GRUPO PÉNASCAL-------------------*/
-.grupoPeñascal{
+.grupoPeñascal {
     width: 100%;
     height: 85vh;
     background-color: var(--grisfondogpenascal);
     position: relative;
     padding-top: 1.5%;
 }
-.grupoPeñascal__cont--titulo{
+
+.grupoPeñascal__cont--titulo {
     width: 60%;
-   float: right;
-   box-shadow: 0px 2.5px 0px 0px rgba(198, 196, 196, 0.377);
-}
-.grupoPeñascal__titular{
-font-family: var(--fuentetitulo);
-font-size: clamp(2.5rem, 1.5vw, 3rem);
+    float: right;
+    box-shadow: 0px 2.5px 0px 0px rgba(198, 196, 196, 0.377);
 }
 
-.grupoPeñascal__img8{
-    position: absolute;
-    	left: 4%;
-        top: 27%;
+.grupoPeñascal__titular {
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2.5rem, 1.5vw, 3rem);
 }
-.grupoPeñascal__img4{
+
+.grupoPeñascal__img8 {
+    position: absolute;
+    left: 4%;
+    top: 27%;
+}
+
+.grupoPeñascal__img4 {
     position: absolute;
     left: 27%;
     top: 19%;
 }
-.grupoPeñascal__img6{
+
+.grupoPeñascal__img6 {
     position: absolute;
     left: 6%;
     top: 45%;
 }
-.grupoPeñascal__img3{
+
+.grupoPeñascal__img3 {
     position: absolute;
     left: 24%;
     top: 43%;
 }
-.grupoPeñascal__img5{
+
+.grupoPeñascal__img5 {
     position: absolute;
     left: 46%;
     top: 21%;
 }
-.grupoPeñascal__img9{
+
+.grupoPeñascal__img9 {
     position: absolute;
     left: 65%;
     top: 18%;
 }
-.grupoPeñascal__img10{
+
+.grupoPeñascal__img10 {
     position: absolute;
     left: 83%;
     top: 26%;
 }
-.grupoPeñascal__img1{
+
+.grupoPeñascal__img1 {
     position: absolute;
     left: 43%;
     top: 47%;
 }
-.grupoPeñascal__img7{
+
+.grupoPeñascal__img7 {
     position: absolute;
     left: 38%;
     top: 67%;
 }
-.grupoPeñascal__img11{
+
+.grupoPeñascal__img11 {
     position: absolute;
     left: 55%;
     top: 66%;
 }
-.grupoPeñascal__img2{
+
+.grupoPeñascal__img2 {
     position: absolute;
     left: 72%;
     top: 50%;
 }
-.responsiveImg{
+
+.responsiveImg {
     cursor: pointer;
 }
+
 /*-------------------FIN GRUPO PÉNASCAL-------------------*/
 
 /*-------------------INICIO FOOTER-------------------*/
-.piedepagina{
+.piedepagina {
     width: 100%;
     height: 70vh;
     background-color: black;
@@ -359,7 +406,7 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
     align-items: center;
 }
 
-.container-piedepag{
+.container-piedepag {
     width: 100%;
     height: 60vh;
     display: flex;
@@ -367,7 +414,7 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
     align-items: center;
 }
 
-.logos-container{
+.logos-container {
     width: 30%;
     height: 50%;
     display: flex;
@@ -376,97 +423,98 @@ font-size: clamp(2.5rem, 1.5vw, 3rem);
     gap: 20%;
 }
 
-.cont-header__navegador_logo{
+.cont-header__navegador_logo {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo-footer{
+.logo-footer {
     cursor: pointer;
 }
 
-.logo-p{
+.logo-p {
     width: 70%;
 }
 
-.container-contacto{
+.container-contacto {
     width: 33%;
     height: 70%;
-    color: rgb(255, 255, 255);   
+    color: rgb(255, 255, 255);
 }
 
-.container-contacto h3{
-font-size: 2vw;
+.container-contacto h3 {
+    font-size: 2vw;
 }
 
-.title-underline{
+.title-underline {
     width: 60%;
     height: 2px;
     border: none;
     background-color: #FE8101;
 }
 
-.container-contacto-info{
+.container-contacto-info {
     width: 80%;
     margin-block-start: 10%;
     font-size: 1.3vw;
 }
 
-.remarked{
-color: #FE8101;
-font-weight: bold;
+.remarked {
+    color: #FE8101;
+    font-weight: bold;
 }
 
-.info-contacto{
+.info-contacto {
     text-decoration: none;
     color: white;
 }
 
-.container-direccion{ 
+.container-direccion {
     height: 70%;
     width: 33%;
     color: white;
     display: flex;
     flex-flow: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.direccion-title{
+.direccion-title {
     font-size: 2vw;
 }
 
-.container-mapa{
+.container-mapa {
     width: 80%;
     height: 40vh;
 }
 
-.container-legal{
+.container-legal {
     width: 80%;
     margin: 0 auto;
     height: 10vh;
     color: white;
 }
 
-.legal-line{
+.legal-line {
     width: 100%;
     height: 3px;
     border: none;
     background-color: #FE8101;
 }
 
-.legalidades{
+.legalidades {
     display: flex;
     justify-content: space-between;
 }
 
-.legalidades a{
+.legalidades a {
     text-decoration: none;
     color: white;
 }
+
 /* ------- Avisos legales y politicas de privacidad------------ */
-.bg-principal-legal{
+.bg-principal-legal {
     width: 100%;
     height: 100%;
     background-image: url(../imagenes/header-background.webp);
@@ -475,8 +523,9 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
 }
+
 /* ---botones legalidades---- */
-.btns-legalidad{
+.btns-legalidad {
     height: 8vh;
     background-color: #ffffff76;
     margin: 0 auto;
@@ -485,9 +534,10 @@ font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-block-start:2%;
+    margin-block-start: 2%;
 }
-.btn-legalidad{
+
+.btn-legalidad {
     width: 50%;
     height: 100%;
     text-decoration: none;
@@ -499,13 +549,16 @@ font-weight: bold;
     align-items: center;
     text-align: center;
 }
-.alegal{
+
+.alegal {
     background-color: var(--naranja-pag);
 }
-.polypriv{
+
+.polypriv {
     background-color: rgba(185, 124, 124, 0.53);
 }
-.tabs-legalidad-gen{
+
+.tabs-legalidad-gen {
     padding: 3%;
     color: #fff;
     display: flex;
@@ -513,20 +566,24 @@ font-weight: bold;
     align-items: center;
     justify-content: center;
 }
-.tabs-legalidad{
+
+.tabs-legalidad {
     background-color: #739bc58b;
     /* background-color: #739bc58b; */
     width: 90%;
     padding: 4%;
 
 }
-.tab-avisolegal{
+
+.tab-avisolegal {
     height: 100%;
 }
-.tab-politicas{
+
+.tab-politicas {
     display: none;
 }
-.titu-aviso{
+
+.titu-aviso {
     margin-bottom: 5%;
     text-align: center;
     display: flex;
@@ -534,13 +591,15 @@ font-weight: bold;
     text-decoration: 5px underline var(--naranja-pag);
     font-size: clamp(2rem, 1.5vw, 3rem);
 
-    
+
 }
-.link-iturritek{
+
+.link-iturritek {
     text-decoration: none;
     color: var(--naranja-pag);
 }
-.titu-politicas{
+
+.titu-politicas {
     margin-bottom: 5%;
     text-align: center;
     display: flex;
@@ -548,17 +607,19 @@ font-weight: bold;
     text-decoration: 5px underline var(--naranja-pag);
     font-size: clamp(2rem, 1.5vw, 3rem);
 }
-.titulos-avisos{
+
+.titulos-avisos {
     margin-top: 5%;
 }
-.titulos-politicas{
+
+.titulos-politicas {
     margin-top: 5%;
 }
 
 /*__________________________________________________________________________________________*/
 
 /*-----------------Contacto.html----------------------*/
-.bg-principal-contact{
+.bg-principal-contact {
     width: 100%;
     height: 100vh;
     background-image: url(../imagenes/header-background.webp);
@@ -567,7 +628,8 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
 }
-.main-contact{
+
+.main-contact {
     width: 70%;
     height: 80vh;
     background-image: url(../imagenes/bgcontact.svg);
@@ -581,7 +643,7 @@ font-weight: bold;
     /* border: 3px solid green; */
 }
 
-.main-container{
+.main-container {
     width: 100%;
     height: 80%;
     display: flex;
@@ -591,7 +653,7 @@ font-weight: bold;
     /* border: 3px solid rgb(81, 51, 218); */
 }
 
-.contact-title{
+.contact-title {
     height: 13%;
     display: flex;
     font-size: 3vw;
@@ -600,39 +662,74 @@ font-weight: bold;
     padding: auto;
 }
 
-.contact-descrip{
+.contact-descrip {
     width: 45%;
     height: 100%;
     padding-top: 2%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
-    /* border: 2px solid red; */
-    
+
 }
 
-.contact-detalles{
+.contact-detalles {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.container-mapa_contact{
+.container-mapa_contact {
     width: 90%;
 }
 
-.contact-info{
+.contact-info {
     text-decoration: none;
     color: black;
 }
 
-
-.contact-mensaje{
-    border: 2px solid red;
+.contact-form {
+    height: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: space-around;
 }
 
+.contact-form_usuario {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.datos-personales {
+    margin-inline-start: 3%;
+    width: 60%;
+}
 
+.input-deco{
+border-radius: 15px;
+border: none;
+background-color: rgba(215, 211, 211, 0.726);
+}
+
+.datos-servicio {
+    margin-inline: auto;
+    border-radius: 15px;
+}
+
+.datos-textarea{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.btn-form{
+    width: 35%;
+    height: 9%;
+    color: #fff;
+    border: none;
+    background-color: #367c9c;
+}
 /* 
 .contact-title{
     color: #fff;
@@ -692,152 +789,177 @@ font-weight: bold;
 /* -------------RESPONSIVE-------------- */
 /**/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
-    .piedepagina{
+    .piedepagina {
         height: 35vh;
 
     }
-    .container-piedepag{
+
+    .container-piedepag {
         height: 30vh;
     }
 }
 
 @media (max-width: 768px) {
+
     /*-------------------INICIO HEADER------------------- */
-    .bg-principal{
+    .bg-principal {
         background-position: center;
     }
-    .home{
+
+    .home {
         position: fixed;
         bottom: 0;
         left: 85%;
     }
-    .home__img{
-        width: 90%; 
+
+    .home__img {
+        width: 90%;
     }
-    .dropdown{
+
+    .dropdown {
         width: 25%;
         margin-inline: 5.5%;
         justify-content: space-between;
-        
-    }
-   .linkscript{
-   margin-inline: 5.5%;
-   }
-   .cont-apartados{
-   background-color: rgb(0, 0, 0);
-   position: absolute;
-   top:100%;
-   }
 
-   /*-------------------HEADER PRESENTACION------------------- */
-   .Cont-header__presentIturritek{
-    height: 80%;
-   }
-   .Cont-header__presentIturritek-title{
-    margin-bottom: 10%;
-}
-  .Cont-header__presentIturritek-text{
-    margin-bottom: 10%;
-    width: 60%;
-  }
-  .contactobtn{
-    margin: 5%;
-  }
+    }
+
+    .linkscript {
+        margin-inline: 5.5%;
+    }
+
+    .cont-apartados {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 100%;
+    }
+
+    /*-------------------HEADER PRESENTACION------------------- */
+    .Cont-header__presentIturritek {
+        height: 80%;
+    }
+
+    .Cont-header__presentIturritek-title {
+        margin-bottom: 10%;
+    }
+
+    .Cont-header__presentIturritek-text {
+        margin-bottom: 10%;
+        width: 60%;
+    }
+
+    .contactobtn {
+        margin: 5%;
+    }
+
     /* ----NAVEGADOR---------- */
-    .logo-cont{
+    .logo-cont {
         width: 30%;
     }
-    .logo{
+
+    .logo {
         width: 90%;
     }
+
     /* -------------ABOUT US----------------- */
-    .aboutUs{
-         height: 100%;
+    .aboutUs {
+        height: 100%;
         flex-flow: column;
         justify-content: space-between;
     }
-    .aboutUs__cont-img{
+
+    .aboutUs__cont-img {
         width: 60%;
         margin: 5%;
     }
-    .aboutUs__img{
+
+    .aboutUs__img {
         width: 90%;
     }
-    .aboutUs__article{
+
+    .aboutUs__article {
         width: 70%;
         margin: 5%;
-    
+
     }
 
     /*---------COMPROMISO SOCIAL----------*/
-    .socialPromise__list--parallax{
+    .socialPromise__list--parallax {
         height: 50vh;
         background-size: cover;
         background-position-y: top;
         background-position-x: 30%;
     }
-    .socialPromise__article{
+
+    .socialPromise__article {
         margin-block-start: 3%;
         padding-inline: 7%;
     }
 
-    .socialPromise__article__cont--flex{
+    .socialPromise__article__cont--flex {
         padding-block-start: 10%;
     }
 
-    .socialPromise__article--paragraph{
+    .socialPromise__article--paragraph {
         font-size: 4vw;
     }
 
     /*-------------------GRUPO PEÑASCAL------------------- */
-  .grupoPeñascal{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .responsiveImg{
-    position: static;
-    width: 40%;
-    padding: 2%;
-  }
-  .grupoPeñascal__titular{
-    font-size: 1.8rem
+    .grupoPeñascal {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
+
+    .responsiveImg {
+        position: static;
+        width: 40%;
+        padding: 2%;
+    }
+
+    .grupoPeñascal__titular {
+        font-size: 1.8rem
+    }
+
     /* ------------------INICIO SOCIAL PROMISE------------------- */
-    .socialPromise__article__cont--flex{
+    .socialPromise__article__cont--flex {
         width: 90%;
         text-align: justify;
-     }
-     .socialPromise__article--img{
+    }
+
+    .socialPromise__article--img {
         width: 10vw;
-     }
+    }
+
     /*-------------------SERVICIOS------------------- */
-     .services-container{
+    .services-container {
         width: 94%;
         height: auto;
         padding-inline: 5%;
         margin-bottom: 15%;
-        
+
     }
-    .services-container__box--upper{
+
+    .services-container__box--upper {
         flex-wrap: wrap;
-     }
-    .services-container__box--down{
-       flex-direction: column;
-       align-items: center;
     }
-    .services__cont--cards{
+
+    .services-container__box--down {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__cont--cards {
         width: 90%;
         height: auto;
         background-color: transparent;
         margin-bottom: 15%;
-    } 
-    .box__down--title{
+    }
+
+    .box__down--title {
         font-family: var(--fuentetitulo);
         font-size: clamp(2rem, 1.5vw, 2rem);
         display: flex;
@@ -845,42 +967,47 @@ font-weight: bold;
         padding-bottom: 4%;
         padding-top: 40%;
     }
-    .services__cont__cards--info{
+
+    .services__cont__cards--info {
         height: auto;
         margin-top: 0%;
     }
+
     /* ---------LEGALIDADES-------------------------- */
-    .titulos-avisos{
+    .titulos-avisos {
         margin-top: 10%;
     }
-    .titulos-politicas{
+
+    .titulos-politicas {
         margin-top: 15%;
     }
-    .titu-aviso{
-        margin: 10%;
-    }
-    .titu-politicas{
+
+    .titu-aviso {
         margin: 10%;
     }
 
-    
+    .titu-politicas {
+        margin: 10%;
+    }
+
+
     /*-------------------FOOTER-------------------------*/
-    .piedepagina{
+    .piedepagina {
         width: 100%;
         height: 115vh;
         padding-block-start: 5%;
     }
 
-    .container-piedepag{
+    .container-piedepag {
         width: 100%;
         height: 100vh;
         display: flex;
         flex-flow: column;
         align-items: center;
-        
+
     }
 
-    .logos-container{ 
+    .logos-container {
         width: 80%;
         height: 50%;
         display: flex;
@@ -890,86 +1017,111 @@ font-weight: bold;
         gap: 20%;
     }
 
-    .Cont-header__navegador_logo{
+    .Cont-header__navegador_logo {
         width: 30%;
     }
 
-    .logo-footer{
+    .logo-footer {
         width: 100%;
     }
-    
-    .container-contacto{
+
+    .container-contacto {
         width: 70%;
     }
-    
-    .container-contacto h3{
+
+    .container-contacto h3 {
         font-size: 5vw;
         text-align: center;
     }
-    
-    .title-underline{
+
+    .title-underline {
         width: 100%;
         height: 2px;
     }
-    
-    .container-contacto-info{
+
+    .container-contacto-info {
         width: 100%;
         margin-block-start: 10%;
         font-size: 4vw;
         text-align: center;
     }
-    
-    .container-direccion{
+
+    .container-direccion {
         width: 70%;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         margin-block-start: 5%;
     }
-    
-    .direccion-title{
+
+    .direccion-title {
         font-size: 5vw;
         text-align: center;
     }
 
-    .container-mapa{
+    .container-mapa {
         width: 100%;
         height: 30vh;
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-    
-    .container-legal{
+
+    .container-legal {
         width: 80%;
         height: 5vh;
         margin: 0 auto;
         color: white;
     }
-    
-    .legal-line{
+
+    .legal-line {
         width: 100%;
     }
-    
-    .legalidades{
+
+    .legalidades {
         height: 100%;
         margin-block-start: 2%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 3vw;
-        
+
     }
-    
-    .legalidades a{
+
+    .legalidades a {
         text-decoration: none;
         color: white;
     }
-    
-    .legalidades h5{
+
+    .legalidades h5 {
         font-size: 3vw;
     }
-   
-
+    /* -------------CONTACTOS-------------- */
+    .bg-principal-contact{
+        height: 180vh;
+    }
+    .main-contact {
+        width: 80%;
+        height: 150vh;
+     }
+    .main-container{
+        height: 130vh;
+        flex-flow: column;
+        border: 3px solid green;
+    }
+    .contact-title{
+        height: 5%;
+       font-size: 1.4rem;
+    }
+    .contact-descrip {
+        width: 90%;
+        height: 50vh;
+     
+    }
+    .contact-form_usuario{
+        flex-flow: column;
+    }
+    .contact-detalles{
+        height: 60vh;
+    }
+    
 }
-
-

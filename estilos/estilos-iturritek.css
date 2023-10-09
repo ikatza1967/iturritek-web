@@ -620,7 +620,7 @@
 /*-----------------Contacto.html----------------------*/
 .bg-principal-contact {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(../imagenes/header-background.webp);
     background-size: cover;
     flex-direction: column;
@@ -1095,17 +1095,14 @@ background-color: rgba(215, 211, 211, 0.726);
         font-size: 3vw;
     }
     /* -------------CONTACTOS-------------- */
-    .bg-principal-contact{
-        height: 180vh;
-    }
     .main-contact {
         width: 90%;
-        height: 140vh;
+        height: 100%;
      }
     .main-container{
-        height: 130vh;
+        height: 170vh;
         flex-flow: column-reverse;
-        /* border: 3px solid rgb(128, 0, 0); */
+        border: 3px solid rgb(128, 0, 0);
     }
     .contact-title{
         height: 5%;
@@ -1113,11 +1110,11 @@ background-color: rgba(215, 211, 211, 0.726);
     }
     .contact-descrip {
         width: 100%;
-        height: 60vh;
-        /* border: 3px solid green; */
+        height: 90vh;
+        border: 3px solid green;
     }
     .contact-form_usuario{
-        height: 70%;
+        height: 20%;
         display: flex;
         flex-flow: column;
         /* border: 3px solid rgb(36, 82, 176); */
@@ -1125,6 +1122,8 @@ background-color: rgba(215, 211, 211, 0.726);
     }
     .contact-detalles{
         height: 60vh;
+        width: 100%;
+        height: 70vh;
     }
     .input-deco{
        width: 70%; 

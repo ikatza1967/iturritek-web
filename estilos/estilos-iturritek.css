@@ -454,9 +454,6 @@
 .titu-aviso{
     font-family: var(--fuentetitulo);
 }
-.parrafo-aviso{
-    font-family: var(--fuenteparrafo);
-}
 .titulos-avisos{
     font-family: var(--fuentetitulo);
 }
@@ -464,7 +461,7 @@
     font-family: var(--fuentetitulo);
 }
 .tabs-legalidad{
-    font-family: var(--fuentetitulo);
+    font-family: var(--fuenteparrafo);
 }
 
 

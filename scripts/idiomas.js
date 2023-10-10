@@ -35,6 +35,10 @@ const encabezadoNav={
     link3:{
         en:"PEÑASCAL GROUP",
         eu:"PEÑASCAL TALDEA",
+    },
+    link4:{
+        en:"CONTACT US",
+        eu: "KONTAKTUA",
     }
 } 
 
@@ -148,8 +152,8 @@ const aboutUsTitle={
         eu:"Gas-instalazioa eta muntaketa egiten dugu sukaldeetan, garbigailuetarako gas-instalazioetan, bitrozeramika edo ontzi-garbigailuetan.",
     },
     tarjeta4:{
-        en:"Fixed, Portable and market.",
-        eu:"Finkoa, eramangarria eta azoka",
+        en:"Fixed, Portable and for azoka.",
+        eu:"Finkoa, eramangarria eta azokentzako",
     },
     tarjeta5:{
         en:"Maintenance of facilities both at the individual level and in buildings, carrying out preventive and corrective treatments.",
@@ -208,6 +212,7 @@ function headerEn(){
         vinculosHeader[0].textContent=encabezadoNav.link1.en
         vinculosHeader[1].textContent=encabezadoNav.link2.en
         vinculosHeader[2].textContent=encabezadoNav.link3.en
+        vinculosHeader[3].textContent=encabezadoNav.link4.en
      }
      tituloHeader.textContent=encabezadoTitle.en;
      textoHeader.textContent=encabezadoText.en;
@@ -271,6 +276,7 @@ function headerEu(){
         vinculosHeader[0].textContent=encabezadoNav.link1.eu
         vinculosHeader[1].textContent=encabezadoNav.link2.eu
         vinculosHeader[2].textContent=encabezadoNav.link3.eu
+        vinculosHeader[3].textContent=encabezadoNav.link4.eu
      }
      tituloHeader.textContent=encabezadoTitle.eu;
      textoHeader.textContent=encabezadoText.eu;

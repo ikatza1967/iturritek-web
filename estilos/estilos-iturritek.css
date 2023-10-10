@@ -703,14 +703,21 @@
 }
 
 .contact-form_datos {
+    width: 100%;
     height: 20%;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-
+    
 }
 
 .datos-personales {
+    width: 90%;  
+}
+.input-tel{
+    width: 50%;
+}
+.datos-servicios{
     margin-inline-start: 3%;
     width: 70%;
 }
@@ -1112,33 +1119,36 @@
     .main-contact {
         width: 90%;
         height: 90%;
-   
      }
     .main-container{
         height: 170vh;
         flex-flow: column-reverse;
+        /* background-color: #c837e1; */
       
      
     }
     .contact-title{
-        height: 10vh;
+        height: 8vh;
         margin: 5%;
         font-size: 2rem;
+     
     }
     .contact-descrip {
         width: 100%;
         height: 80vh;
-        background-color: #ce2929;
+        /* background-color: #ce2929; */
 
     }
     .titulos-card_contacto{
-        height: 10vh;
+        height: 8vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     .contact-form {
-        height: 100%;
+        height: 87%;
+     
        
         
     }
@@ -1146,26 +1156,29 @@
         height: 25%;
         display: flex;
         flex-flow: column;
+        background-color: #ffffff;
     }
     .contact-form_datos{
         height: 25%;
         display: flex;
         flex-flow: column;
         align-items: center;
+        background-color: #ffffff;
+
     }
 
     .contact-detalles{
-        height: 60vh;
         width: 100%;
         height: 70vh;
-        background-color: #28c476;
+        /* background-color: #28c476; */
     }
     .input-deco{
        width: 90%; 
        height:30%;
-    
+     
     }
 
+    
 
 
     

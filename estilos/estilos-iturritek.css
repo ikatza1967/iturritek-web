@@ -586,6 +586,7 @@
     justify-content: center;
     align-items: center;
     padding: auto;
+    font-family: var(--fuentetitulo);
 }
 .contact-descrip {
     width: 45%;
@@ -601,8 +602,17 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.titulos-card_contacto{
+    font-family: var(--fuentetitulo);
+}
+
 .container-mapa_contact {
     width: 90%;
+}
+
+.contact-paragraph{
+    font-family: var(--fuenteparrafo);
 }
 
 .contact-info {
@@ -1009,6 +1019,7 @@
         height: auto;
         margin-top: 20%;
     }
+    
     .input-deco{
        width: 95%; 
        margin: 3%;

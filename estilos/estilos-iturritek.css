@@ -777,7 +777,6 @@
 
     .piedepagina {
         height: 35vh;
-
     }
 
     .container-piedepag {
@@ -788,32 +787,26 @@
 @media (max-width: 768px) {
 
     /*-------------------INICIO HEADER------------------- */
+    
     .bg-principal {
         background-position: center;
     }
-
     .home {
         position: fixed;
         bottom: 0;
         left: 80%;
     }
-
     .home__img {
         width: 70%;
-
     }
-
     .dropdown {
         width: 100%;
         justify-content: center;
         gap: 5%;
-
     }
-
     .linkscript {
         margin-inline: 5.5%;
     }
-
     .cont-apartados {
         position: absolute;
         top: 100%;
@@ -823,44 +816,41 @@
     }
 
     /*-------------------HEADER PRESENTACION------------------- */
+
     .Cont-header__presentIturritek {
         height: 80%;
     }
-
     .Cont-header__presentIturritek-title {
         margin-bottom: 10%;
     }
-
     .Cont-header__presentIturritek-text {
         margin-bottom: 10%;
         width: 60%;
     }
-
     .contactobtn {
         margin: 5%;
     }
 
     /* ----NAVEGADOR---------- */
+
     .logo-cont {
         width: 30%;
     }
-
     .logo {
         width: 90%;
     }
 
     /* -------------ABOUT US----------------- */
+
     .aboutUs {
         height: 100%;
         flex-flow: column;
         justify-content: space-between;
     }
-
     .aboutUs__cont-img {
         width: 60%;
         margin: 5%;
     }
-
     .aboutUs__img {
         width: 90%;
     }
@@ -868,31 +858,29 @@
     .aboutUs__article {
         width: 70%;
         margin: 5%;
-
     }
 
     /*---------COMPROMISO SOCIAL----------*/
+
     .socialPromise__list--parallax {
         height: 50vh;
         background-size: cover;
         background-position-y: top;
         background-position-x: 30%;
     }
-
     .socialPromise__article {
         margin-block-start: 3%;
         padding-inline: 7%;
     }
-
     .socialPromise__article__cont--flex {
         padding-block-start: 10%;
     }
-
     .socialPromise__article--paragraph {
         font-size: 4vw;
     }
 
     /*-------------------GRUPO PEÑASCAL------------------- */
+
     .grupoPeñascal {
         height: auto;
         display: flex;
@@ -900,52 +888,46 @@
         align-items: center;
         text-align: center;
     }
-
     .responsiveImg {
         position: static;
         width: 40%;
         padding: 2%;
     }
-
     .grupoPeñascal__titular {
         font-size: 1.8rem
     }
 
     /* ------------------INICIO SOCIAL PROMISE------------------- */
+
     .socialPromise__article__cont--flex {
         width: 90%;
         text-align: justify;
     }
-
     .socialPromise__article--img {
         width: 10vw;
     }
 
     /*-------------------SERVICIOS------------------- */
+
     .services-container {
         width: 94%;
         height: auto;
         padding-inline: 5%;
         margin-bottom: 15%;
-
     }
-
     .services-container__box--upper {
         flex-wrap: wrap;
     }
-
     .services-container__box--down {
         flex-direction: column;
         align-items: center;
     }
-
     .services__cont--cards {
         width: 90%;
         height: auto;
         background-color: transparent;
         margin-bottom: 15%;
     }
-
     .box__down--title {
         font-family: var(--fuentetitulo);
         font-size: clamp(2rem, 1.5vw, 2rem);
@@ -954,50 +936,43 @@
         padding-bottom: 4%;
         padding-top: 40%;
     }
-
     .services__cont__cards--info {
         height: auto;
         margin-top: 0%;
     }
 
     /* ---------LEGALIDADES-------------------------- */
+
     .titulos-avisos {
         margin-top: 10%;
     }
-
     .titulos-politicas {
         margin-top: 15%;
     }
-
     .subtitulos-politicas {
         margin-top: 10%;
     }
-
     .titu-aviso {
         margin: 10%;
     }
-
     .titu-politicas {
         margin: 10%;
     }
 
-
     /*-------------------FOOTER-------------------------*/
+
     .piedepagina {
         width: 100%;
         height: 115vh;
         padding-block-start: 5%;
     }
-
     .container-piedepag {
         width: 100%;
         height: 100vh;
         display: flex;
         flex-flow: column;
         align-items: center;
-
     }
-
     .logos-container {
         width: 80%;
         height: 50%;
@@ -1007,36 +982,29 @@
         justify-content: space-between;
         gap: 20%;
     }
-
     .Cont-header__navegador_logo {
         width: 30%;
     }
-
     .logo-footer {
         width: 100%;
     }
-
     .container-contacto {
         width: 70%;
     }
-
     .container-contacto h3 {
         font-size: 5vw;
         text-align: center;
     }
-
     .title-underline {
         width: 100%;
         height: 2px;
     }
-
     .container-contacto-info {
         width: 100%;
         margin-block-start: 10%;
         font-size: 4vw;
         text-align: center;
     }
-
     .container-direccion {
         width: 70%;
         display: flex;
@@ -1044,30 +1012,25 @@
         justify-content: space-between;
         margin-block-start: 5%;
     }
-
     .direccion-title {
         font-size: 5vw;
         text-align: center;
     }
-
     .container-mapa {
         width: 100%;
         height: 30vh;
         display: flex;
         justify-content: center;
     }
-
     .container-legal {
         width: 80%;
         height: 5vh;
         margin: 0 auto;
         color: white;
     }
-
     .legal-line {
         width: 100%;
     }
-
     .legalidades {
         height: 100%;
         margin-block-start: 2%;
@@ -1075,14 +1038,11 @@
         justify-content: space-between;
         align-items: center;
         font-size: 3vw;
-
     }
-
     .legalidades a {
         text-decoration: none;
         color: white;
     }
-
     .legalidades h5 {
         font-size: 3vw;
     }
@@ -1104,13 +1064,11 @@
         height: 8vh;
         margin: 5%;
         font-size: 2rem;
-     
     }
     .contact-descrip {
         width: 100%;
         margin-bottom: 20%;
     }
-  
     .titulos-card_contacto{
         height: 8vh;
         display: flex;
@@ -1134,8 +1092,6 @@
         padding-left: 0%;
         margin-bottom: 8%;
     }
-    
-
     .contact-detalles{
         width: 100%;
         height: auto;

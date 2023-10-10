@@ -660,7 +660,6 @@
     justify-content: center;
     align-items: center;
     padding: auto;
-    font-family: var(--fuentetitulo);
 }
 
 .contact-descrip {
@@ -678,17 +677,8 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.titulos-card_contacto{
-    font-family: var(--fuentetitulo);
-}
-
 .container-mapa_contact {
     width: 90%;
-}
-
-.contact-paragraph{
-    font-family: var(--fuenteparrafo);
 }
 
 .contact-info {
@@ -1192,7 +1182,6 @@
         height: 70vh;
         /* background-color: #28c476; */
     }
-    
     .input-deco{
        width: 90%; 
        height:30%;

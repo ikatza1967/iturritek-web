@@ -451,6 +451,22 @@
     justify-content: center;
     align-items: center;
 }
+.titu-aviso{
+    font-family: var(--fuentetitulo);
+}
+.parrafo-aviso{
+    font-family: var(--fuenteparrafo);
+}
+.titulos-avisos{
+    font-family: var(--fuentetitulo);
+}
+.titu-politicas{
+    font-family: var(--fuentetitulo);
+}
+.tabs-legalidad{
+    font-family: var(--fuentetitulo);
+}
+
 
 /* ---botones legalidades---- */
 

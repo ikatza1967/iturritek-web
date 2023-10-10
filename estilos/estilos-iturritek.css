@@ -8,7 +8,6 @@
     font-family: Roboto-Bold;
     src: url(../fuentes/Roboto-Bold.ttf);
 }
-
 @font-face {
     font-family: Roboto-Medium;
     src: url(../fuentes/Roboto-Medium.ttf);
@@ -22,13 +21,11 @@
     --grisfondogpenascal: rgba(235, 231, 231, 0.75);
 }
 
-
-
 /* ------------------INICIO HEADER------------------- */
+
 .container-General {
     width: 100%;
 }
-
 .home {
     position: fixed;
     bottom: 0;
@@ -38,11 +35,9 @@
 .home__img{
     width: 70%; 
 }
-
 .home__img:hover {
     scale: 110%;
 }
-
 .bg-principal {
     width: 100%;
     height: 100vh;
@@ -51,7 +46,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 /* ----- header - navegador-------- */
@@ -62,17 +56,15 @@
     display: flex;
     gap: 40%;
 }
-
 .cont-apartados {
     width: 100%;
 }
-
 .dropdown {
     display: flex;
 }
 
-
 /* ---- HEADER PRESENTACION---------------- */
+
 .Cont-header__presentIturritek {
     color: #fff;
     width: 100%;
@@ -82,13 +74,11 @@
     align-items: center;
     justify-content: center;
 }
-
 .Cont-header__presentIturritek-title {
     font-size: calc(2.3em + 3.5vw);
     text-align: center;
     font-family: var(--fuentetitulo);
 }
-
 .Cont-header__presentIturritek-text {
     width: 50%;
     margin: 2%;
@@ -96,17 +86,13 @@
     text-align: center;
     font-family: var(--fuenteparrafo);
 }
-
 .contactanosbtn {
     color: #fff;
     text-decoration: none;
 }
-
 .contactanosbtn:hover {
     background-color: rgb(206, 104, 3);
-    ;
 }
-
 .presentIturritek__Btn-contact {
     text-decoration: none;
     font-size: 1.3rem;
@@ -121,8 +107,8 @@
     background-color: var(--naranja-pag);
 }
 
-
 /* --------------INICIO ABOUT-US -------------------- */
+
 .aboutUs {
     width: 100%;
     height: 90vh;
@@ -130,14 +116,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
 }
-
 .aboutUs__img {
     width: 90%;
     height: 90%;
 }
-
 .aboutUs__article {
     width: 50%;
     padding: 4%;
@@ -147,13 +130,11 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .aboutUs__article--title {
     font-size: clamp(1.5rem, 5vw, 1.5rem);
     font-family: var(--fuentetitulo);
     padding-top: 7%;
 }
-
 .aboutUs__article--info {
     font-size: clamp(0.7rem, 4vw, 1.2rem);
     margin: 2%;
@@ -161,11 +142,11 @@
 }
 
 /* ------------------INICIO SOCIAL PROMISE------------------- */
+
 .socialPromise {
     padding-bottom: 5%;
     margin-bottom: 5%;
 }
-
 .socialPromise__list--parallax {
     overflow: scroll;
     background-image: url(../imagenes/compromiso.webp);
@@ -176,23 +157,19 @@
     background-position-y: 0%;
     height: 60vh;
 }
-
 ::-webkit-scrollbar {
     display: none;
 }
-
 .socialPromise__article {
     width: 100%;
     padding-top: 5%;
 }
-
 .socialPromise__article__cont--flex {
     width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
-
 .socialPromise__article--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2.5rem, 1.5vw, 5rem);
@@ -202,15 +179,11 @@
     padding-bottom: 3%;
     text-decoration: underline var(--azul-pag);
 }
-
 .socialPromise__article--paragraph {
     font-family: var(--fuenteparrafo);
     font-size: clamp(1.3rem, 1.5vw, 2rem);
     margin-left: 3%;
 }
-
-/* ------------------FIN SOCIAL PROMISE------------------- */
-
 
 /* ------------------INICIO SERVICES------------------- */
 
@@ -222,7 +195,6 @@
     text-decoration: underline var(--naranja-pag);
     padding-bottom: 5%;
 }
-
 .services-container {
     width: 94%;
     height: 165vh;
@@ -233,13 +205,11 @@
     padding-inline: 5%;
     margin-bottom: 15%;
 }
-
 .services-container__box--upper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7%;
 }
-
 .box__upper--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2rem, 1.5vw, 2rem);
@@ -247,12 +217,10 @@
     padding-bottom: 4%;
     margin-left: 10%;
 }
-
 .services-container__box--down {
     display: flex;
     justify-content: space-between;
 }
-
 .box__down--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2rem, 1.5vw, 2rem);
@@ -261,23 +229,19 @@
     margin-right: 5%;
     padding-bottom: 4%;
 }
-
 .services__cont--cards {
     width: 30%;
     height: 70vh;
     background-color: transparent;
 }
-
 .services__cont__cards--imagen img {
     width: 100%;
     border-radius: 0.5vw;
 }
-
 .services__title-position {
     font-family: var(--fuentetitulo);
     font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
-
 .services__cont__cards--info {
     padding: 9%;
     height: 26vh;
@@ -288,21 +252,18 @@
     text-align: center;
     box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
 }
-
 .services__cont__cards--title {
     font-family: var(--fuentetitulo);
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin-bottom: 5%;
 }
-
 .services__cont__cards--paragraph {
     font-family: var(--fuenteparrafo);
     font-size: clamp(1rem, 1.5vw, 1rem);
 }
 
-/* ------------------FIN SERVICES------------------- */
-
 /*-------------------INICIO GRUPO PÉNASCAL-------------------*/
+
 .grupoPeñascal {
     width: 100%;
     height: 85vh;
@@ -310,91 +271,76 @@
     position: relative;
     padding-top: 1.5%;
 }
-
 .grupoPeñascal__cont--titulo {
     width: 60%;
     float: right;
     box-shadow: 0px 2.5px 0px 0px rgba(198, 196, 196, 0.377);
 }
-
 .grupoPeñascal__titular {
     font-family: var(--fuentetitulo);
     font-size: clamp(2.5rem, 1.5vw, 3rem);
 }
-
 .grupoPeñascal__img8 {
     position: absolute;
     left: 4%;
     top: 27%;
 }
-
 .grupoPeñascal__img4 {
     position: absolute;
     left: 27%;
     top: 19%;
 }
-
 .grupoPeñascal__img6 {
     position: absolute;
     left: 6%;
     top: 45%;
 }
-
 .grupoPeñascal__img3 {
     position: absolute;
     left: 24%;
     top: 43%;
 }
-
 .grupoPeñascal__img5 {
     position: absolute;
     left: 46%;
     top: 21%;
 }
-
 .grupoPeñascal__img9 {
     position: absolute;
     left: 65%;
     top: 18%;
 }
-
 .grupoPeñascal__img10 {
     position: absolute;
     left: 83%;
     top: 26%;
 }
-
 .grupoPeñascal__img1 {
     position: absolute;
     left: 43%;
     top: 47%;
 }
-
 .grupoPeñascal__img7 {
     position: absolute;
     left: 38%;
     top: 67%;
 }
-
 .grupoPeñascal__img11 {
     position: absolute;
     left: 55%;
     top: 66%;
 }
-
 .grupoPeñascal__img2 {
     position: absolute;
     left: 72%;
     top: 50%;
 }
-
 .responsiveImg {
     cursor: pointer;
 }
 
-/*-------------------FIN GRUPO PÉNASCAL-------------------*/
-
 /*-------------------INICIO FOOTER-------------------*/
+
 .piedepagina {
     width: 100%;
     height: 70vh;
@@ -403,7 +349,6 @@
     flex-flow: column;
     align-items: center;
 }
-
 .container-piedepag {
     width: 100%;
     height: 60vh;
@@ -411,7 +356,6 @@
     flex-flow: row;
     align-items: center;
 }
-
 .logos-container {
     width: 30%;
     height: 50%;
@@ -420,32 +364,26 @@
     justify-content: space-between;
     gap: 20%;
 }
-
 .cont-header__navegador_logo {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .logo-footer {
     cursor: pointer;
 }
-
 .logo-p {
     width: 70%;
 }
-
 .container-contacto {
     width: 33%;
     height: 70%;
     color: rgb(255, 255, 255);
 }
-
 .container-contacto h3 {
     font-size: 2vw;
 }
-
 .title-underline {
     width: 60%;
     height: 2px;
@@ -458,17 +396,14 @@
     margin-block-start: 10%;
     font-size: 1.3vw;
 }
-
 .remarked {
     color: #FE8101;
     font-weight: bold;
 }
-
 .info-contacto {
     text-decoration: none;
     color: white;
 }
-
 .container-direccion {
     height: 70%;
     width: 33%;
@@ -477,41 +412,36 @@
     flex-flow: column;
     justify-content: space-between;
 }
-
 .direccion-title {
     font-size: 2vw;
 }
-
 .container-mapa {
     width: 80%;
     height: 40vh;
 }
-
 .container-legal {
     width: 80%;
     margin: 0 auto;
     height: 10vh;
     color: white;
 }
-
 .legal-line {
     width: 100%;
     height: 3px;
     border: none;
     background-color: #FE8101;
 }
-
 .legalidades {
     display: flex;
     justify-content: space-between;
 }
-
 .legalidades a {
     text-decoration: none;
     color: white;
 }
 
 /* ------- Avisos legales y politicas de privacidad------------ */
+
 .bg-principal-legal {
     width: 100%;
     height: 100%;
@@ -523,6 +453,7 @@
 }
 
 /* ---botones legalidades---- */
+
 .btns-legalidad {
     height: 8vh;
     background-color: #ffffff76;
@@ -534,7 +465,6 @@
     justify-content: space-evenly;
     margin-block-start: 2%;
 }
-
 .btn-legalidad {
     width: 50%;
     height: 100%;
@@ -547,15 +477,12 @@
     align-items: center;
     text-align: center;
 }
-
 .alegal {
     background-color: var(--naranja-pag);
 }
-
 .polypriv {
     background-color: rgba(185, 124, 124, 0.53);
 }
-
 .tabs-legalidad-gen {
     padding: 3%;
     color: #fff;
@@ -564,23 +491,17 @@
     align-items: center;
     justify-content: center;
 }
-
 .tabs-legalidad {
     background-color: #739bc58b;
-    /* background-color: #739bc58b; */
     width: 90%;
     padding: 4%;
-
 }
-
 .tab-avisolegal {
     height: 100%;
 }
-
 .tab-politicas {
     display: none;
 }
-
 .titu-aviso {
     margin-bottom: 5%;
     text-align: center;
@@ -588,15 +509,11 @@
     flex-direction: column;
     text-decoration: 5px underline var(--naranja-pag);
     font-size: clamp(2rem, 1.5vw, 3rem);
-
-
 }
-
 .link-iturritek {
     text-decoration: none;
     color: var(--naranja-pag);
 }
-
 .titu-politicas {
     margin-bottom: 5%;
     text-align: center;
@@ -605,7 +522,6 @@
     text-decoration: 5px underline var(--naranja-pag);
     font-size: clamp(2rem, 1.5vw, 3rem);
 }
-
 .titulos-avisos {
     margin-top: 5%;
 }
@@ -613,9 +529,6 @@
 .titulos-politicas {
     margin-top: 5%;
 }
-
-
-
 
 /*__________________________________________________________________________________________*/
 
@@ -630,7 +543,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .main-contact {
     width: 70%;
     height: 80vh;
@@ -642,9 +554,7 @@
     padding-inline: 5%;
     text-align: center;
     margin-top: 1%;
-    /* border: 3px solid green; */
 }
-
 .main-container {
     width: 100%;
     height: 80%;
@@ -652,9 +562,7 @@
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    /* border: 3px solid rgb(81, 51, 218); */
 }
-
 .contact-title {
     height: 13%;
     display: flex;
@@ -663,7 +571,6 @@
     align-items: center;
     padding: auto;
 }
-
 .contact-descrip {
     width: 45%;
     height: 100%;
@@ -672,14 +579,12 @@
     box-shadow: 0.1px 0.1px 2px 2px rgba(161, 161, 161, 0.377);
 
 }
-
 .contact-detalles {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
 }
-
 .container-mapa_contact {
     width: 90%;
 }
@@ -688,24 +593,19 @@
     text-decoration: none;
     color: black;
 }
-
 .contact-form {
     height: 90%;
     display: flex;
     flex-flow: column;
     align-items: left;
     justify-content: space-around;
-
 }
-
 .contact-form_usuario {
-
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
 }
-
 .contact-form_datos {
     width: 100%;
     height: 20%;
@@ -714,7 +614,6 @@
     flex-flow: column;
     justify-content: space-around; 
 }
-
 .datos-personales {
     width: 90%;  
 }
@@ -725,7 +624,6 @@
     margin-inline-start: 3%;
     width: 70%;
 }
-
 .input-deco{
     padding: 4px;
     border-radius: 15px;
@@ -733,14 +631,12 @@
     background-color: rgba(228, 226, 226, 0.726);
     box-shadow: 1px 1px 2px 2px rgba(161, 161, 161, 0.377);
 }
-
 .datos-servicio{
     width: 60%;
     height: 8%;
     margin-inline: auto;
     border-radius: 15px;
 }
-
 .datos-textarea{
     font-size: 1.2rem;
     width: 90%;
@@ -787,7 +683,7 @@
 @media (max-width: 768px) {
 
     /*-------------------INICIO HEADER------------------- */
-    
+
     .bg-principal {
         background-position: center;
     }

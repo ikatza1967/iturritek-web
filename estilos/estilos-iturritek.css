@@ -69,6 +69,7 @@
 
 .dropdown {
     display: flex;
+    
 }
 
 
@@ -860,10 +861,9 @@
     }
 
     .dropdown {
-        width: 25%;
-        margin-inline: 5.5%;
-        justify-content: space-between;
-
+        width: 100%;
+        justify-content: center;
+        gap: 5%;
     }
 
     .linkscript {
@@ -871,9 +871,11 @@
     }
 
     .cont-apartados {
-        background-color: rgb(0, 0, 0);
         position: absolute;
         top: 100%;
+        left: 0;
+        background-color: #394272;
+        text-align: center;
     }
 
     /*-------------------HEADER PRESENTACION------------------- */

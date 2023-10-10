@@ -1121,7 +1121,7 @@
         height: 90%;
      }
     .main-container{
-        height: 170vh;
+        height: 180vh;
         flex-flow: column-reverse;
         /* background-color: #c837e1; */
       
@@ -1135,7 +1135,7 @@
     }
     .contact-descrip {
         width: 100%;
-        height: 80vh;
+        height: 95vh;
         /* background-color: #ce2929; */
 
     }
@@ -1174,8 +1174,14 @@
     }
     .input-deco{
        width: 90%; 
-       height:30%;
+       height:35%;
      
+    }
+    .servicio-interés{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+
     }
 
     

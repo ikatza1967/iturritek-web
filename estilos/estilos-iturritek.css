@@ -758,7 +758,7 @@
     border-radius: 0.5vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    box-shadow: 0px 1px 1px 1px rgb(209, 207, 207);
+    box-shadow: 1px 1px 2px 2px rgb(240, 181, 122);
 }
 .btn__Form-enviar {
     width: 20%;

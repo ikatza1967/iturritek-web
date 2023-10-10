@@ -152,8 +152,8 @@ const aboutUsTitle={
         eu:"Gas-instalazioa eta muntaketa egiten dugu sukaldeetan, garbigailuetarako gas-instalazioetan, bitrozeramika edo ontzi-garbigailuetan.",
     },
     tarjeta4:{
-        en:"Fixed, Portable and market.",
-        eu:"Finkoa, eramangarria eta azoka",
+        en:"Fixed, Portable and for azoka.",
+        eu:"Finkoa, eramangarria eta azokentzako",
     },
     tarjeta5:{
         en:"Maintenance of facilities both at the individual level and in buildings, carrying out preventive and corrective treatments.",

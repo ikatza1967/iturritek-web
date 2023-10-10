@@ -715,8 +715,7 @@
     padding-left: 3%;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 
 .datos-personales {
@@ -734,7 +733,8 @@
     padding: 4px;
     border-radius: 15px;
     border: none;
-    background-color: rgba(215, 211, 211, 0.726);
+    background-color: rgba(228, 226, 226, 0.726);
+    box-shadow: 1px 1px 2px 2px rgba(161, 161, 161, 0.377);
 }
 
 .datos-servicio{
@@ -1135,14 +1135,11 @@
     }
     .main-contact {
         width: 90%;
-        height: 90%;
+        height: auto;
      }
     .main-container{
-        height: 200vh;
+        height: auto;
         flex-flow: column-reverse;
-        /* background-color: #c837e1; */
-      
-     
     }
     .contact-title{
         height: 8vh;
@@ -1152,59 +1149,58 @@
     }
     .contact-descrip {
         width: 100%;
-        height: 60%;
-        /* background-color: #ce2929; */
-
+        margin-bottom: 20%;
     }
+  
     .titulos-card_contacto{
         height: 8vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
     .contact-form {
-        height: 87%;
-     
-       
-        
-    }
-    .contact-form_usuario{
-        height: 25%;
+        height: auto;
         display: flex;
         flex-flow: column;
-        background-color: #ffffff;
     }
-    .contact-form_datos{
-        height: 25%;
+    .contact-form_usuario{
         display: flex;
         flex-flow: column;
         align-items: center;
-        padding-left: 0;
-        background-color: #ffffff;
-
     }
+    .contact-form_datos{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-left: 0%;
+        margin-bottom: 8%;
+    }
+    
 
     .contact-detalles{
         width: 100%;
-        height: 70vh;
-        /* background-color: #28c476; */
+        height: auto;
+        margin-top: 20%;
     }
     .input-deco{
-       width: 90%; 
-       height:30%;
-     
+       width: 95%; 
+       margin: 3%;
+       height: 6vh;
     }
     .servicio-interés{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         font-size: 1.4rem;
-
     }
     .datos-servicio{
-        height: 6%;
+        width: 70%;
+        height: 4vh;
+        margin-top: 8%;
+        margin-bottom: 8%;
     }
-
+    .contact-descrip {
+        height: auto;
+    }
     
 
 

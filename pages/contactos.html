@@ -79,30 +79,36 @@
           
           <div class="contact-descrip">
             <h3 class="titulos-card_contacto">Envíanos un mensaje</h3>
-            <form action="post" class="contact-form">
+
+
+            <!-- Formulario de contacto ******************************** -->
+
+            <form method="post" class="contact-form" onsubmit="enviarDatos(event)">
               <div class="contact-form_usuario">
                 <input type="text" id="name" class="input-deco" name="user_name" placeholder="  Nombre * " />
                 <input type="text" id="surname" class="input-deco" name="user_surname" placeholder="  Apellidos *"/>  
               </div>
               <div class="contact-form_datos">
-                <input type="tel" class="datos-personales  input-deco input-tel" id="tel" name="user_tel" placeholder="  Teléfono *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                <input type="tel" class="datos-personales  input-deco input-tel" id="tel" name="user_tel" placeholder="  Teléfono *"/>
                 <input type="email" class="datos-personales  input-deco" id="email" name="user_email" placeholder="  Email *" />  
               </div>
 
                 <label for="servicio" class="servicio-interés contact-paragraph">¿En qué servicio está interesado?</label>
               <select name="select" class=" datos-servicio" >
-                <option value="value1"></option>
-                <option value="value1">Aire acondicionado</option>
-                <option value="value2">Fontanería</option>
-                <option value="value3">Calefacción y gas</option>
-                <option value="value1">Reformas</option>
-                <option value="value2">Montajes</option>
-                <option value="value3">Mantenimineto</option>
+                <option value="vacio"></option>
+                <option value="Aire_acondicionado">Aire acondicionado</option>
+                <option value="Fontaneria">Fontanería</option>
+                <option value="Calefacción_y_gas">Calefacción y gas</option>
+                <option value="Reformas">Reformas</option>
+                <option value="Montajes">Montajes</option>
+                <option value="Mantenimineto">Mantenimineto</option>
               </select>
               <textarea id="mensaje" name="message" rows="4" cols="50" class="datos-textarea" placeholder="  Cuéntanos"></textarea>
 
-              <button id="btn-Form"><img class="btn__Form-enviar" src="../imagenes/mensaje.gif" alt="" >Enviar</button>
+              <button id="btn-Form" type="submit"><img class="btn__Form-enviar" src="../imagenes/mensaje.gif" alt="" >Enviar</button>
             </form>
+
+            
           </div>
 
         </div>
@@ -114,6 +120,41 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/scripts/mapaAPI.js"></script>
   <script src="/scripts/funcionalidades.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+
+    //Funcionalidad para enviar los datos del formulario al back
+    function enviarDatos(event) {
+        event.preventDefault();
+
+        // Datos del formulario
+        const user_name = document.getElementById("name").value;
+        const user_surname = document.getElementById("surname").value;
+        const user_tel = document.getElementById("tel").value;
+        const user_email = document.getElementById("email").value;
+        const select = document.querySelector(".datos-servicio").value;
+        const message = document.getElementById("mensaje").value;
+
+        // Metemos los datos en un obejto
+        const datos = {
+          user_name,
+          user_surname,
+          user_tel,
+          user_email,
+          select,
+          message
+        };
+
+        // Solicitud al back
+        axios.post("http://127.0.0.1:4000/recibir_datos", datos)
+          .then(response => {
+            console.log(response.data);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }
+  </script>
 
 </body>
 

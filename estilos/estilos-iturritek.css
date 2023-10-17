@@ -692,6 +692,33 @@
 }
 
 
+/* Contacto. Parte del back cuando se envia el correo */
+
+.overlayBien {
+    opacity: 0;
+    border: green 2px solid;
+    background-color: rgba(0, 128, 0, 0.521);
+    position: absolute;
+    right: 20px;
+    padding: 1rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+}
+
+.overlayMal {
+    opacity: 0;
+    border: red 2px solid;
+    background-color: rgba(255, 0, 0, 0.503);
+    position: absolute;
+    right: 20px;
+    padding: 1rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+}
+
+.mostrar {
+    opacity: 1;
+}
 
 /* -------------////////////////RESPONSIVE///////////////////-------------- */
 

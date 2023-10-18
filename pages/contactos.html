@@ -85,23 +85,22 @@
 
             <form method="post" class="contact-form" onsubmit="enviarDatos(event)">
               <div class="contact-form_usuario">
-                <input type="text" id="name" class="input-deco" name="user_name" placeholder="  Nombre * " />
+                <input type="text" id="name" class="input-deco" name="user_name" placeholder="  Nombre * " required/>
                 <input type="text" id="surname" class="input-deco" name="user_surname" placeholder="  Apellidos *"/>  
               </div>
               <div class="contact-form_datos">
                 <input type="tel" class="datos-personales  input-deco input-tel" id="tel" name="user_tel" placeholder="  Teléfono *"/>
-                <input type="email" class="datos-personales  input-deco" id="email" name="user_email" placeholder="  Email *" />  
+                <input type="email" class="datos-personales  input-deco" id="email" name="user_email" placeholder="  Email *" required/>  
               </div>
 
                 <label for="servicio" class="servicio-interés contact-paragraph">¿En qué servicio está interesado?</label>
               <select name="select" class=" datos-servicio" >
-                <option value="vacio"></option>
-                <option value="Aire_acondicionado">Aire acondicionado</option>
-                <option value="Fontaneria">Fontanería</option>
-                <option value="Calefacción_y_gas">Calefacción y gas</option>
-                <option value="Reformas">Reformas</option>
-                <option value="Montajes">Montajes</option>
-                <option value="Mantenimineto">Mantenimineto</option>
+                <option value="1">Aire acondicionado</option>
+                <option value="2">Fontanería</option>
+                <option value="3">Calefacción y gas</option>
+                <option value="4">Reformas</option>
+                <option value="5">Montajes</option>
+                <option value="6">Mantenimineto</option>
               </select>
               <textarea id="mensaje" name="message" rows="4" cols="50" class="datos-textarea" placeholder="  Cuéntanos"></textarea>
 

@@ -1,0 +1,10 @@
+.categoriasServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.categoriasServicios > div{
+    border: 1px solid black;
+    padding-left: 1rem;
+}

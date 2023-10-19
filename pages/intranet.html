@@ -38,7 +38,7 @@
                 <textarea id="agregarDescripcionServicio" name="descripcion_Servicio" placeholder="Descripción del servicio"
                 required></textarea><br><br>
 
-                <input type="text" id="agregarImgServicio" name="img_Servicio" placeholder="Imagen: Input temporal" required/><br><br>
+                <input type="file" id="agregarImgServicio" name="imagen_Servicio" accept="image/*" required /><p>El tipo de archivo tiene que ser .jpeg</p><br>
 
                 <select name="select" id="agregarIdCategoriaServicio">
                     <!-- <option value="1">Instalaciones</option>
@@ -46,7 +46,7 @@
                 </select><br><br>
 
                 <button type="submit">Agregar Servicio</button>
-
+                
             </form>
 
             <div class="verServicios"><br>

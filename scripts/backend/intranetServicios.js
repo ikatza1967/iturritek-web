@@ -1,32 +1,35 @@
 
-// Funcion que se encarga de agragar servicios nuevos ********************************
-function agregarServicio(event){
+// Funcion que se encarga de agregar servicios nuevos ********************************
+function agregarServicio(event) {
     event.preventDefault();
 
-    const nombre_Servicio = document.getElementById('agregarNombreServicio').value
-    const descripcion_Servicio = document.getElementById('agregarDescripcionServicio').value
-    const img_Servicio = document.getElementById('agregarImgServicio').value
-    const categoria_Id = document.getElementById('agregarIdCategoriaServicio').value
-    
-    
-    const datos = {
-        nombre_Servicio,
-        descripcion_Servicio,
-        img_Servicio,
-        categoria_Id
-    }
+    const nombre_Servicio = document.getElementById('agregarNombreServicio').value;
+    const descripcion_Servicio = document.getElementById('agregarDescripcionServicio').value;
+    const categoria_Id = document.getElementById('agregarIdCategoriaServicio').value;
 
-    console.log("Estos son los datos enviados para el back " + JSON.stringify(datos))
+    // Obtener el archivo seleccionado
+    const img_ServicioInput = document.getElementById('agregarImgServicio');
+    const img_Servicio = img_ServicioInput.files[0];
 
-    axios.post("http://127.0.0.1:4000/agregar_servicio", datos)
-    .then(response => {
-        location.reload();
-        console.log("Respuesta del servidor: " + JSON.stringify(response.data));
-    })
-    .catch(error => {
-        console.error("Error al hacer la solicitud: " + error);
-    });
+    // Crear un objeto FormData para enviar los datos
+    const formData = new FormData();
+    formData.append('nombre_Servicio', nombre_Servicio);
+    formData.append('descripcion_Servicio', descripcion_Servicio);
+    formData.append('categoria_Id', categoria_Id);
+    formData.append('img_Servicio', img_Servicio);
+
+    console.log("Estos son los datos enviados para el backend " + JSON.stringify(formData));
+
+    axios.post("http://127.0.0.1:4000/agregar_servicio", formData)
+        .then(response => {
+            location.reload();
+            console.log("Respuesta del servidor: " + JSON.stringify(response.data));
+        })
+        .catch(error => {
+            console.error("Error al hacer la solicitud: " + error);
+        });
 }
+
 
 // Funcion que se encarga de cargar los servicios en la intranet ****************
 function cargarServicios() {
@@ -128,6 +131,7 @@ function iterarCategorias(categorias) {
     }
 }
 
-
 // por ultimo llamamos a que carguen las ccategorias
 cargarCategorias()
+
+

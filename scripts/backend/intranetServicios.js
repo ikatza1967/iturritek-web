@@ -33,32 +33,26 @@ function cargarServicios() {
     axios.get("http://127.0.0.1:4000/ver_servicios")
         .then(response => {
             const servicios = response.data;
-            const serviciosContainer = document.getElementById("serviciosContainer");
+            const serviciosContainer = document.getElementById("serviciosContainer"); 
+            console.log(servicios)
+            servicios.forEach(servicio => {
+                const id = servicio.id_Servicio;
+                const nombre = servicio.nombre_Servicio;
+                const descripcion = servicio.descripcion_Servicio;
+                const imgBase64 = servicio.imagen_base64; // Imagen en formato base64
+                const categoriaId = servicio.categoria_Id;
 
-            servicios.forEach(servicioData => {
-                if (Array.isArray(servicioData) && servicioData.length === 5) {
-                    const id = servicioData[0];
-                    const nombre = servicioData[1];
-                    const descripcion = servicioData[2];
-                    const img = servicioData[3];
-                    const categoriaId = servicioData[4];
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <p>ID: ${id}</p>
+                    <p>Nombre: ${nombre}</p>
+                    <p>Descripción: ${descripcion}</p>
+                    <img src="data:image/jpeg;base64, ${imgBase64}" alt="Imagen del servicio" />
+                    <p>Categoría ID: ${categoriaId}</p>
+                    <button onclick="eliminarServicio('${id}')">Eliminar</button>
+                `;
 
-                    const li = document.createElement("li");
-                    li.innerHTML = `
-                        <span>Id: ${id}</span><br>
-                        <span>Nombre: ${nombre}</span><br>
-                        <span>Descripción: ${descripcion}</span><br>
-                        <span>Imagen: ${img}</span><br>
-                        <span>Categoría ID: ${categoriaId}</span><br>
-                        <button class="btnEliminar" data-id-servicio="${id}">Eliminar</button><br><br>
-                    `;
-
-                    li.querySelector(".btnEliminar").addEventListener("click", () => {
-                        eliminarServicio(id);
-                    });
-
-                    serviciosContainer.appendChild(li);
-                }
+                serviciosContainer.appendChild(li);
             });
         })
         .catch(error => {
@@ -68,6 +62,7 @@ function cargarServicios() {
 
 // Llama a la función para cargar y mostrar los servicios
 cargarServicios();
+
 
 // Función para eliminar un servicio ******************************************************
 function eliminarServicio(id) {

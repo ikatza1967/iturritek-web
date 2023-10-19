@@ -62,3 +62,31 @@ function enviarDatos(event) {
         envioFallido();
       });
   }
+
+//Funcion para iterar el selct con los servicios ********************************
+// Primero se llama a los sericios
+
+function cargarServicios() {
+    axios.get("http://127.0.0.1:4000/ver_servicios")
+        .then(response => {
+            const servicios = response.data;
+            iterarServicios(servicios)
+        })
+        .catch(error => {
+            console.error("Error al cargar los servicios: " + error);
+        });
+}
+
+cargarServicios()
+// Una vez tenemos los servicios se iteran
+function iterarServicios(servicios) {
+    const selectServicio = document.getElementById('agregarIdServicio');
+
+    servicios.forEach(servicio => {
+        const option = document.createElement('option'); 
+        option.value = servicio.id_Servicio; 
+        option.text = servicio.nombre_Servicio; 
+        selectServicio.appendChild(option); 
+    });
+}
+

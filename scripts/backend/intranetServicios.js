@@ -37,7 +37,6 @@ function cargarServicios() {
         .then(response => {
             const servicios = response.data;
             const serviciosContainer = document.getElementById("serviciosContainer"); 
-            console.log(servicios)
             servicios.forEach(servicio => {
                 const id = servicio.id_Servicio;
                 const nombre = servicio.nombre_Servicio;

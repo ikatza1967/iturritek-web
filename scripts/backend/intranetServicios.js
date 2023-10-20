@@ -42,18 +42,22 @@ function cargarServicios() {
                 const descripcion = servicio.descripcion_Servicio;
                 const imgBase64 = servicio.imagen_base64; // Imagen en formato base64
                 const categoriaId = servicio.categoria_Id;
+                const nombreCategoria = servicio.nombre_categoria;
 
-                const li = document.createElement("li");
-                li.innerHTML = `
-                    <p>ID: ${id}</p>
-                    <p>Nombre: ${nombre}</p>
-                    <p>Descripción: ${descripcion}</p>
-                    <img src="data:image/jpeg;base64, ${imgBase64}" alt="Imagen del servicio" />
-                    <p>Categoría ID: ${categoriaId}</p>
-                    <button onclick="eliminarServicio('${id}')">Eliminar</button>
+                const div = document.createElement("div");
+                div.innerHTML = `
+                    <img src="data:image/png;base64, ${imgBase64}" alt="Imagen del servicio" class="imgServicio" />
+                    <div class="descripcionServicio">
+                        <p>ID: ${id}</p>
+                        <p>Nombre: ${nombre}</p>
+                        <p>Descripción: ${descripcion}</p>
+                        <p>Nombre Categoría: ${nombreCategoria}</p>
+                        <p>Categoría ID: ${categoriaId}</p>
+                        <button onclick="eliminarServicio('${id}')">Eliminar</button>
+                    </div>
                 `;
 
-                serviciosContainer.appendChild(li);
+                serviciosContainer.appendChild(div);
             });
         })
         .catch(error => {

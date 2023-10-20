@@ -31,25 +31,25 @@
         <div class="administrarServicios">
             <h3>Administrar Servicios</h3>
             <p>Añadir nuevo servicio</p>
-            <form method="post" onsubmit="agregarServicio(event)">
+            <form method="post" onsubmit="agregarServicio(event)" class="formServicio">
 
-                <input type="text" id="agregarNombreServicio" name="nombre_Servicio" placeholder="  Nombre del servicio" required /><br><br>
+                <input type="text" id="agregarNombreServicio" name="nombre_Servicio" placeholder="  Nombre del servicio" required />
 
                 <textarea id="agregarDescripcionServicio" name="descripcion_Servicio" placeholder="Descripción del servicio"
-                required></textarea><br><br>
+                required></textarea>
 
-                <input type="file" id="agregarImgServicio" name="imagen_Servicio" accept="image/*" required /><p>El tipo de archivo tiene que ser .jpeg</p><br>
+                <input type="file" id="agregarImgServicio" name="imagen_Servicio" accept="image/*" required /><p>El tipo de archivo tiene que ser .png</p>
 
                 <select name="select" id="agregarIdCategoriaServicio">
                     <!-- <option value="1">Instalaciones</option>
                     <option value="2">Reformas-Mantenimiento</option> -->
-                </select><br><br>
+                </select> 
 
                 <button type="submit">Agregar Servicio</button>
                 
             </form>
 
-            <div class="verServicios"><br>
+            <div class="verServicios">
                 <p>Editar categorias</p>
                 <div id="serviciosContainer">
                     <!-- Contenido de servicios se añadirá aquí -->

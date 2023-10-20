@@ -11,10 +11,10 @@ function cargarCategorias() {
                     const nombre = categoriaData[1];
                     // Damos un id unico al id de serviciosCategorias para que solo se genere en el lugar correcto
                     const categoriaHTML = `
-                        <div>
-                            <p>${nombre}</p>
-                            <div id="serviciosCategoria${id}"></div>
-                        </div>
+                        
+                            <h6 class="box__upper--title">${nombre}</h6>
+                            <div class="services-container__box--upper serviciosEnCategorias" id="serviciosCategoria${id}"></div>
+                       
                     `;
 
                     categoriasContainer.innerHTML += categoriaHTML;
@@ -47,9 +47,17 @@ function servicioDeCategoria(id) {
                 const id = servicioData.id_Servicio;
                 const img = servicioData.imagen_base64;
                 contenidoHTML += `
-                    <p>Nombre: ${nombre}</p>
-                    <p>${id}</p>
-                    <img src="data:image/png;base64, ${img}" alt="Imagen del servicio" class="imgServicio" />
+                   <article class="services__cont--cards">
+                        <div>
+                            <figure>
+                                <img src="data:image/png;base64, ${img}" alt="Imagen del servicio" class="imgServicioPorCategoria" />
+                            </figure>
+                        </div>
+                        <div class="services__cont__cards--info">
+                            <h5 class="services__cont__cards--title">${nombre}</h5>
+                            <p class="services__cont__cards--paragraph">${descripcionServicio}</p>
+                        </div>
+                    </article>
                 `;
             });
 

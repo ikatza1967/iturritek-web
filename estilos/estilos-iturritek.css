@@ -187,6 +187,17 @@
 
 /* ------------------INICIO SERVICES------------------- */
 
+.serviciosEnCategorias > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.imgServicioPorCategoria{
+    width: 100%;
+}
+
 .services-container__title {
     font-family: var(--fuentetitulo);
     font-size: clamp(2.5rem, 1.5vw, 2rem);
@@ -197,7 +208,6 @@
 }
 .services-container {
     width: 94%;
-    height: 165vh;
     background-image: url(../imagenes/BG-SERVICIOS.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;

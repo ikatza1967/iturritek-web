@@ -8,60 +8,63 @@
     <title>Intranet</title>
 </head>
 <body>
-    <h2>Intranet</h2>
-    <div class="categoriasServicios">
-        <div class="administrarCategorias">
-            <h3>Administrar Categorias</h3>
-            <div class="anadirCategoria">
-                <p>Añadir nueva categoria</p>
-                <form method="post" onsubmit="agregarCategoria(event)">
-                    <input type="text" id="agregarNombreCategoria" name="nombre_categoria" placeholder="  Nombre categoria *" required />
-                    <button type="submit">Agregar categoria</button>
+    <div id="intranet-container">
+        <h2>Intranet</h2>
+        <div class="categoriasServicios">
+            <div class="administrarCategorias">
+                <h3>Administrar Categorias</h3>
+                <div class="anadirCategoria">
+                    <p>Añadir nueva categoria</p>
+                    <form method="post" onsubmit="agregarCategoria(event)">
+                        <input type="text" id="agregarNombreCategoria" name="nombre_categoria" placeholder="  Nombre categoria *" required />
+                        <button type="submit">Agregar categoria</button>
+                    </form>
+                </div>
+
+                <div class="verCategorias"><br>
+                    <p>Editar categorias</p>
+                    <div id="categoriasContainer">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="administrarServicios">
+                <h3>Administrar Servicios</h3>
+                <p>Añadir nuevo servicio</p>
+                <form method="post" onsubmit="agregarServicio(event)" class="formServicio">
+
+                    <input type="text" id="agregarNombreServicio" name="nombre_Servicio" placeholder="  Nombre del servicio" required />
+
+                    <textarea id="agregarDescripcionServicio" name="descripcion_Servicio" placeholder="Descripción del servicio"
+                    required></textarea>
+
+                    <input type="file" id="agregarImgServicio" name="imagen_Servicio" accept="image/*" required /><p>El tipo de archivo tiene que ser .png</p>
+
+                    <select name="select" id="agregarIdCategoriaServicio">
+                        <!-- <option value="1">Instalaciones</option>
+                        <option value="2">Reformas-Mantenimiento</option> -->
+                    </select> 
+
+                    <button type="submit">Agregar Servicio</button>
+                    
                 </form>
-            </div>
 
-            <div class="verCategorias"><br>
-                <p>Editar categorias</p>
-                <div id="categoriasContainer">
+                <div class="verServicios">
+                    <p>Editar categorias</p>
+                    <div id="serviciosContainer">
+                        <!-- Contenido de servicios se añadirá aquí -->
+                    </div>
 
                 </div>
-            </div>
-        </div>
 
-        <div class="administrarServicios">
-            <h3>Administrar Servicios</h3>
-            <p>Añadir nuevo servicio</p>
-            <form method="post" onsubmit="agregarServicio(event)" class="formServicio">
-
-                <input type="text" id="agregarNombreServicio" name="nombre_Servicio" placeholder="  Nombre del servicio" required />
-
-                <textarea id="agregarDescripcionServicio" name="descripcion_Servicio" placeholder="Descripción del servicio"
-                required></textarea>
-
-                <input type="file" id="agregarImgServicio" name="imagen_Servicio" accept="image/*" required /><p>El tipo de archivo tiene que ser .png</p>
-
-                <select name="select" id="agregarIdCategoriaServicio">
-                    <!-- <option value="1">Instalaciones</option>
-                    <option value="2">Reformas-Mantenimiento</option> -->
-                </select> 
-
-                <button type="submit">Agregar Servicio</button>
-                
-            </form>
-
-            <div class="verServicios">
-                <p>Editar categorias</p>
-                <div id="serviciosContainer">
-                    <!-- Contenido de servicios se añadirá aquí -->
-                </div>
 
             </div>
-
-
         </div>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/scripts/backend/token.js"></script>
 <script src="/scripts/backend/intranetCategorias.js"></script>
 <script src="/scripts/backend/intranetServicios.js"></script>
 

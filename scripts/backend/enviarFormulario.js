@@ -18,7 +18,6 @@ function envioFallido(){
   }, 3000);
 }
 
-
 //Funcionalidad para enviar los datos del formulario al back
 function enviarDatos(event) {
     event.preventDefault();

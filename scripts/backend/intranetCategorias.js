@@ -1,3 +1,4 @@
+// Funcion para agregar nuevas categorias
 function agregarCategoria(event){
     event.preventDefault();
 
@@ -18,8 +19,6 @@ function agregarCategoria(event){
         console.error("Error al hacer la solicitud: " + error);
     });
 }
-
-
 
 // Función para cargar y mostrar las categorías
 function cargarCategorias() {

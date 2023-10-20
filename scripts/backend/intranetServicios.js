@@ -30,7 +30,6 @@ function agregarServicio(event) {
         });
 }
 
-
 // Funcion que se encarga de cargar los servicios en la intranet ****************
 function cargarServicios() {
     axios.get("http://127.0.0.1:4000/ver_servicios")
@@ -65,7 +64,6 @@ function cargarServicios() {
 // Llama a la función para cargar y mostrar los servicios
 cargarServicios();
 
-
 // Función para eliminar un servicio ******************************************************
 function eliminarServicio(id) {
     // Realiza una solicitud DELETE al servidor para eliminar la categoría
@@ -87,8 +85,6 @@ function eliminarServicio(id) {
             console.error("Error al eliminar la categoría: " + error);
         });
 }
-
-
 
 // Logica para iterar el selct de las catregorias dinamicamente *******************************
     //Primero llamamos a las categorias

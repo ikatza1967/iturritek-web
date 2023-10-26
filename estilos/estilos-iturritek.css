@@ -20,6 +20,72 @@
     --azul-pag: rgba(60, 160, 216, 1);
     --grisfondogpenascal: rgba(235, 231, 231, 0.75);
 }
+/* estilos login */
+
+.Container-login {
+  
+ 
+    padding: 1em; 
+    background-color: #888686f6;
+    
+      border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    width: 41%;
+    height: 50%;    
+  }
+  Estilos de la página de inicio de sesión 
+  #login {
+    margin: 20px ;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }  
+  
+  #login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  } 
+  
+  #login label {
+    display: block;
+    margin-bottom: 5px;
+  } 
+  
+  #login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } 
+  
+  #login input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  } 
+  
+  #login input[type="submit"]:hover {
+    background-color: #0056b3;
+  } 
+  .fondo-login{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  
+  
 
 /* ------------------INICIO HEADER------------------- */
 

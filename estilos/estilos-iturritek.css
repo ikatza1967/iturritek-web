@@ -708,35 +708,37 @@
     justify-content: space-around;
 }
 .contact-form_usuario {
-    display: flex;
-    flex-flow: row;
+      /* display: flex; */
+     flex-flow: row; */
     justify-content: space-around;
     align-items: center;
+    
 }
 .contact-form_datos {
     width: 100%;
-    height: 20%;
+    height: 30%;
     padding-left: 3%;
-    display: flex;
+    /* display: flex; */
     flex-flow: column;
     justify-content: space-around; 
 }
 .datos-personales {
-    width: 90%;  
+    width: 70%;  
 }
 .input-tel{
-    width: 50%;
+    width: 70%;
 }
 .datos-servicios{
     margin-inline-start: 3%;
     width: 70%;
 }
 .input-deco{
-    padding: 4px;
+    padding: 5px;
     border-radius: 15px;
     border: none;
     background-color: rgba(228, 226, 226, 0.726);
     box-shadow: 1px 1px 2px 2px rgba(161, 161, 161, 0.377);
+    margin: 2%;
 }
 .datos-servicio{
     width: 60%;

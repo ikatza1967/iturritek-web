@@ -50,8 +50,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link text-light linkscript" href="pages/contactos.html">
-                                        INTRANET
+                                    <a class="nav-link text-light linkscript" href="#" onclick="mostrarFormularioIntranet()">INTRANET
                                     </a>
                                 </li>
                                 <div class="dropdown">
@@ -67,19 +66,32 @@
                     </div>
                 </nav>
             </header>
-            <div class="fondo-login">
-                <div class="Container-login "> 
+            <div class="fondo-login hidden">
+                <div class="Container-login " id="formularioIntranet"> 
+                    
                     <section id="login">  
                           <!-- Página de inicio de sesión (simulada)  -->
-                <h2>Iniciar Sesión</h2> 
-                         <form action="procesar_login.php" method="post"> 
+                <!-- <h2>Iniciar Sesión</h2> 
+                         <form action="login-form" method="post"> 
                              <label for="usuario">Usuario:</label>
                             <input type="text" id="usuario" name="usuario" required><br>
                             <label for="contrasena">Contraseña:</label>
                             <input type="password" id="contrasena" name="contrasena" required><br>
                             <input type="submit" value="Iniciar Sesión">
-                        </form>
+                        </form> -->
+                        <h1>Iniciar Sesión</h1>
+    <form id="login-form">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p id="message"></p>
                     </section> 
+                
                 </div>   
             </div>  
             .<section class="Cont-header__presentIturritek">
@@ -308,7 +320,21 @@
     <script src="scripts/idiomas.js"></script>
     <script src="/scripts/funcionalidades.js"></script>
     <script src="/scripts/backend/indexDinamico.js"></script>
-
+    <script src="scripts/formulario.js"></script>
+    <script src="/scripts/backend/login.js"></script>
+    <!-- <script>
+        // Agregar un escuchador de eventos para el formulario
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitar la recarga de la página
+    
+            // Aquí puedes agregar tu lógica para abrir la intranet
+            // Por ejemplo, redirigir a una página de intranet
+            // window.location.href = 'tu_pagina_de_intranet.html';
+            
+            // Simulación de redirección después del inicio de sesión
+            alert('Iniciar Sesión exitoso. Redireccionando a la intranet...');
+        });
+    </script> -->
 </body>
 
 </html>

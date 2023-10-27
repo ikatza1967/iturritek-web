@@ -4,9 +4,12 @@ function cargarCategorias() {
         .then(response => {
             const categorias = response.data;
             const categoriasContainer = document.getElementById("generarCategoriasIndex");
+            const containerSinBack = document.getElementById("serviciosSinBack")
 
             categorias.forEach(categoriaData => {
                 if (Array.isArray(categoriaData) && categoriaData.length === 2) {
+                    // So servicios se generar con el back los estaticos del front desaparecen
+                    containerSinBack.classList.add("noDisplay")
                     const id = categoriaData[0];
                     const nombre = categoriaData[1];
                     // Damos un id unico al id de serviciosCategorias para que solo se genere en el lugar correcto

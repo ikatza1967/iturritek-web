@@ -257,6 +257,10 @@
 
 /* ------------------INICIO SERVICES------------------- */
 
+.noDisplay{
+    display: none;
+}
+
 .serviciosEnCategorias > div{
     display: flex;
     flex-wrap: wrap;

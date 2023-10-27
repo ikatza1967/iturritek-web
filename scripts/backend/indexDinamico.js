@@ -50,7 +50,7 @@ function servicioDeCategoria(id) {
                 const id = servicioData.id_Servicio;
                 const img = servicioData.imagen_base64;
                 contenidoHTML += `
-                   <article class="services__cont--cards">
+                   <article class="services__cont--cards" onclick="ensenarServicio(${id})">
                         <div>
                             <figure>
                                 <img src="data:image/png;base64, ${img}" alt="Imagen del servicio" class="imgServicioPorCategoria" />
@@ -75,3 +75,36 @@ function servicioDeCategoria(id) {
 
 // Se llama siempre a la funcion para mostrar categorías
 cargarCategorias();
+
+// LLamamos a un servicio con su id para recivir solo sus datos y luego los mostramos en una plantilla literal
+function ensenarServicio(id) {
+    const servicioEspecificoContainer = document.getElementById("servicioEspecifico");
+
+    axios.get(`http://127.0.0.1:4000/servicio_especifico/${id}`)
+        .then(response => {
+            const servicio = response.data;
+            const servicioHTML = `
+           <div class="overlayServicioEspecifico" id="modalOverlayServicio" onclick="cerrarModal(event)">
+                <div class="modalServicioEspecidico">
+                    <h3>${servicio.nombre_Servicio}</h3>
+                    <img src="data:image/png;base64, ${servicio.img_Servicio}" alt="Imagen del servicio" class="imgServicioEspecifico" />
+                    <p>${servicio.descripcion_Servicio}</p>
+                    <p>Links de la pagina...</p>
+                    <p>Links de la pagina...</p>
+                </div>
+            </div>
+            `;
+
+            servicioEspecificoContainer.innerHTML = servicioHTML;
+        })
+        .catch(error => {
+            console.error("Error al cargar el servicio específico: " + error);
+        });
+}
+
+function cerrarModal(event) {
+    if (event.target.id === "modalOverlayServicio") {
+        const modalOverlay = document.getElementById("modalOverlayServicio");
+        modalOverlay.style.display = "none";
+    }
+}

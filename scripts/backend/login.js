@@ -1,3 +1,17 @@
+function EnsenarOverlayLogin() {
+    var overlay = document.querySelector('.overlayLoginIntranet');
+    overlay.style.display = 'flex';
+}
+
+function OcultarOverlayLogin(event) {
+    var overlay = document.querySelector('.overlayLoginIntranet');
+    if (event.target === overlay) {
+        overlay.style.display = 'none';
+    }
+}
+
+
+
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 

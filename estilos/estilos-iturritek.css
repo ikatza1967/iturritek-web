@@ -20,21 +20,57 @@
     --azul-pag: rgba(60, 160, 216, 1);
     --grisfondogpenascal: rgba(235, 231, 231, 0.75);
 }
-/* estilos login */
+/* estilos login ********************/
+.overlayLoginIntranet {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
 
-.Container-login {
-  
- 
-    padding: 1em; 
-    background-color: #888686f6;
-    
-      border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    width: 41%;
-    height: 50%;    
-  }
-  Estilos de la página de inicio de sesión 
+/* Estilos para el formulario de login */
+.loginIntranet {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.loginIntranet h1 {
+    font-size: 24px;
+}
+
+.loginIntranet form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginIntranet label {
+    margin-bottom: 5px;
+}
+
+.loginIntranet input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.loginIntranet button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+  /* Estilos de la página de inicio de sesión  */
   #login {
     margin: 20px ;
     max-width: 400px;
@@ -74,22 +110,6 @@
   #login input[type="submit"]:hover {
     background-color: #0056b3;
   } 
-  .fondo-login{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.26);
-  }
-  .hidden{
-    visibility: hidden;
-  }
-  
-  
-  
-  
 
 /* ------------------INICIO HEADER------------------- */
 
